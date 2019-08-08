@@ -35,11 +35,13 @@ class ViewController: UIViewController {
     var disposeSub: Disposable!
     var disposeBag = DisposeBag()
     
+    let kylError = NSError.init(domain: "com.kylerror.cn", code: 10090, userInfo: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
  //        limitObservable()
 //          intervalObservableTest()
-        test_skipUntil()
+        test_retry2()
     }
     
     
@@ -48,39 +50,125 @@ class ViewController: UIViewController {
     }
 }
 
-
-// MARK: - Rx高阶函数： 集合控制操作符
-extension ViewController {
-    func test_toArray() {
-        
-    }
-    
-    func test_reduce() {
-        
-    }
-    
-    func test_concat() {
-        
-    }
-    
-}
-
 // MARK: - Rx高阶函数： 从可观察对象的错误通知中恢复的操作符
 extension ViewController {
+    
+    
+    /// 从错误事件中恢复，方法是返回一个可观察到的序列，该序列发出单个元素，然后终止
     func test_catchErrorJustReturn() {
+        // **** catchErrorJustReturn
+        // 从错误事件中恢复，方法是返回一个可观察到的序列，该序列发出单个元素，然后终止
+        print("*****catchErrorJustReturn*****")
+        let sequenceThatFails = PublishSubject<String>()
         
+        sequenceThatFails
+            .catchErrorJustReturn("kongyulu")
+            .subscribe{print($0)}
+            .disposed(by: disposeBag)
+
+        sequenceThatFails.onNext("yifeng")
+        sequenceThatFails.onNext("yisheng")// 正常序列发送成功的
+        sequenceThatFails.onError(self.kylError) //发送失败的序列,一旦订阅到位 返回我们之前设定的错误的预案
     }
     
+    
+    /// 通过切换到提供的恢复可观察序列，从错误事件中恢复
     func test_catchError() {
+        // **** catchErrorJustReturn
+        // 从错误事件中恢复，方法是返回一个可观察到的序列，该序列发出单个元素，然后终止
+        print("*****catchErrorJustReturn*****")
+        let sequenceThatFails = PublishSubject<String>()
+        
+        sequenceThatFails
+            .catchErrorJustReturn("kongyulu")
+            .subscribe{print($0)}
+            .disposed(by: disposeBag)
+        
+        sequenceThatFails.onNext("yifeng")
+        sequenceThatFails.onNext("yisheng")// 正常序列发送成功的
+        sequenceThatFails.onError(self.kylError) //发送失败的序列,一旦订阅到位 返回我们之前设定的错误的预案
+        
+        // **** catchError
+        // 通过切换到提供的恢复可观察序列，从错误事件中恢复
+        print("*****catchError*****")
+        
+        let recoverySequence = PublishSubject<String>()
+        
+        recoverySequence
+            .catchError {
+            print("Error:",$0)
+            return recoverySequence // 获取到了错误序列-我们在中间的闭包操作处理完毕,返回给用户需要的序列(showAlert)
+            }
+            .subscribe{print($0)}
+            .disposed(by: disposeBag)
+        
+        sequenceThatFails.onNext("test1")
+        sequenceThatFails.onNext("test2")  // 正常序列发送成功的
+        sequenceThatFails.onError(kylError) // 发送失败的序列
+        
+        recoverySequence.onNext("yuhairong")
         
     }
     
+    
+    /// 通过无限地重新订阅可观察序列来恢复重复的错误事件
     func test_retry() {
+        // *** retry: 通过无限地重新订阅可观察序列来恢复重复的错误事件
+        print("*****retry*****")
+        var count = 1 // 外界变量控制流程
+        let sequenceRetryErrors = Observable<String>.create { (observer) -> Disposable in
+            observer.onNext("kongyulu")
+            observer.onNext("yifeng")
+            observer.onNext("yisheng")
+            
+            if count == 1 { // 流程进来之后就会过度-这里的条件可以作为出口,失败的次数
+                observer.onError(self.kylError)
+                print("错误序列来了")
+                count += 1
+            }
+            
+            observer.onNext("test1")
+            observer.onNext("test2")
+            observer.onNext("test3")
+            observer.onCompleted()
+            return Disposables.create()
+        }
         
+        sequenceRetryErrors
+            .retry() //调用这个retry后，上面的observer闭包会重新执行一次
+            .subscribe(onNext: {print($0)})
+            .disposed(by: disposeBag)
     }
     
+    
+    /// retry(_:): 通过重新订阅可观察到的序列，重复地从错误事件中恢复，直到重试次数达到max未遂计数
     func test_retry2() {
+        // **** retry(_:): 通过重新订阅可观察到的序列，重复地从错误事件中恢复，直到重试次数达到max未遂计数
+        print("*****retry(_:)*****")
+        var count = 1 // 外界变量控制流程
+        let sequenceThatErrors = Observable<String>.create { observer in
+            observer.onNext("kongyulu")
+            observer.onNext("yifeng")
+            observer.onNext("yisheng")
+            
+            if count < 5 { // 这里设置的错误出口是没有太多意义的额,因为我们设置重试次数
+                observer.onError(self.kylError) //发送错误消息
+                print("错误序列来了")
+                count += 1
+            }
+            //发送错误后，下面的sender都不会打印了
+            observer.onNext("sender 1")
+            observer.onNext("sender 2")
+            observer.onNext("sender 3")
+            observer.onCompleted()
+            
+            return Disposables.create()
+        }
         
+        sequenceThatErrors
+            .retry(3) //重复地从错误事件中恢复3次
+            .subscribe(onNext: { print($0) })
+            .disposed(by: disposeBag)
     }
     
 }
@@ -100,6 +188,65 @@ extension ViewController {
     }
     
 }
+
+
+// MARK: - Rx高阶函数： 集合控制操作符
+extension ViewController {
+    
+    
+    /// 将一个可观察序列转换为一个数组，将该数组作为一个新的单元素可观察序列发出，然后终止
+    func test_toArray() {
+        // *** toArray: 将一个可观察序列转换为一个数组，将该数组作为一个新的单元素可观察序列发出，然后终止
+        print("*****toArray*****")
+        Observable.range(start: 1, count: 10)
+            .toArray() //这里生成一个从1到10的数组
+            .subscribe { print($0) }
+            .disposed(by: disposeBag)
+    }
+    
+    
+    /// 从一个设置的初始化值开始，然后对一个可观察序列发出的所有元素应用累加器闭包，并以单个元素可观察序列的形式返回聚合结果 - 类似scan
+    func test_reduce() {
+        // *** reduce: 从一个设置的初始化值开始，然后对一个可观察序列发出的所有元素应用累加器闭包，并以单个元素可观察序列的形式返回聚合结果 - 类似scan
+        print("*****reduce*****")
+        Observable.of(10, 100, 1000)
+            .reduce(1, accumulator: +) // 1 + 10 + 100 + 1000 = 1111
+            .subscribe(onNext: { print($0) })
+            .disposed(by: disposeBag)
+    }
+    
+    
+    /// 以顺序方式连接来自一个可观察序列的内部可观察序列的元素，在从下一个序列发出元素之前，等待每个序列成功终止
+    /// 用来控制顺序
+    func test_concat() {
+        // *** concat: 以顺序方式连接来自一个可观察序列的内部可观察序列的元素，在从下一个序列发出元素之前，等待每个序列成功终止
+        // 用来控制顺序
+        print("*****concat*****")
+        let subject1 = BehaviorSubject(value: "kongyulu")
+        let subject2 = BehaviorSubject(value: "1")
+        
+        let subjectsSubject = BehaviorSubject(value: subject1)
+        
+        subjectsSubject.asObservable()
+            .concat()
+            .subscribe { print($0) }
+            .disposed(by: disposeBag)
+        
+        subject1.onNext("yifeng")
+        subject1.onNext("yisheng")
+        
+        subjectsSubject.onNext(subject2)
+        
+        subject2.onNext("打印不出来")
+        subject2.onNext("2")
+        
+        //subject1.onCompleted() // 必须要等subject1 完成了才能订阅到! 用来控制顺序 网络数据的异步
+        subject2.onNext("3")
+    }
+    
+}
+
+
 
 
 
