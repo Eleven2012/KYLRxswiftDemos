@@ -1,0 +1,6 @@
+framework module Pods_002_RxSwift_____ {
+  umbrella header "Pods-002-RxSwift核心销毁者-umbrella.h"
+
+  export *
+  module * { export * }
+}

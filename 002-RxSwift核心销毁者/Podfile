@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '002-RxSwift核心销毁者' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+   pod 'RxSwift', '~> 5'
+   pod 'RxCocoa', '~> 5'
+  # Pods for 002-RxSwift核心销毁者
+
+end
