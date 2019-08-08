@@ -36,8 +36,118 @@ class ViewController: UIViewController {
 
 // MARK: - Rx高阶函数： 映射操作符
 extension ViewController {
+    func test_map() {
+        
+    }
+    
+    func test_flatmap() {
+        
+    }
+    
+    func test_scan() {
+        
+    }
+}
+
+
+// MARK: - Rx高阶函数： 过滤条件操作符
+extension ViewController {
+    func test_fliter() {
+        
+    }
+    
+    func test_distinctUntilChanged() {
+        
+    }
+    
+    func test_elementAt() {
+        
+    }
+    
+    func test_single() {
+        
+    }
+    
+    func test_take() {
+        
+    }
+    
+    func test_takeLast() {
+        
+    }
+    
+    func test_takeUntil() {
+        
+    }
+    
+    func test_skip() {
+        
+    }
+    
+    func test_skipWhile() {
+        
+    }
+    
+    func test_skipUntil() {
+        
+    }
     
 }
+
+
+// MARK: - Rx高阶函数： 集合控制操作符
+extension ViewController {
+    func test_toArray() {
+        
+    }
+    
+    func test_reduce() {
+        
+    }
+    
+    func test_concat() {
+        
+    }
+    
+}
+
+// MARK: - Rx高阶函数： 从可观察对象的错误通知中恢复的操作符
+extension ViewController {
+    func test_catchErrorJustReturn() {
+        
+    }
+    
+    func test_catchError() {
+        
+    }
+    
+    func test_retry() {
+        
+    }
+    
+    func test_retry2() {
+        
+    }
+    
+}
+
+// MARK: - Rx高阶函数： Rx流程操作符
+extension ViewController {
+    func test_debug() {
+        
+    }
+    
+    func test_delay() {
+        
+    }
+    
+    func test_connect() {
+        
+    }
+    
+}
+
+
 
 // MARK: - Rx高阶函数： 组合操作符
 extension ViewController {
