@@ -41,13 +41,208 @@ class ViewController: UIViewController {
         super.viewDidLoad()
  //        limitObservable()
 //          intervalObservableTest()
-        test_retry2()
+        testPushConnectOperators()
     }
     
     
     deinit {
         print("我走了")
     }
+}
+
+// MARK: - Rx高阶函数： Rx流程操作符
+extension ViewController {
+    func test_debug() {
+        // **** debug
+        // 打印所有订阅、事件和处理。
+        print("*****debug*****")
+        var count = 1
+        
+        let sequenceThatErrors = Observable<String>.create { observer in
+            observer.onNext("Kongyulu")
+            observer.onNext("yifeng")
+            observer.onNext("yisheng")
+            
+            if count < 5 {
+                observer.onError(self.kylError)
+                print("错误序列来了")
+                count += 1
+            }
+            
+            observer.onNext("yuhairong")
+            observer.onNext("zhangsiyuan")
+            observer.onNext("kongliyuan")
+            observer.onCompleted()
+            
+            return Disposables.create()
+        }
+        
+        sequenceThatErrors
+            .retry(3)
+            .debug()
+            .subscribe(onNext: { print($0) })
+            .disposed(by: disposeBag)
+    }
+    
+    func test_delay() {
+        
+    }
+    
+    func test_connect() {
+        
+    }
+    
+    /// multicast
+    func testMulticastConnectOperators(){
+        
+        // *** multicast : 将源可观察序列转换为可连接序列，并通过指定的主题广播其发射。
+        print("*****multicast*****")
+        let subject = PublishSubject<Any>()
+        subject.subscribe{print("00:\($0)")}
+            .disposed(by: disposeBag)
+        
+        let netOB = Observable<Any>.create { (observer) -> Disposable in
+            sleep(2)// 模拟网络延迟
+            print("我开始请求网络了")
+            observer.onNext("请求到的网络数据")
+            observer.onNext("请求到的本地")
+            observer.onCompleted()
+            return Disposables.create {
+                print("销毁回调了")
+            }
+            }.publish()
+        
+        netOB.subscribe(onNext: { (anything) in
+            print("订阅1:",anything)
+        })
+            .disposed(by: disposeBag)
+        
+        // 我们有时候不止一次网络订阅,因为有时候我们的数据可能用在不同的额地方
+        // 所以在订阅一次 会出现什么问题?
+        netOB.subscribe(onNext: { (anything) in
+            print("订阅2:",anything)
+        })
+            .disposed(by: disposeBag)
+        
+        _ = netOB.connect()
+        
+    }
+    
+    /// replay
+    func testReplayConnectOperators(){
+        
+        // **** replay: 将源可观察序列转换为可连接的序列，并将向每个新订阅服务器重放以前排放的缓冲大小
+        // 首先拥有和publish一样的能力，共享 Observable sequence， 其次使用replay还需要我们传入一个参数（buffer size）来缓存已发送的事件，当有新的订阅者订阅了，会把缓存的事件发送给新的订阅者
+        print("*****replay*****")
+        
+        let interval = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance).replay(5)
+        
+        interval.subscribe(onNext: { print(Date.time,"订阅: 1, 事件: \($0)") })
+            .disposed(by: self.disposeBag)
+        
+        delay(2) { _ = interval.connect() }
+        
+        delay(4) {
+            interval.subscribe(onNext: { print(Date.time,"订阅: 2, 事件: \($0)") })
+                .disposed(by: self.disposeBag)
+        }
+        
+        delay(8) {
+            interval.subscribe(onNext: { print(Date.time,"订阅: 3, 事件: \($0)") })
+                .disposed(by: self.disposeBag)
+        }
+        delay(20, closure: {
+            self.disposeBag = DisposeBag()
+        })
+        
+        /**
+         订阅: 1, 事件: 4
+         订阅: 1, 事件: 0
+         2019-05-28 21-32-42 订阅: 2, 事件: 0
+         2019-05-28 21-32-42 订阅: 1, 事件: 1
+         2019-05-28 21-32-42 订阅: 2, 事件: 1
+         2019-05-28 21-32-45 订阅: 2, 事件: 4
+         2019-05-28 21-32-46 订阅: 3, 事件: 0
+         2019-05-28 21-32-46 订阅: 3, 事件: 1
+         2019-05-28 21-32-46 订阅: 3, 事件: 2
+         2019-05-28 21-32-46 订阅: 3, 事件: 3
+         2019-05-28 21-32-46 订阅: 3, 事件: 4
+         
+         // 序列从 0开始
+         // 定时器也没有断层  sub2 sub3 和 sub1 是同步的
+         */
+    }
+    
+    /// push - connect 将源可观察序列转换为可连接序列
+    func testPushConnectOperators(){
+        
+        // **** push:将源可观察序列转换为可连接序列
+        // 共享一个Observable的事件序列，避免创建多个Observable sequence。
+        // 注意:需要调用connect之后才会开始发送事件
+        print("*****testPushConnect*****")
+        
+        let interval = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance).publish()
+        
+        interval.subscribe(onNext: { print("订阅: 1, 事件: \($0)") })
+            .disposed(by: disposeBag)
+        
+        delay(2) {
+            _ = interval.connect()
+        }
+        delay(4) {
+            interval.subscribe(onNext: { print("订阅: 2, 事件: \($0)") })
+                .disposed(by: self.disposeBag)
+        }
+        delay(6) {
+            interval.subscribe(onNext: { print("订阅: 3, 事件: \($0)") })
+                .disposed(by: self.disposeBag)
+        }
+        delay(10, closure: {
+            self.disposeBag = DisposeBag()
+        })
+        /**
+         订阅: 1, 事件: 1
+         订阅: 2, 事件: 1
+         订阅: 1, 事件: 2
+         订阅: 2, 事件: 2
+         订阅: 1, 事件: 3
+         订阅: 2, 事件: 3
+         订阅: 3, 事件: 3
+         
+         订阅: 2 从1开始
+         订阅: 3 从3开始
+         */
+        // 但是后面来的订阅者，却无法得到之前已发生的事件
+    }
+    
+    /// 没有共享序列
+    func testWithoutConnect() {
+        
+        print("*****testWithoutConnect*****")
+        
+        let interval = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+        
+        interval.subscribe(onNext: { print("订阅: 1, 事件: \($0)") })
+            .disposed(by: disposeBag)
+        
+        delay(3) {
+            interval.subscribe(onNext: { print("订阅: 2, 事件: \($0)") })
+                .disposed(by: self.disposeBag)
+        }
+        delay(10, closure: {
+            self.disposeBag = DisposeBag()
+        })
+        
+        // 发现有一个问题:在延时3s之后订阅的Subscription: 2的计数并没有和Subscription: 1一致，而是又从0开始了，如果想共享，怎么办?
+    }
+    
+    /// 延迟几秒执行
+    func delay(_ delay: Double, closure: @escaping () -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+            closure()
+        }
+    }
+    
 }
 
 // MARK: - Rx高阶函数： 从可观察对象的错误通知中恢复的操作符
@@ -173,21 +368,7 @@ extension ViewController {
     
 }
 
-// MARK: - Rx高阶函数： Rx流程操作符
-extension ViewController {
-    func test_debug() {
-        
-    }
-    
-    func test_delay() {
-        
-    }
-    
-    func test_connect() {
-        
-    }
-    
-}
+
 
 
 // MARK: - Rx高阶函数： 集合控制操作符
