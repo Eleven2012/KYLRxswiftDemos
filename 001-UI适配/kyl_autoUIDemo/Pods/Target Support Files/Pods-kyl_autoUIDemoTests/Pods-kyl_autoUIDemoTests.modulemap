@@ -1,0 +1,6 @@
+framework module Pods_kyl_autoUIDemoTests {
+  umbrella header "Pods-kyl_autoUIDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
