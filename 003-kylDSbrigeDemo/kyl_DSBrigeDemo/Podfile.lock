@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (4.8.2)
+  - BayMaxProtector (2.3.3)
+  - Differentiator (4.0.1)
+  - dsBridge (3.0.6)
+  - HandyJSON (5.0.0)
+  - JXPhotoBrowser (2.2.3):
+    - JXPhotoBrowser/Kingfisher (= 2.2.3)
+  - JXPhotoBrowser/Core (2.2.3)
+  - JXPhotoBrowser/Kingfisher (2.2.3):
+    - JXPhotoBrowser/Core
+    - Kingfisher
+  - Kingfisher (5.5.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BayMaxProtector
+  - dsBridge
+  - HandyJSON
+  - JXPhotoBrowser
+  - Kingfisher
+  - Moya
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SnapKit (~> 5.0.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BayMaxProtector
+    - Differentiator
+    - dsBridge
+    - HandyJSON
+    - JXPhotoBrowser
+    - Kingfisher
+    - Moya
+    - Result
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  BayMaxProtector: 97f0eae859a578f8a0f66c5c7fef0d4e95e5a530
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  JXPhotoBrowser: 44657e0dc05a710c6ea86a8b4686badd760760f7
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 5030603e917f0f4a8a4e746cd4307cc5831e9574
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_kyl_DSBrigeDemoTests {
+  umbrella header "Pods-kyl_DSBrigeDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

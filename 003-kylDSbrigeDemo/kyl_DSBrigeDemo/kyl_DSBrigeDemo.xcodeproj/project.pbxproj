@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4657FC831A785C22FF126E70 /* Pods_kyl_DSBrigeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */; };
+		A50D58C023053B9F0026CDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */; };
+		A50D58C223053B9F0026CDA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58C123053B9F0026CDA0 /* ViewController.swift */; };
+		A50D58C523053B9F0026CDA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D58C323053B9F0026CDA0 /* Main.storyboard */; };
+		A50D58C823053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50D58C623053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld */; };
+		A50D58CA23053BA10026CDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50D58C923053BA10026CDA0 /* Assets.xcassets */; };
+		A50D58CD23053BA10026CDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D58CB23053BA10026CDA0 /* LaunchScreen.storyboard */; };
+		A50D58D823053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58D723053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift */; };
+		A50D58E323053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */; };
+		DD8D6D55AFCFE672265291FA /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */; };
+		E323CCC23592D8EC46EC828C /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A50D58D423053BA10026CDA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50D58B423053B9F0026CDA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50D58BB23053B9F0026CDA0;
+			remoteInfo = kyl_DSBrigeDemo;
+		};
+		A50D58DF23053BA10026CDA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A50D58B423053B9F0026CDA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50D58BB23053B9F0026CDA0;
+			remoteInfo = kyl_DSBrigeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25AB9F270FC479A4A6382EFC /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoUITests/Pods-kyl_DSBrigeDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25E0068EDF12FA3C8F99A1D7 /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoTests/Pods-kyl_DSBrigeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AD060087E4B34DF6AF7324C /* Pods-kyl_DSBrigeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A267C00FCC1116EFB9B2652 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoTests/Pods-kyl_DSBrigeDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50D58BC23053B9F0026CDA0 /* kyl_DSBrigeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kyl_DSBrigeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A50D58C123053B9F0026CDA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A50D58C423053B9F0026CDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A50D58C723053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kyl_DSBrigeDemo.xcdatamodel; sourceTree = "<group>"; };
+		A50D58C923053BA10026CDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A50D58CC23053BA10026CDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A50D58CE23053BA10026CDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50D58D323053BA10026CDA0 /* kyl_DSBrigeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyl_DSBrigeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50D58D723053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyl_DSBrigeDemoTests.swift; sourceTree = "<group>"; };
+		A50D58D923053BA10026CDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50D58DE23053BA10026CDA0 /* kyl_DSBrigeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyl_DSBrigeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyl_DSBrigeDemoUITests.swift; sourceTree = "<group>"; };
+		A50D58E423053BA10026CDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CB4D2DEF844E5E3FE4011B /* Pods-kyl_DSBrigeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1B7A98C26DF5D0C0C1F346 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoUITests/Pods-kyl_DSBrigeDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A50D58B923053B9F0026CDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4657FC831A785C22FF126E70 /* Pods_kyl_DSBrigeDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D58D023053BA10026CDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8D6D55AFCFE672265291FA /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D58DB23053BA10026CDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E323CCC23592D8EC46EC828C /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6872DF7E4FFDE8F41BFDE800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */,
+				CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */,
+				80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A50D58B323053B9F0026CDA0 = {
+			isa = PBXGroup;
+			children = (
+				A50D58BE23053B9F0026CDA0 /* kyl_DSBrigeDemo */,
+				A50D58D623053BA10026CDA0 /* kyl_DSBrigeDemoTests */,
+				A50D58E123053BA10026CDA0 /* kyl_DSBrigeDemoUITests */,
+				A50D58BD23053B9F0026CDA0 /* Products */,
+				EAC91DBE34B368B9BED153AE /* Pods */,
+				6872DF7E4FFDE8F41BFDE800 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A50D58BD23053B9F0026CDA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A50D58BC23053B9F0026CDA0 /* kyl_DSBrigeDemo.app */,
+				A50D58D323053BA10026CDA0 /* kyl_DSBrigeDemoTests.xctest */,
+				A50D58DE23053BA10026CDA0 /* kyl_DSBrigeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A50D58BE23053B9F0026CDA0 /* kyl_DSBrigeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */,
+				A50D58C123053B9F0026CDA0 /* ViewController.swift */,
+				A50D58C323053B9F0026CDA0 /* Main.storyboard */,
+				A50D58C923053BA10026CDA0 /* Assets.xcassets */,
+				A50D58CB23053BA10026CDA0 /* LaunchScreen.storyboard */,
+				A50D58CE23053BA10026CDA0 /* Info.plist */,
+				A50D58C623053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld */,
+			);
+			path = kyl_DSBrigeDemo;
+			sourceTree = "<group>";
+		};
+		A50D58D623053BA10026CDA0 /* kyl_DSBrigeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A50D58D723053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift */,
+				A50D58D923053BA10026CDA0 /* Info.plist */,
+			);
+			path = kyl_DSBrigeDemoTests;
+			sourceTree = "<group>";
+		};
+		A50D58E123053BA10026CDA0 /* kyl_DSBrigeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */,
+				A50D58E423053BA10026CDA0 /* Info.plist */,
+			);
+			path = kyl_DSBrigeDemoUITests;
+			sourceTree = "<group>";
+		};
+		EAC91DBE34B368B9BED153AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AD060087E4B34DF6AF7324C /* Pods-kyl_DSBrigeDemo.debug.xcconfig */,
+				B4CB4D2DEF844E5E3FE4011B /* Pods-kyl_DSBrigeDemo.release.xcconfig */,
+				25E0068EDF12FA3C8F99A1D7 /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */,
+				5A267C00FCC1116EFB9B2652 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */,
+				25AB9F270FC479A4A6382EFC /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */,
+				CB1B7A98C26DF5D0C0C1F346 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50D58BB23053B9F0026CDA0 /* kyl_DSBrigeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50D58E723053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemo" */;
+			buildPhases = (
+				6889F4202186AC0A535D7CED /* [CP] Check Pods Manifest.lock */,
+				A50D58B823053B9F0026CDA0 /* Sources */,
+				A50D58B923053B9F0026CDA0 /* Frameworks */,
+				A50D58BA23053B9F0026CDA0 /* Resources */,
+				AA1862BC3D75CB8EEE69CFC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kyl_DSBrigeDemo;
+			productName = kyl_DSBrigeDemo;
+			productReference = A50D58BC23053B9F0026CDA0 /* kyl_DSBrigeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50D58D223053BA10026CDA0 /* kyl_DSBrigeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50D58EA23053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemoTests" */;
+			buildPhases = (
+				C17D3098AF272D19559BBAE6 /* [CP] Check Pods Manifest.lock */,
+				A50D58CF23053BA10026CDA0 /* Sources */,
+				A50D58D023053BA10026CDA0 /* Frameworks */,
+				A50D58D123053BA10026CDA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50D58D523053BA10026CDA0 /* PBXTargetDependency */,
+			);
+			name = kyl_DSBrigeDemoTests;
+			productName = kyl_DSBrigeDemoTests;
+			productReference = A50D58D323053BA10026CDA0 /* kyl_DSBrigeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A50D58DD23053BA10026CDA0 /* kyl_DSBrigeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50D58ED23053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemoUITests" */;
+			buildPhases = (
+				94693A04353C4AEEE0B22951 /* [CP] Check Pods Manifest.lock */,
+				A50D58DA23053BA10026CDA0 /* Sources */,
+				A50D58DB23053BA10026CDA0 /* Frameworks */,
+				A50D58DC23053BA10026CDA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A50D58E023053BA10026CDA0 /* PBXTargetDependency */,
+			);
+			name = kyl_DSBrigeDemoUITests;
+			productName = kyl_DSBrigeDemoUITests;
+			productReference = A50D58DE23053BA10026CDA0 /* kyl_DSBrigeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A50D58B423053B9F0026CDA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A50D58BB23053B9F0026CDA0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A50D58D223053BA10026CDA0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A50D58BB23053B9F0026CDA0;
+					};
+					A50D58DD23053BA10026CDA0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A50D58BB23053B9F0026CDA0;
+					};
+				};
+			};
+			buildConfigurationList = A50D58B723053B9F0026CDA0 /* Build configuration list for PBXProject "kyl_DSBrigeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50D58B323053B9F0026CDA0;
+			productRefGroup = A50D58BD23053B9F0026CDA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50D58BB23053B9F0026CDA0 /* kyl_DSBrigeDemo */,
+				A50D58D223053BA10026CDA0 /* kyl_DSBrigeDemoTests */,
+				A50D58DD23053BA10026CDA0 /* kyl_DSBrigeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A50D58BA23053B9F0026CDA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50D58CD23053BA10026CDA0 /* LaunchScreen.storyboard in Resources */,
+				A50D58CA23053BA10026CDA0 /* Assets.xcassets in Resources */,
+				A50D58C523053B9F0026CDA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D58D123053BA10026CDA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D58DC23053BA10026CDA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6889F4202186AC0A535D7CED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyl_DSBrigeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94693A04353C4AEEE0B22951 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyl_DSBrigeDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1862BC3D75CB8EEE69CFC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BayMaxProtector/BayMaxProtector.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/dsBridge/dsBridge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BayMaxProtector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dsBridge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17D3098AF272D19559BBAE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyl_DSBrigeDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A50D58B823053B9F0026CDA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50D58C823053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld in Sources */,
+				A50D58C223053B9F0026CDA0 /* ViewController.swift in Sources */,
+				A50D58C023053B9F0026CDA0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D58CF23053BA10026CDA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50D58D823053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A50D58DA23053BA10026CDA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50D58E323053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A50D58D523053BA10026CDA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50D58BB23053B9F0026CDA0 /* kyl_DSBrigeDemo */;
+			targetProxy = A50D58D423053BA10026CDA0 /* PBXContainerItemProxy */;
+		};
+		A50D58E023053BA10026CDA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50D58BB23053B9F0026CDA0 /* kyl_DSBrigeDemo */;
+			targetProxy = A50D58DF23053BA10026CDA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A50D58C323053B9F0026CDA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50D58C423053B9F0026CDA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A50D58CB23053BA10026CDA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50D58CC23053BA10026CDA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A50D58E523053BA10026CDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A50D58E623053BA10026CDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A50D58E823053BA10026CDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD060087E4B34DF6AF7324C /* Pods-kyl_DSBrigeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kyl_DSBrigeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wswy.l05.kyl-DSBrigeDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A50D58E923053BA10026CDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4CB4D2DEF844E5E3FE4011B /* Pods-kyl_DSBrigeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kyl_DSBrigeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wswy.l05.kyl-DSBrigeDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A50D58EB23053BA10026CDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E0068EDF12FA3C8F99A1D7 /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kyl_DSBrigeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wswy.l05.kyl-DSBrigeDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kyl_DSBrigeDemo.app/kyl_DSBrigeDemo";
+			};
+			name = Debug;
+		};
+		A50D58EC23053BA10026CDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A267C00FCC1116EFB9B2652 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kyl_DSBrigeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wswy.l05.kyl-DSBrigeDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kyl_DSBrigeDemo.app/kyl_DSBrigeDemo";
+			};
+			name = Release;
+		};
+		A50D58EE23053BA10026CDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25AB9F270FC479A4A6382EFC /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kyl_DSBrigeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wswy.l05.kyl-DSBrigeDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kyl_DSBrigeDemo;
+			};
+			name = Debug;
+		};
+		A50D58EF23053BA10026CDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1B7A98C26DF5D0C0C1F346 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kyl_DSBrigeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wswy.l05.kyl-DSBrigeDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kyl_DSBrigeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A50D58B723053B9F0026CDA0 /* Build configuration list for PBXProject "kyl_DSBrigeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50D58E523053BA10026CDA0 /* Debug */,
+				A50D58E623053BA10026CDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50D58E723053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50D58E823053BA10026CDA0 /* Debug */,
+				A50D58E923053BA10026CDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50D58EA23053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50D58EB23053BA10026CDA0 /* Debug */,
+				A50D58EC23053BA10026CDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A50D58ED23053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50D58EE23053BA10026CDA0 /* Debug */,
+				A50D58EF23053BA10026CDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A50D58C623053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A50D58C723053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodel */,
+			);
+			currentVersion = A50D58C723053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodel */;
+			path = kyl_DSBrigeDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A50D58B423053B9F0026CDA0 /* Project object */;
+}
