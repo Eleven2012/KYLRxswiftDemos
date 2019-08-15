@@ -16,6 +16,9 @@
 		A50D58CD23053BA10026CDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D58CB23053BA10026CDA0 /* LaunchScreen.storyboard */; };
 		A50D58D823053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58D723053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift */; };
 		A50D58E323053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */; };
+		A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */; };
+		A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */; };
+		A571AF452305585F00E3D5E7 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A571AF442305585F00E3D5E7 /* test.html */; };
 		DD8D6D55AFCFE672265291FA /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */; };
 		E323CCC23592D8EC46EC828C /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,9 @@
 		A50D58DE23053BA10026CDA0 /* kyl_DSBrigeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyl_DSBrigeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyl_DSBrigeDemoUITests.swift; sourceTree = "<group>"; };
 		A50D58E423053BA10026CDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLJSApiTest.swift; sourceTree = "<group>"; };
+		A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLWebViewVC.swift; sourceTree = "<group>"; };
+		A571AF442305585F00E3D5E7 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CB4D2DEF844E5E3FE4011B /* Pods-kyl_DSBrigeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,7 @@
 		A50D58BE23053B9F0026CDA0 /* kyl_DSBrigeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A571AF3E230557AA00E3D5E7 /* dsbrige */,
 				A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */,
 				A50D58C123053B9F0026CDA0 /* ViewController.swift */,
 				A50D58C323053B9F0026CDA0 /* Main.storyboard */,
@@ -153,6 +160,24 @@
 				A50D58E423053BA10026CDA0 /* Info.plist */,
 			);
 			path = kyl_DSBrigeDemoUITests;
+			sourceTree = "<group>";
+		};
+		A571AF3E230557AA00E3D5E7 /* dsbrige */ = {
+			isa = PBXGroup;
+			children = (
+				A571AF432305585300E3D5E7 /* html */,
+				A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */,
+				A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */,
+			);
+			path = dsbrige;
+			sourceTree = "<group>";
+		};
+		A571AF432305585300E3D5E7 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				A571AF442305585F00E3D5E7 /* test.html */,
+			);
+			path = html;
 			sourceTree = "<group>";
 		};
 		EAC91DBE34B368B9BED153AE /* Pods */ = {
@@ -276,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A571AF452305585F00E3D5E7 /* test.html in Resources */,
 				A50D58CD23053BA10026CDA0 /* LaunchScreen.storyboard in Resources */,
 				A50D58CA23053BA10026CDA0 /* Assets.xcassets in Resources */,
 				A50D58C523053B9F0026CDA0 /* Main.storyboard in Resources */,
@@ -422,7 +448,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */,
 				A50D58C823053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld in Sources */,
+				A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */,
 				A50D58C223053B9F0026CDA0 /* ViewController.swift in Sources */,
 				A50D58C023053B9F0026CDA0 /* AppDelegate.swift in Sources */,
 			);
