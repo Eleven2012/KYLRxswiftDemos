@@ -20,6 +20,8 @@
 		A5482E35230B8AA300AF7693 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E34230B8AA300AF7693 /* KLayout.swift */; };
 		A5482E3C230BC9E300AF7693 /* KYLFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E3B230BC9E300AF7693 /* KYLFPSLabel.swift */; };
 		A5482E3E230BC9FB00AF7693 /* KYLCornerCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E3D230BC9FB00AF7693 /* KYLCornerCutter.swift */; };
+		A5482E40230BD0D500AF7693 /* KYLHomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E3F230BD0D500AF7693 /* KYLHomeListViewModel.swift */; };
+		A5482E42230BD15900AF7693 /* KYLListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E41230BD15900AF7693 /* KYLListModel.swift */; };
 		A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */; };
 		A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */; };
 		A571AF452305585F00E3D5E7 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A571AF442305585F00E3D5E7 /* test.html */; };
@@ -68,6 +70,8 @@
 		A5482E34230B8AA300AF7693 /* KLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLayout.swift; sourceTree = "<group>"; };
 		A5482E3B230BC9E300AF7693 /* KYLFPSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLFPSLabel.swift; sourceTree = "<group>"; };
 		A5482E3D230BC9FB00AF7693 /* KYLCornerCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLCornerCutter.swift; sourceTree = "<group>"; };
+		A5482E3F230BD0D500AF7693 /* KYLHomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLHomeListViewModel.swift; sourceTree = "<group>"; };
+		A5482E41230BD15900AF7693 /* KYLListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLListModel.swift; sourceTree = "<group>"; };
 		A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLJSApiTest.swift; sourceTree = "<group>"; };
 		A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLWebViewVC.swift; sourceTree = "<group>"; };
 		A571AF442305585F00E3D5E7 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -219,6 +223,7 @@
 		A5482E39230BC97500AF7693 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A5482E3F230BD0D500AF7693 /* KYLHomeListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		A5482E3A230BC97E00AF7693 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5482E41230BD15900AF7693 /* KYLListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -483,10 +489,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5482E42230BD15900AF7693 /* KYLListModel.swift in Sources */,
 				A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */,
 				A50D58C823053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld in Sources */,
 				A5482E32230B874B00AF7693 /* SwiftyFitsize.swift in Sources */,
 				A5482E35230B8AA300AF7693 /* KLayout.swift in Sources */,
+				A5482E40230BD0D500AF7693 /* KYLHomeListViewModel.swift in Sources */,
 				A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */,
 				A5482E3C230BC9E300AF7693 /* KYLFPSLabel.swift in Sources */,
 				A5482E3E230BC9FB00AF7693 /* KYLCornerCutter.swift in Sources */,
