@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		A50D58CD23053BA10026CDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D58CB23053BA10026CDA0 /* LaunchScreen.storyboard */; };
 		A50D58D823053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58D723053BA10026CDA0 /* kyl_DSBrigeDemoTests.swift */; };
 		A50D58E323053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */; };
+		A5482E32230B874B00AF7693 /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E31230B874B00AF7693 /* SwiftyFitsize.swift */; };
+		A5482E35230B8AA300AF7693 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E34230B8AA300AF7693 /* KLayout.swift */; };
 		A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */; };
 		A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */; };
 		A571AF452305585F00E3D5E7 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A571AF442305585F00E3D5E7 /* test.html */; };
@@ -60,6 +62,8 @@
 		A50D58DE23053BA10026CDA0 /* kyl_DSBrigeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kyl_DSBrigeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50D58E223053BA10026CDA0 /* kyl_DSBrigeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kyl_DSBrigeDemoUITests.swift; sourceTree = "<group>"; };
 		A50D58E423053BA10026CDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5482E31230B874B00AF7693 /* SwiftyFitsize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFitsize.swift; sourceTree = "<group>"; };
+		A5482E34230B8AA300AF7693 /* KLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLayout.swift; sourceTree = "<group>"; };
 		A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLJSApiTest.swift; sourceTree = "<group>"; };
 		A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLWebViewVC.swift; sourceTree = "<group>"; };
 		A571AF442305585F00E3D5E7 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		A50D58BE23053B9F0026CDA0 /* kyl_DSBrigeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5482E33230B888C00AF7693 /* rxswift */,
+				A5482E30230B872C00AF7693 /* autoFitSize */,
 				A571AF3E230557AA00E3D5E7 /* dsbrige */,
 				A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */,
 				A50D58C123053B9F0026CDA0 /* ViewController.swift */,
@@ -160,6 +166,22 @@
 				A50D58E423053BA10026CDA0 /* Info.plist */,
 			);
 			path = kyl_DSBrigeDemoUITests;
+			sourceTree = "<group>";
+		};
+		A5482E30230B872C00AF7693 /* autoFitSize */ = {
+			isa = PBXGroup;
+			children = (
+				A5482E31230B874B00AF7693 /* SwiftyFitsize.swift */,
+				A5482E34230B8AA300AF7693 /* KLayout.swift */,
+			);
+			path = autoFitSize;
+			sourceTree = "<group>";
+		};
+		A5482E33230B888C00AF7693 /* rxswift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rxswift;
 			sourceTree = "<group>";
 		};
 		A571AF3E230557AA00E3D5E7 /* dsbrige */ = {
@@ -375,48 +397,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/BayMaxProtector/BayMaxProtector.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/dsBridge/dsBridge.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BayMaxProtector.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/dsBridge.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C17D3098AF272D19559BBAE6 /* [CP] Check Pods Manifest.lock */ = {
@@ -450,6 +439,8 @@
 			files = (
 				A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */,
 				A50D58C823053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld in Sources */,
+				A5482E32230B874B00AF7693 /* SwiftyFitsize.swift in Sources */,
+				A5482E35230B8AA300AF7693 /* KLayout.swift in Sources */,
 				A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */,
 				A50D58C223053B9F0026CDA0 /* ViewController.swift in Sources */,
 				A50D58C023053B9F0026CDA0 /* AppDelegate.swift in Sources */,
@@ -631,6 +622,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kyl_DSBrigeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,6 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kyl_DSBrigeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

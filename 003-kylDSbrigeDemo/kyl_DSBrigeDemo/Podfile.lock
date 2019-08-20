@@ -45,7 +45,7 @@ DEPENDENCIES:
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - BayMaxProtector
     - Differentiator
@@ -79,6 +79,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 5030603e917f0f4a8a4e746cd4307cc5831e9574
+PODFILE CHECKSUM: 1e54c98298420f98641c4ca60ab3507e22023628
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.0.beta.1
