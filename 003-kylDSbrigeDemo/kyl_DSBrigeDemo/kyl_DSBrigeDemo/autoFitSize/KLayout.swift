@@ -16,6 +16,8 @@ let screenWidth = max(UIScreen.main.bounds.height, UIScreen.main.bounds.width)
 let screenHeight = min(UIScreen.main.bounds.height, UIScreen.main.bounds.width)
 let screenBounds = UIScreen.main.bounds
 
+let navBarHeight :CGFloat = isiPhoneX ? 88 : 64
+
 // MARK: - 判断 机型
 let isiPhone5 = UIDevice.isiPhone5()
 let isiPhone6 = UIDevice.isiPhone6()
