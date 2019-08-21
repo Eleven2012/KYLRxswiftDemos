@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E98230D18F800AF7693 /* AppDelegate.swift */; };
+		A5482E9B230D18F800AF7693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9A230D18F800AF7693 /* ViewController.swift */; };
+		A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482E9C230D18F800AF7693 /* Main.storyboard */; };
+		A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */; };
+		A5482EA3230D18F900AF7693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5482EA2230D18F900AF7693 /* Assets.xcassets */; };
+		A5482EA6230D18F900AF7693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482EA4230D18F900AF7693 /* LaunchScreen.storyboard */; };
+		A5482EB1230D18F900AF7693 /* kylRxMemoryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EB0230D18F900AF7693 /* kylRxMemoryDemoTests.swift */; };
+		A5482EBC230D18F900AF7693 /* kylRxMemoryDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EBB230D18F900AF7693 /* kylRxMemoryDemoUITests.swift */; };
+		A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */; };
+		A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */; };
+		A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECD230D1A7000AF7693 /* KPerson.swift */; };
+		A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */; };
+		A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */; };
+		E411B89A3CDF240A54C4BCAD /* Pods_kylRxMemoryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD9DAF87E09B872FF6D2E27 /* Pods_kylRxMemoryDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5482EAD230D18F900AF7693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5482E8D230D18F800AF7693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5482E94230D18F800AF7693;
+			remoteInfo = kylRxMemoryDemo;
+		};
+		A5482EB8230D18F900AF7693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5482E8D230D18F800AF7693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5482E94230D18F800AF7693;
+			remoteInfo = kylRxMemoryDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10FB71694B560F97634EB9FB /* Pods-kylRxMemoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxMemoryDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D12B7A76C92946E2B3192A1 /* Pods-kylRxMemoryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxMemoryDemo.release.xcconfig"; path = "Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxMemoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5482E98230D18F800AF7693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5482E9A230D18F800AF7693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5482E9D230D18F800AF7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5482EA0230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kylRxMemoryDemo.xcdatamodel; sourceTree = "<group>"; };
+		A5482EA2230D18F900AF7693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5482EA5230D18F900AF7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5482EA7230D18F900AF7693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5482EAC230D18F900AF7693 /* kylRxMemoryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxMemoryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5482EB0230D18F900AF7693 /* kylRxMemoryDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxMemoryDemoTests.swift; sourceTree = "<group>"; };
+		A5482EB2230D18F900AF7693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5482EB7230D18F900AF7693 /* kylRxMemoryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxMemoryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5482EBB230D18F900AF7693 /* kylRxMemoryDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxMemoryDemoUITests.swift; sourceTree = "<group>"; };
+		A5482EBD230D18F900AF7693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCTableViewCell.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCTableViewCell.swift"; sourceTree = "<group>"; };
+		A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCTableViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCTableViewController.swift"; sourceTree = "<group>"; };
+		A5482ECD230D1A7000AF7693 /* KPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KPerson.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KPerson.swift"; sourceTree = "<group>"; };
+		A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCDetailViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCDetailViewController.swift"; sourceTree = "<group>"; };
+		A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCHomeViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCHomeViewController.swift"; sourceTree = "<group>"; };
+		DFD9DAF87E09B872FF6D2E27 /* Pods_kylRxMemoryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxMemoryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5482E92230D18F800AF7693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E411B89A3CDF240A54C4BCAD /* Pods_kylRxMemoryDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5482EA9230D18F900AF7693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5482EB4230D18F900AF7693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0693C89D4F3F1A8C46315437 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10FB71694B560F97634EB9FB /* Pods-kylRxMemoryDemo.debug.xcconfig */,
+				7D12B7A76C92946E2B3192A1 /* Pods-kylRxMemoryDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		473FB1468EC1638A42791BC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFD9DAF87E09B872FF6D2E27 /* Pods_kylRxMemoryDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5482E8C230D18F800AF7693 = {
+			isa = PBXGroup;
+			children = (
+				A5482E97230D18F800AF7693 /* kylRxMemoryDemo */,
+				A5482EAF230D18F900AF7693 /* kylRxMemoryDemoTests */,
+				A5482EBA230D18F900AF7693 /* kylRxMemoryDemoUITests */,
+				A5482E96230D18F800AF7693 /* Products */,
+				0693C89D4F3F1A8C46315437 /* Pods */,
+				473FB1468EC1638A42791BC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5482E96230D18F800AF7693 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */,
+				A5482EAC230D18F900AF7693 /* kylRxMemoryDemoTests.xctest */,
+				A5482EB7230D18F900AF7693 /* kylRxMemoryDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5482E97230D18F800AF7693 /* kylRxMemoryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EC9230D1A4C00AF7693 /* rx */,
+				A5482E98230D18F800AF7693 /* AppDelegate.swift */,
+				A5482E9A230D18F800AF7693 /* ViewController.swift */,
+				A5482E9C230D18F800AF7693 /* Main.storyboard */,
+				A5482EA2230D18F900AF7693 /* Assets.xcassets */,
+				A5482EA4230D18F900AF7693 /* LaunchScreen.storyboard */,
+				A5482EA7230D18F900AF7693 /* Info.plist */,
+				A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */,
+			);
+			path = kylRxMemoryDemo;
+			sourceTree = "<group>";
+		};
+		A5482EAF230D18F900AF7693 /* kylRxMemoryDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EB0230D18F900AF7693 /* kylRxMemoryDemoTests.swift */,
+				A5482EB2230D18F900AF7693 /* Info.plist */,
+			);
+			path = kylRxMemoryDemoTests;
+			sourceTree = "<group>";
+		};
+		A5482EBA230D18F900AF7693 /* kylRxMemoryDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EBB230D18F900AF7693 /* kylRxMemoryDemoUITests.swift */,
+				A5482EBD230D18F900AF7693 /* Info.plist */,
+			);
+			path = kylRxMemoryDemoUITests;
+			sourceTree = "<group>";
+		};
+		A5482EC9230D1A4C00AF7693 /* rx */ = {
+			isa = PBXGroup;
+			children = (
+				A5482ECA230D1A5B00AF7693 /* testMemory */,
+			);
+			path = rx;
+			sourceTree = "<group>";
+		};
+		A5482ECA230D1A5B00AF7693 /* testMemory */ = {
+			isa = PBXGroup;
+			children = (
+				A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */,
+				A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */,
+				A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */,
+				A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */,
+				A5482ECD230D1A7000AF7693 /* KPerson.swift */,
+			);
+			path = testMemory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5482E94230D18F800AF7693 /* kylRxMemoryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5482EC0230D18F900AF7693 /* Build configuration list for PBXNativeTarget "kylRxMemoryDemo" */;
+			buildPhases = (
+				6DD657AB7A04CC057258E657 /* [CP] Check Pods Manifest.lock */,
+				A5482E91230D18F800AF7693 /* Sources */,
+				A5482E92230D18F800AF7693 /* Frameworks */,
+				A5482E93230D18F800AF7693 /* Resources */,
+				94A625B238D86FBC88CFEF78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kylRxMemoryDemo;
+			productName = kylRxMemoryDemo;
+			productReference = A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5482EAB230D18F900AF7693 /* kylRxMemoryDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5482EC3230D18F900AF7693 /* Build configuration list for PBXNativeTarget "kylRxMemoryDemoTests" */;
+			buildPhases = (
+				A5482EA8230D18F900AF7693 /* Sources */,
+				A5482EA9230D18F900AF7693 /* Frameworks */,
+				A5482EAA230D18F900AF7693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5482EAE230D18F900AF7693 /* PBXTargetDependency */,
+			);
+			name = kylRxMemoryDemoTests;
+			productName = kylRxMemoryDemoTests;
+			productReference = A5482EAC230D18F900AF7693 /* kylRxMemoryDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5482EB6230D18F900AF7693 /* kylRxMemoryDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5482EC6230D18F900AF7693 /* Build configuration list for PBXNativeTarget "kylRxMemoryDemoUITests" */;
+			buildPhases = (
+				A5482EB3230D18F900AF7693 /* Sources */,
+				A5482EB4230D18F900AF7693 /* Frameworks */,
+				A5482EB5230D18F900AF7693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5482EB9230D18F900AF7693 /* PBXTargetDependency */,
+			);
+			name = kylRxMemoryDemoUITests;
+			productName = kylRxMemoryDemoUITests;
+			productReference = A5482EB7230D18F900AF7693 /* kylRxMemoryDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5482E8D230D18F800AF7693 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A5482E94230D18F800AF7693 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A5482EAB230D18F900AF7693 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5482E94230D18F800AF7693;
+					};
+					A5482EB6230D18F900AF7693 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5482E94230D18F800AF7693;
+					};
+				};
+			};
+			buildConfigurationList = A5482E90230D18F800AF7693 /* Build configuration list for PBXProject "kylRxMemoryDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5482E8C230D18F800AF7693;
+			productRefGroup = A5482E96230D18F800AF7693 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5482E94230D18F800AF7693 /* kylRxMemoryDemo */,
+				A5482EAB230D18F900AF7693 /* kylRxMemoryDemoTests */,
+				A5482EB6230D18F900AF7693 /* kylRxMemoryDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5482E93230D18F800AF7693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5482EA6230D18F900AF7693 /* LaunchScreen.storyboard in Resources */,
+				A5482EA3230D18F900AF7693 /* Assets.xcassets in Resources */,
+				A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5482EAA230D18F900AF7693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5482EB5230D18F900AF7693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DD657AB7A04CC057258E657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxMemoryDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94A625B238D86FBC88CFEF78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5482E91230D18F800AF7693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5482E9B230D18F800AF7693 /* ViewController.swift in Sources */,
+				A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */,
+				A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */,
+				A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */,
+				A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */,
+				A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */,
+				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
+				A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5482EA8230D18F900AF7693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5482EB1230D18F900AF7693 /* kylRxMemoryDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5482EB3230D18F900AF7693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5482EBC230D18F900AF7693 /* kylRxMemoryDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5482EAE230D18F900AF7693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5482E94230D18F800AF7693 /* kylRxMemoryDemo */;
+			targetProxy = A5482EAD230D18F900AF7693 /* PBXContainerItemProxy */;
+		};
+		A5482EB9230D18F900AF7693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5482E94230D18F800AF7693 /* kylRxMemoryDemo */;
+			targetProxy = A5482EB8230D18F900AF7693 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5482E9C230D18F800AF7693 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5482E9D230D18F800AF7693 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5482EA4230D18F900AF7693 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5482EA5230D18F900AF7693 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5482EBE230D18F900AF7693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5482EBF230D18F900AF7693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5482EC1230D18F900AF7693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10FB71694B560F97634EB9FB /* Pods-kylRxMemoryDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxMemoryDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxMemoryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5482EC2230D18F900AF7693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D12B7A76C92946E2B3192A1 /* Pods-kylRxMemoryDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxMemoryDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxMemoryDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5482EC4230D18F900AF7693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxMemoryDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxMemoryDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylRxMemoryDemo.app/kylRxMemoryDemo";
+			};
+			name = Debug;
+		};
+		A5482EC5230D18F900AF7693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxMemoryDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxMemoryDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylRxMemoryDemo.app/kylRxMemoryDemo";
+			};
+			name = Release;
+		};
+		A5482EC7230D18F900AF7693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxMemoryDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxMemoryDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylRxMemoryDemo;
+			};
+			name = Debug;
+		};
+		A5482EC8230D18F900AF7693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxMemoryDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxMemoryDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylRxMemoryDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5482E90230D18F800AF7693 /* Build configuration list for PBXProject "kylRxMemoryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5482EBE230D18F900AF7693 /* Debug */,
+				A5482EBF230D18F900AF7693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5482EC0230D18F900AF7693 /* Build configuration list for PBXNativeTarget "kylRxMemoryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5482EC1230D18F900AF7693 /* Debug */,
+				A5482EC2230D18F900AF7693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5482EC3230D18F900AF7693 /* Build configuration list for PBXNativeTarget "kylRxMemoryDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5482EC4230D18F900AF7693 /* Debug */,
+				A5482EC5230D18F900AF7693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5482EC6230D18F900AF7693 /* Build configuration list for PBXNativeTarget "kylRxMemoryDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5482EC7230D18F900AF7693 /* Debug */,
+				A5482EC8230D18F900AF7693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5482EA0230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodel */,
+			);
+			currentVersion = A5482EA0230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodel */;
+			path = kylRxMemoryDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5482E8D230D18F800AF7693 /* Project object */;
+}

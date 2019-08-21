@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18445B4F8DEE0C41F54BFDBE /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D81BC736FC9C8DE5CA31F76 /* Pods_kyl_DSBrigeDemoTests.framework */; };
+		25D4859DB9236C285E1D259E /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD07265ECFBC7F34696D85 /* Pods_kyl_DSBrigeDemoUITests.framework */; };
 		4657FC831A785C22FF126E70 /* Pods_kyl_DSBrigeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */; };
 		A50D58C023053B9F0026CDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */; };
 		A50D58C223053B9F0026CDA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D58C123053B9F0026CDA0 /* ViewController.swift */; };
@@ -30,8 +32,6 @@
 		A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */; };
 		A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */; };
 		A571AF452305585F00E3D5E7 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A571AF442305585F00E3D5E7 /* test.html */; };
-		DD8D6D55AFCFE672265291FA /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */; };
-		E323CCC23592D8EC46EC828C /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25AB9F270FC479A4A6382EFC /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoUITests/Pods-kyl_DSBrigeDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		25E0068EDF12FA3C8F99A1D7 /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoTests/Pods-kyl_DSBrigeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D81BC736FC9C8DE5CA31F76 /* Pods_kyl_DSBrigeDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD060087E4B34DF6AF7324C /* Pods-kyl_DSBrigeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5A267C00FCC1116EFB9B2652 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoTests/Pods-kyl_DSBrigeDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4896C7A1313117A62606AB55 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoUITests/Pods-kyl_DSBrigeDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61CD07265ECFBC7F34696D85 /* Pods_kyl_DSBrigeDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913FF6B24663B1D847A1CCBA /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoTests/Pods-kyl_DSBrigeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A50D58BC23053B9F0026CDA0 /* kyl_DSBrigeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kyl_DSBrigeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50D58BF23053B9F0026CDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50D58C123053B9F0026CDA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +87,8 @@
 		A571AF442305585F00E3D5E7 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CB4D2DEF844E5E3FE4011B /* Pods-kyl_DSBrigeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo.release.xcconfig"; sourceTree = "<group>"; };
-		CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kyl_DSBrigeDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB1B7A98C26DF5D0C0C1F346 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoUITests/Pods-kyl_DSBrigeDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C93A78C9FC78DA0D2D120327 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoTests/Pods-kyl_DSBrigeDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6EE52A75D5098D9D40EC5B2 /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kyl_DSBrigeDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kyl_DSBrigeDemoUITests/Pods-kyl_DSBrigeDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD8D6D55AFCFE672265291FA /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */,
+				18445B4F8DEE0C41F54BFDBE /* Pods_kyl_DSBrigeDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E323CCC23592D8EC46EC828C /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */,
+				25D4859DB9236C285E1D259E /* Pods_kyl_DSBrigeDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				AEBE7BF70A25D31D1B77B491 /* Pods_kyl_DSBrigeDemo.framework */,
-				CA30BA01E1EFC4DB78022B16 /* Pods_kyl_DSBrigeDemoTests.framework */,
-				80A4FF3847518C301B439B07 /* Pods_kyl_DSBrigeDemoUITests.framework */,
+				0D81BC736FC9C8DE5CA31F76 /* Pods_kyl_DSBrigeDemoTests.framework */,
+				61CD07265ECFBC7F34696D85 /* Pods_kyl_DSBrigeDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -290,10 +290,10 @@
 			children = (
 				2AD060087E4B34DF6AF7324C /* Pods-kyl_DSBrigeDemo.debug.xcconfig */,
 				B4CB4D2DEF844E5E3FE4011B /* Pods-kyl_DSBrigeDemo.release.xcconfig */,
-				25E0068EDF12FA3C8F99A1D7 /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */,
-				5A267C00FCC1116EFB9B2652 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */,
-				25AB9F270FC479A4A6382EFC /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */,
-				CB1B7A98C26DF5D0C0C1F346 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */,
+				913FF6B24663B1D847A1CCBA /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */,
+				C93A78C9FC78DA0D2D120327 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */,
+				D6EE52A75D5098D9D40EC5B2 /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */,
+				4896C7A1313117A62606AB55 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A50D58EA23053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemoTests" */;
 			buildPhases = (
-				C17D3098AF272D19559BBAE6 /* [CP] Check Pods Manifest.lock */,
+				E8A88586EFBB902FFF7DFB0C /* [CP] Check Pods Manifest.lock */,
 				A50D58CF23053BA10026CDA0 /* Sources */,
 				A50D58D023053BA10026CDA0 /* Frameworks */,
 				A50D58D123053BA10026CDA0 /* Resources */,
@@ -343,7 +343,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A50D58ED23053BA10026CDA0 /* Build configuration list for PBXNativeTarget "kyl_DSBrigeDemoUITests" */;
 			buildPhases = (
-				94693A04353C4AEEE0B22951 /* [CP] Check Pods Manifest.lock */,
+				1590735E673A832AE6316AB0 /* [CP] Check Pods Manifest.lock */,
 				A50D58DA23053BA10026CDA0 /* Sources */,
 				A50D58DB23053BA10026CDA0 /* Frameworks */,
 				A50D58DC23053BA10026CDA0 /* Resources */,
@@ -430,6 +430,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1590735E673A832AE6316AB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kyl_DSBrigeDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6889F4202186AC0A535D7CED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,28 +468,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-kyl_DSBrigeDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		94693A04353C4AEEE0B22951 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-kyl_DSBrigeDemoUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,7 +491,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kyl_DSBrigeDemo/Pods-kyl_DSBrigeDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C17D3098AF272D19559BBAE6 /* [CP] Check Pods Manifest.lock */ = {
+		E8A88586EFBB902FFF7DFB0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -748,7 +748,7 @@
 		};
 		A50D58EB23053BA10026CDA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25E0068EDF12FA3C8F99A1D7 /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 913FF6B24663B1D847A1CCBA /* Pods-kyl_DSBrigeDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -770,7 +770,7 @@
 		};
 		A50D58EC23053BA10026CDA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A267C00FCC1116EFB9B2652 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */;
+			baseConfigurationReference = C93A78C9FC78DA0D2D120327 /* Pods-kyl_DSBrigeDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -792,7 +792,7 @@
 		};
 		A50D58EE23053BA10026CDA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25AB9F270FC479A4A6382EFC /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = D6EE52A75D5098D9D40EC5B2 /* Pods-kyl_DSBrigeDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -813,7 +813,7 @@
 		};
 		A50D58EF23053BA10026CDA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB1B7A98C26DF5D0C0C1F346 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */;
+			baseConfigurationReference = 4896C7A1313117A62606AB55 /* Pods-kyl_DSBrigeDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -38,9 +38,9 @@ DEPENDENCIES:
   - JXPhotoBrowser
   - Kingfisher
   - Moya
-  - RxCocoa
+  - RxCocoa (~> 5)
   - RxDataSources
-  - RxSwift
+  - RxSwift (~> 5)
   - SnapKit (~> 5.0.0)
   - SwiftyJSON
 
@@ -79,6 +79,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 1e54c98298420f98641c4ca60ab3507e22023628
+PODFILE CHECKSUM: 1b58e882d6cec932182ca0f28b710729aa2b5646
 
 COCOAPODS: 1.8.0.beta.1
