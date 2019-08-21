@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'kylRxVideoPlayer' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for kylRxVideoPlayer
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Kingfisher'
+  pod 'HandyJSON'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Moya'
+  pod 'JXPhotoBrowser'
+  pod 'Kingfisher'
+  pod 'BayMaxProtector'
+  pod 'dsBridge'
+  pod 'youtube-ios-player-helper'
+
+  target 'kylRxVideoPlayerTests' do
+    inherit! :search_paths
+    # Pods for testing
+
+  end
+
+  target 'kylRxVideoPlayerUITests' do
+    # Pods for testing
+  end
+
+end

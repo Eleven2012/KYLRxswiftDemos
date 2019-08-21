@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0242528298F890243FED2CE6 /* Pods_kylRxVideoPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B2768F3BDF68AE4FEA1301 /* Pods_kylRxVideoPlayerTests.framework */; };
+		16583AF6EF9623CDB5CF67AB /* Pods_kylRxVideoPlayer_kylRxVideoPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6FD58E8E2FDC2623F9A7F9 /* Pods_kylRxVideoPlayer_kylRxVideoPlayerUITests.framework */; };
+		85420F7AE9C1F48390D134DB /* Pods_kylRxVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC715C0566E67B806C7E35FF /* Pods_kylRxVideoPlayer.framework */; };
 		A5482E5C230CDB0900AF7693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E5B230CDB0900AF7693 /* AppDelegate.swift */; };
 		A5482E5E230CDB0900AF7693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E5D230CDB0900AF7693 /* ViewController.swift */; };
 		A5482E61230CDB0900AF7693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482E5F230CDB0900AF7693 /* Main.storyboard */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FE1553CCA2CD4D0E57623D1 /* Pods-kylRxVideoPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxVideoPlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxVideoPlayerTests/Pods-kylRxVideoPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FFC3D9676883F45C3FCDCCF /* Pods-kylRxVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxVideoPlayer.debug.xcconfig"; path = "Target Support Files/Pods-kylRxVideoPlayer/Pods-kylRxVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		69B2768F3BDF68AE4FEA1301 /* Pods_kylRxVideoPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxVideoPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8029437EC805F0DD30CCA3C7 /* Pods-kylRxVideoPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxVideoPlayerTests.release.xcconfig"; path = "Target Support Files/Pods-kylRxVideoPlayerTests/Pods-kylRxVideoPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		95FD2C6068DBADFFA1123791 /* Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.release.xcconfig"; path = "Target Support Files/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A5482E58230CDB0900AF7693 /* kylRxVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482E5B230CDB0900AF7693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5482E5D230CDB0900AF7693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		A5482E7A230CDB0B00AF7693 /* kylRxVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482E7E230CDB0B00AF7693 /* kylRxVideoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxVideoPlayerUITests.swift; sourceTree = "<group>"; };
 		A5482E80230CDB0B00AF7693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA0FB5F908B459B241DEE83 /* Pods-kylRxVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxVideoPlayer.release.xcconfig"; path = "Target Support Files/Pods-kylRxVideoPlayer/Pods-kylRxVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		EC715C0566E67B806C7E35FF /* Pods_kylRxVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6FD58E8E2FDC2623F9A7F9 /* Pods_kylRxVideoPlayer_kylRxVideoPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxVideoPlayer_kylRxVideoPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB79AC19BE3AEBF4682B2373 /* Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85420F7AE9C1F48390D134DB /* Pods_kylRxVideoPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0242528298F890243FED2CE6 /* Pods_kylRxVideoPlayerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16583AF6EF9623CDB5CF67AB /* Pods_kylRxVideoPlayer_kylRxVideoPlayerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BD78B763AD259924E418B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC715C0566E67B806C7E35FF /* Pods_kylRxVideoPlayer.framework */,
+				FA6FD58E8E2FDC2623F9A7F9 /* Pods_kylRxVideoPlayer_kylRxVideoPlayerUITests.framework */,
+				69B2768F3BDF68AE4FEA1301 /* Pods_kylRxVideoPlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5482E4F230CDB0900AF7693 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				A5482E72230CDB0B00AF7693 /* kylRxVideoPlayerTests */,
 				A5482E7D230CDB0B00AF7693 /* kylRxVideoPlayerUITests */,
 				A5482E59230CDB0900AF7693 /* Products */,
+				F37B580022C89200833E55ED /* Pods */,
+				8BD78B763AD259924E418B84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,20 @@
 			path = kylRxVideoPlayerUITests;
 			sourceTree = "<group>";
 		};
+		F37B580022C89200833E55ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC3D9676883F45C3FCDCCF /* Pods-kylRxVideoPlayer.debug.xcconfig */,
+				ABA0FB5F908B459B241DEE83 /* Pods-kylRxVideoPlayer.release.xcconfig */,
+				FB79AC19BE3AEBF4682B2373 /* Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.debug.xcconfig */,
+				95FD2C6068DBADFFA1123791 /* Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.release.xcconfig */,
+				0FE1553CCA2CD4D0E57623D1 /* Pods-kylRxVideoPlayerTests.debug.xcconfig */,
+				8029437EC805F0DD30CCA3C7 /* Pods-kylRxVideoPlayerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5482E83230CDB0B00AF7693 /* Build configuration list for PBXNativeTarget "kylRxVideoPlayer" */;
 			buildPhases = (
+				3EC0C4A95FBFB0EA7EBC4CEE /* [CP] Check Pods Manifest.lock */,
 				A5482E54230CDB0900AF7693 /* Sources */,
 				A5482E55230CDB0900AF7693 /* Frameworks */,
 				A5482E56230CDB0900AF7693 /* Resources */,
+				D69B8D0F42723B072AC11F3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5482E86230CDB0B00AF7693 /* Build configuration list for PBXNativeTarget "kylRxVideoPlayerTests" */;
 			buildPhases = (
+				8FB4E66D0E03471C9ADB60F8 /* [CP] Check Pods Manifest.lock */,
 				A5482E6B230CDB0B00AF7693 /* Sources */,
 				A5482E6C230CDB0B00AF7693 /* Frameworks */,
 				A5482E6D230CDB0B00AF7693 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5482E89230CDB0B00AF7693 /* Build configuration list for PBXNativeTarget "kylRxVideoPlayerUITests" */;
 			buildPhases = (
+				868B5B827B52FC2EF491B8D0 /* [CP] Check Pods Manifest.lock */,
 				A5482E76230CDB0B00AF7693 /* Sources */,
 				A5482E77230CDB0B00AF7693 /* Frameworks */,
 				A5482E78230CDB0B00AF7693 /* Resources */,
+				634931C06A12736D2DD70BBD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EC0C4A95FBFB0EA7EBC4CEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxVideoPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		634931C06A12736D2DD70BBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868B5B827B52FC2EF491B8D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB4E66D0E03471C9ADB60F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxVideoPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D69B8D0F42723B072AC11F3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxVideoPlayer/Pods-kylRxVideoPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxVideoPlayer/Pods-kylRxVideoPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylRxVideoPlayer/Pods-kylRxVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5482E54230CDB0900AF7693 /* Sources */ = {
@@ -434,6 +583,7 @@
 		};
 		A5482E84230CDB0B00AF7693 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFC3D9676883F45C3FCDCCF /* Pods-kylRxVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +602,7 @@
 		};
 		A5482E85230CDB0B00AF7693 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA0FB5F908B459B241DEE83 /* Pods-kylRxVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +621,7 @@
 		};
 		A5482E87230CDB0B00AF7693 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE1553CCA2CD4D0E57623D1 /* Pods-kylRxVideoPlayerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +643,7 @@
 		};
 		A5482E88230CDB0B00AF7693 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8029437EC805F0DD30CCA3C7 /* Pods-kylRxVideoPlayerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		A5482E8A230CDB0B00AF7693 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB79AC19BE3AEBF4682B2373 /* Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +686,7 @@
 		};
 		A5482E8B230CDB0B00AF7693 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FD2C6068DBADFFA1123791 /* Pods-kylRxVideoPlayer-kylRxVideoPlayerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
