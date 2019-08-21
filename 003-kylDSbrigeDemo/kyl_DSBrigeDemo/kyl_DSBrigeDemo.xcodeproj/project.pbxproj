@@ -22,6 +22,11 @@
 		A5482E3E230BC9FB00AF7693 /* KYLCornerCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E3D230BC9FB00AF7693 /* KYLCornerCutter.swift */; };
 		A5482E40230BD0D500AF7693 /* KYLHomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E3F230BD0D500AF7693 /* KYLHomeListViewModel.swift */; };
 		A5482E42230BD15900AF7693 /* KYLListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E41230BD15900AF7693 /* KYLListModel.swift */; };
+		A5482E46230CD5ED00AF7693 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E45230CD5ED00AF7693 /* KPerson.swift */; };
+		A5482E48230CD67100AF7693 /* KCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E47230CD67100AF7693 /* KCTableViewCell.swift */; };
+		A5482E4A230CD69100AF7693 /* KCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E49230CD69100AF7693 /* KCTableViewController.swift */; };
+		A5482E4C230CD6AF00AF7693 /* KCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E4B230CD6AF00AF7693 /* KCDetailViewController.swift */; };
+		A5482E4E230CD71500AF7693 /* KCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E4D230CD71500AF7693 /* KCHomeViewController.swift */; };
 		A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */; };
 		A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */; };
 		A571AF452305585F00E3D5E7 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A571AF442305585F00E3D5E7 /* test.html */; };
@@ -72,6 +77,11 @@
 		A5482E3D230BC9FB00AF7693 /* KYLCornerCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLCornerCutter.swift; sourceTree = "<group>"; };
 		A5482E3F230BD0D500AF7693 /* KYLHomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLHomeListViewModel.swift; sourceTree = "<group>"; };
 		A5482E41230BD15900AF7693 /* KYLListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLListModel.swift; sourceTree = "<group>"; };
+		A5482E45230CD5ED00AF7693 /* KPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPerson.swift; sourceTree = "<group>"; };
+		A5482E47230CD67100AF7693 /* KCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTableViewCell.swift; sourceTree = "<group>"; };
+		A5482E49230CD69100AF7693 /* KCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTableViewController.swift; sourceTree = "<group>"; };
+		A5482E4B230CD6AF00AF7693 /* KCDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCDetailViewController.swift; sourceTree = "<group>"; };
+		A5482E4D230CD71500AF7693 /* KCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCHomeViewController.swift; sourceTree = "<group>"; };
 		A571AF3F230557FE00E3D5E7 /* KYLJSApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLJSApiTest.swift; sourceTree = "<group>"; };
 		A571AF412305584100E3D5E7 /* KYLWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLWebViewVC.swift; sourceTree = "<group>"; };
 		A571AF442305585F00E3D5E7 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
@@ -144,6 +154,7 @@
 		A50D58BE23053B9F0026CDA0 /* kyl_DSBrigeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5482E43230CD2FD00AF7693 /* rx */,
 				A5482E36230BC94600AF7693 /* tool */,
 				A5482E33230B888C00AF7693 /* rxswift */,
 				A5482E30230B872C00AF7693 /* autoFitSize */,
@@ -234,6 +245,26 @@
 				A5482E41230BD15900AF7693 /* KYLListModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A5482E43230CD2FD00AF7693 /* rx */ = {
+			isa = PBXGroup;
+			children = (
+				A5482E44230CD30E00AF7693 /* recircle */,
+			);
+			path = rx;
+			sourceTree = "<group>";
+		};
+		A5482E44230CD30E00AF7693 /* recircle */ = {
+			isa = PBXGroup;
+			children = (
+				A5482E45230CD5ED00AF7693 /* KPerson.swift */,
+				A5482E47230CD67100AF7693 /* KCTableViewCell.swift */,
+				A5482E49230CD69100AF7693 /* KCTableViewController.swift */,
+				A5482E4B230CD6AF00AF7693 /* KCDetailViewController.swift */,
+				A5482E4D230CD71500AF7693 /* KCHomeViewController.swift */,
+			);
+			path = recircle;
 			sourceTree = "<group>";
 		};
 		A571AF3E230557AA00E3D5E7 /* dsbrige */ = {
@@ -493,13 +524,18 @@
 				A571AF40230557FE00E3D5E7 /* KYLJSApiTest.swift in Sources */,
 				A50D58C823053B9F0026CDA0 /* kyl_DSBrigeDemo.xcdatamodeld in Sources */,
 				A5482E32230B874B00AF7693 /* SwiftyFitsize.swift in Sources */,
+				A5482E48230CD67100AF7693 /* KCTableViewCell.swift in Sources */,
 				A5482E35230B8AA300AF7693 /* KLayout.swift in Sources */,
 				A5482E40230BD0D500AF7693 /* KYLHomeListViewModel.swift in Sources */,
 				A571AF422305584100E3D5E7 /* KYLWebViewVC.swift in Sources */,
 				A5482E3C230BC9E300AF7693 /* KYLFPSLabel.swift in Sources */,
+				A5482E4C230CD6AF00AF7693 /* KCDetailViewController.swift in Sources */,
 				A5482E3E230BC9FB00AF7693 /* KYLCornerCutter.swift in Sources */,
+				A5482E4E230CD71500AF7693 /* KCHomeViewController.swift in Sources */,
 				A50D58C223053B9F0026CDA0 /* ViewController.swift in Sources */,
+				A5482E46230CD5ED00AF7693 /* KPerson.swift in Sources */,
 				A50D58C023053B9F0026CDA0 /* AppDelegate.swift in Sources */,
+				A5482E4A230CD69100AF7693 /* KCTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

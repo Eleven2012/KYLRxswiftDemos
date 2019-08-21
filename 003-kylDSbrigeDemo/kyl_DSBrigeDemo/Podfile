@@ -17,9 +17,9 @@ target 'kyl_DSBrigeDemo' do
   pod 'SwiftyJSON'
   pod 'Moya'
   pod 'JXPhotoBrowser'
-pod 'Kingfisher'
-pod 'BayMaxProtector'
-pod 'dsBridge'
+  pod 'Kingfisher'
+  pod 'BayMaxProtector'
+  pod 'dsBridge'
 #pod 'SwiftyFitsize'
 
   target 'kyl_DSBrigeDemoTests' do
