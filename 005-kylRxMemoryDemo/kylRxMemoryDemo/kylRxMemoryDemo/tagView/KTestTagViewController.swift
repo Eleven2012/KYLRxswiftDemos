@@ -171,7 +171,11 @@ extension KTestTagViewController {
     
     @objc private func btnAddMoreClicked(_ sender: Any) {
         debugPrint("\(#function)")
-        tagsField.beginEditing()
+        //tagsField.beginEditing()
+        tagsField.addTag(NSUUID().uuidString)
+        tagsField.addTag(NSUUID().uuidString)
+        tagsField.addTag(NSUUID().uuidString)
+        tagsField.addTag(NSUUID().uuidString)
     }
     
     @objc private func btnChangeStyleClicked(_ sender: Any) {
@@ -207,11 +211,10 @@ extension KTestTagViewController {
     
     @objc private func btnShowListClicked(_ sender: Any) {
         debugPrint("\(#function)")
-        tagsField.addTag(NSUUID().uuidString)
-        tagsField.addTag(NSUUID().uuidString)
-        tagsField.addTag(NSUUID().uuidString)
-        tagsField.addTag(NSUUID().uuidString)
+        navigationController?.pushViewController(KTestTagTableVC(), animated: true)
     }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
