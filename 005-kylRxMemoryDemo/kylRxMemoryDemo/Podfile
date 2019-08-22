@@ -7,6 +7,18 @@ target 'kylRxMemoryDemo' do
   use_frameworks!
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  
+  pod 'dsBridge'
+  pod 'RxDataSources'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Kingfisher'
+  pod 'HandyJSON'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'Moya'
+  pod 'JXPhotoBrowser'
+  pod 'Kingfisher'
+  pod 'BayMaxProtector'
   # Pods for 001-RxSwift内存管理
 
 end

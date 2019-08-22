@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E98230D18F800AF7693 /* AppDelegate.swift */; };
-		A5482E9B230D18F800AF7693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9A230D18F800AF7693 /* ViewController.swift */; };
 		A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482E9C230D18F800AF7693 /* Main.storyboard */; };
 		A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */; };
 		A5482EA3230D18F900AF7693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5482EA2230D18F900AF7693 /* Assets.xcassets */; };
@@ -20,6 +19,19 @@
 		A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECD230D1A7000AF7693 /* KPerson.swift */; };
 		A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */; };
 		A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */; };
+		A5482EDF230D1BC900AF7693 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EDB230D1BC900AF7693 /* KYLWebViewVC.swift */; };
+		A5482EE0230D1BC900AF7693 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A5482EDD230D1BC900AF7693 /* test.html */; };
+		A5482EE1230D1BC900AF7693 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EDE230D1BC900AF7693 /* KYLJSApiTest.swift */; };
+		A5482EE4230D1BD400AF7693 /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE2230D1BD400AF7693 /* SwiftyFitsize.swift */; };
+		A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE3230D1BD400AF7693 /* KLayout.swift */; };
+		A5482EE8230D1BE200AF7693 /* KYLFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */; };
+		A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */; };
+		A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */; };
+		A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C7230E7DD90010F1AD /* KYLTagField.swift */; };
+		A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */; };
+		A5F665D1230E950A0010F1AD /* RxFirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665D0230E950A0010F1AD /* RxFirstTableViewController.swift */; };
+		A5F665D3230E95390010F1AD /* RxSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665D2230E95390010F1AD /* RxSecondViewController.swift */; };
+		A5F665D5230E971D0010F1AD /* KTestTagTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665D4230E971D0010F1AD /* KTestTagTableVC.swift */; };
 		E411B89A3CDF240A54C4BCAD /* Pods_kylRxMemoryDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD9DAF87E09B872FF6D2E27 /* Pods_kylRxMemoryDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +57,6 @@
 		7D12B7A76C92946E2B3192A1 /* Pods-kylRxMemoryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxMemoryDemo.release.xcconfig"; path = "Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxMemoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482E98230D18F800AF7693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5482E9A230D18F800AF7693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5482E9D230D18F800AF7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5482EA0230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kylRxMemoryDemo.xcdatamodel; sourceTree = "<group>"; };
 		A5482EA2230D18F900AF7693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +73,19 @@
 		A5482ECD230D1A7000AF7693 /* KPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KPerson.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KPerson.swift"; sourceTree = "<group>"; };
 		A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCDetailViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCDetailViewController.swift"; sourceTree = "<group>"; };
 		A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCHomeViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCHomeViewController.swift"; sourceTree = "<group>"; };
+		A5482EDB230D1BC900AF7693 /* KYLWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLWebViewVC.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/KYLWebViewVC.swift"; sourceTree = "<group>"; };
+		A5482EDD230D1BC900AF7693 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		A5482EDE230D1BC900AF7693 /* KYLJSApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLJSApiTest.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/KYLJSApiTest.swift"; sourceTree = "<group>"; };
+		A5482EE2230D1BD400AF7693 /* SwiftyFitsize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFitsize.swift; sourceTree = "<group>"; };
+		A5482EE3230D1BD400AF7693 /* KLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLayout.swift; sourceTree = "<group>"; };
+		A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLFPSLabel.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLFPSLabel.swift"; sourceTree = "<group>"; };
+		A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLCornerCutter.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLCornerCutter.swift"; sourceTree = "<group>"; };
+		A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagView.swift; sourceTree = "<group>"; };
+		A5F665C7230E7DD90010F1AD /* KYLTagField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagField.swift; sourceTree = "<group>"; };
+		A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestTagViewController.swift; sourceTree = "<group>"; };
+		A5F665D0230E950A0010F1AD /* RxFirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFirstTableViewController.swift; sourceTree = "<group>"; };
+		A5F665D2230E95390010F1AD /* RxSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSecondViewController.swift; sourceTree = "<group>"; };
+		A5F665D4230E971D0010F1AD /* KTestTagTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestTagTableVC.swift; sourceTree = "<group>"; };
 		DFD9DAF87E09B872FF6D2E27 /* Pods_kylRxMemoryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxMemoryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,14 +157,20 @@
 		A5482E97230D18F800AF7693 /* kylRxMemoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5F665C4230E7D6D0010F1AD /* tagView */,
+				A5482EDA230D1BB200AF7693 /* dsbridge */,
+				A5482ED9230D1BA300AF7693 /* fitsize */,
+				A5482ED8230D1B9400AF7693 /* extension */,
+				A5482ED7230D1B8A00AF7693 /* tools */,
 				A5482EC9230D1A4C00AF7693 /* rx */,
 				A5482E98230D18F800AF7693 /* AppDelegate.swift */,
-				A5482E9A230D18F800AF7693 /* ViewController.swift */,
 				A5482E9C230D18F800AF7693 /* Main.storyboard */,
 				A5482EA2230D18F900AF7693 /* Assets.xcassets */,
 				A5482EA4230D18F900AF7693 /* LaunchScreen.storyboard */,
 				A5482EA7230D18F900AF7693 /* Info.plist */,
 				A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */,
+				A5F665D0230E950A0010F1AD /* RxFirstTableViewController.swift */,
+				A5F665D2230E95390010F1AD /* RxSecondViewController.swift */,
 			);
 			path = kylRxMemoryDemo;
 			sourceTree = "<group>";
@@ -166,6 +196,8 @@
 		A5482EC9230D1A4C00AF7693 /* rx */ = {
 			isa = PBXGroup;
 			children = (
+				A5482ED6230D1B6400AF7693 /* ui */,
+				A5482ED5230D1B4A00AF7693 /* mvvmdemo */,
 				A5482ECA230D1A5B00AF7693 /* testMemory */,
 			);
 			path = rx;
@@ -181,6 +213,75 @@
 				A5482ECD230D1A7000AF7693 /* KPerson.swift */,
 			);
 			path = testMemory;
+			sourceTree = "<group>";
+		};
+		A5482ED5230D1B4A00AF7693 /* mvvmdemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mvvmdemo;
+			sourceTree = "<group>";
+		};
+		A5482ED6230D1B6400AF7693 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		A5482ED7230D1B8A00AF7693 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */,
+				A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		A5482ED8230D1B9400AF7693 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		A5482ED9230D1BA300AF7693 /* fitsize */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EE2230D1BD400AF7693 /* SwiftyFitsize.swift */,
+				A5482EE3230D1BD400AF7693 /* KLayout.swift */,
+			);
+			path = fitsize;
+			sourceTree = "<group>";
+		};
+		A5482EDA230D1BB200AF7693 /* dsbridge */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EDC230D1BC900AF7693 /* html */,
+				A5482EDE230D1BC900AF7693 /* KYLJSApiTest.swift */,
+				A5482EDB230D1BC900AF7693 /* KYLWebViewVC.swift */,
+			);
+			path = dsbridge;
+			sourceTree = "<group>";
+		};
+		A5482EDC230D1BC900AF7693 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				A5482EDD230D1BC900AF7693 /* test.html */,
+			);
+			name = html;
+			path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/html";
+			sourceTree = "<group>";
+		};
+		A5F665C4230E7D6D0010F1AD /* tagView */ = {
+			isa = PBXGroup;
+			children = (
+				A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */,
+				A5F665C7230E7DD90010F1AD /* KYLTagField.swift */,
+				A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */,
+				A5F665D4230E971D0010F1AD /* KTestTagTableVC.swift */,
+			);
+			path = tagView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5482EE0230D1BC900AF7693 /* test.html in Resources */,
 				A5482EA6230D18F900AF7693 /* LaunchScreen.storyboard in Resources */,
 				A5482EA3230D18F900AF7693 /* Assets.xcassets in Resources */,
 				A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */,
@@ -358,14 +460,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5482E9B230D18F800AF7693 /* ViewController.swift in Sources */,
+				A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */,
+				A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */,
 				A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */,
 				A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */,
+				A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */,
 				A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */,
+				A5482EE4230D1BD400AF7693 /* SwiftyFitsize.swift in Sources */,
 				A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */,
 				A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */,
+				A5482EDF230D1BC900AF7693 /* KYLWebViewVC.swift in Sources */,
+				A5F665D3230E95390010F1AD /* RxSecondViewController.swift in Sources */,
+				A5F665D5230E971D0010F1AD /* KTestTagTableVC.swift in Sources */,
 				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
+				A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */,
+				A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */,
+				A5482EE1230D1BC900AF7693 /* KYLJSApiTest.swift in Sources */,
+				A5482EE8230D1BE200AF7693 /* KYLFPSLabel.swift in Sources */,
 				A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */,
+				A5F665D1230E950A0010F1AD /* RxFirstTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +657,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kylRxMemoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kylRxMemoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
