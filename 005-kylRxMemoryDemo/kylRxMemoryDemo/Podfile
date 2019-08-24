@@ -19,7 +19,7 @@ target 'kylRxMemoryDemo' do
   pod 'JXPhotoBrowser'
   pod 'Kingfisher'
   pod 'BayMaxProtector'
-  # Pods for 001-RxSwift内存管理
+  pod 'WCDB.swift'
 
 end
 

@@ -131,6 +131,14 @@
                                     <action selector="btnTestUI1:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="aHO-fH-M7L"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtB-Cc-kWJ">
+                                <rect key="frame" x="51" y="221" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="tableview"/>
+                                <connections>
+                                    <action selector="btnTestTable:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="g4u-Qg-UVB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FVO-v9-ftW"/>
