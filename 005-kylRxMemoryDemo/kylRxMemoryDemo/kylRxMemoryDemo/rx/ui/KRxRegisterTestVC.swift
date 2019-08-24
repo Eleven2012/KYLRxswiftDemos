@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 enum LGGender {
     case notSelcted
@@ -34,7 +36,7 @@ class KRxRegisterTestVC: UIViewController {
         self.birthdayPicker.layer.borderWidth = 1
         // 首先我们的出生日期不能早于今天,否则边框变色
         let birthdayOB = birthdayPicker.rx.date
-            .map { LGDataPickerValidator.isValidDate(date: $0) }
+            .map { KDataPickerValidator.isValidDate(date: $0) }
         
         // 背景色
         birthdayOB.map { $0 ? UIColor.orange : UIColor.clear}

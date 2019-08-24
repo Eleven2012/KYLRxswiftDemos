@@ -34,7 +34,7 @@ class KTVPhotoListVC: UIViewController {
         collection.delegate = self
         collection.dataSource = self
         collection.backgroundColor = UIColor.white
-        collection.register(LGPhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collection.register(KTVPhotoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         return collection
     }()
     
@@ -64,7 +64,7 @@ extension KTVPhotoListVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! LGPhotoCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! KTVPhotoCell
         let asset = photos.object(at: indexPath.item)
         cell.representedAssetIdentifier = asset.localIdentifier
         imageManager.requestImage(for: asset,
@@ -90,7 +90,7 @@ extension KTVPhotoListVC: UICollectionViewDelegate{
                         didSelectItemAt indexPath: IndexPath) {
         
         let asset = photos.object(at: indexPath.item)
-        if let cell = collectionView.cellForItem(at: indexPath) as? LGPhotoCell {
+        if let cell = collectionView.cellForItem(at: indexPath) as? KTVPhotoCell {
             cell.selected()
         }
         imageManager.requestImage(for: asset,

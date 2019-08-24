@@ -17,13 +17,13 @@ class KTVDetailVC: UITableViewController {
     @IBOutlet weak var choosePictureBtn: UIButton!
     var done: Bool = false
     
-    fileprivate let todoSubject = PublishSubject<LGModel>()
-    var todoOB: Observable<LGModel>{
+    fileprivate let todoSubject = PublishSubject<KTVModel>()
+    var todoOB: Observable<KTVModel>{
         return todoSubject.asObservable()
     }
     let disposBag = DisposeBag()
     
-    var model: LGModel!
+    var model: KTVModel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,7 +35,7 @@ class KTVDetailVC: UITableViewController {
             isFinishedSwitch.isOn = model.isFinished
         }
         else {
-            model = LGModel(tittle: "", isFinished: false)
+            model = KTVModel(tittle: "", isFinished: false)
         }
     }
     
@@ -51,7 +51,7 @@ class KTVDetailVC: UITableViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .cancel, target: self, action: #selector(didClickCancelAction))
         
         _ = self.choosePictureBtn.rx.tap.subscribe(onNext: { [weak self] in
-            self?.navigationController?.pushViewController(LGPhotoCollectionViewController(), animated: true)
+            self?.navigationController?.pushViewController(KTVPhotoListVC(), animated: true)
         })
     }
     

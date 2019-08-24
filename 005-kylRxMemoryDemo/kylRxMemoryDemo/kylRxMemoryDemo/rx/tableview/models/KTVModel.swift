@@ -23,7 +23,7 @@ class KTVModel: TableCodable{
     }
     
     enum CodingKeys: String, CodingTableKey {
-        typealias Root = LGModel
+        typealias Root = KTVModel
         static let objectRelationalMapping = TableBinding(CodingKeys.self)
         case tittle
         case isFinished

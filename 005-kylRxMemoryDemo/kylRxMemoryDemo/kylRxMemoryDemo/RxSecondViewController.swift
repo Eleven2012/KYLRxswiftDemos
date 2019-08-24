@@ -33,6 +33,11 @@ class RxSecondViewController: UIViewController {
         navigationController?.pushViewController(KTVTestVC(), animated: true)
     }
     
+    
+    @IBAction func btnShowRxBinderUI(_ sender: Any) {
+        navigationController?.pushViewController(KRxRegisterTestVC(), animated: true)
+    }
+    
     @IBAction func btnTestUI1(_ sender: Any) {
         navigationController?.pushViewController(KRxTextFieldTestVC(), animated: true)
     }

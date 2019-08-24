@@ -34,10 +34,10 @@ let buttonMargin = CGFloat(36)
 class KTVTestVC: UIViewController {
     
     let resuseID = "resuseID_LGViewController"
-    var modelItems: [LGModel] = []
-    var modelsSub: BehaviorSubject<[LGModel]>?
+    var modelItems: [KTVModel] = []
+    var modelsSub: BehaviorSubject<[KTVModel]>?
     let disposeBag = DisposeBag()
-    var detailVC:LGDetailViewController?
+    var detailVC:KTVDetailVC?
     
     lazy var tableView: UITableView = {
         let tabView = UITableView.init(frame: CGRect(x: 0, y: navigationHeight, width: kScreenW, height: kScreenH-navigationHeight-bottomViewH), style: .plain)
@@ -45,7 +45,7 @@ class KTVTestVC: UIViewController {
         tabView.dataSource = self
         tabView.rowHeight = 50
         tabView.tableFooterView = UIView()
-        tabView.register(LGTableViewCell.classForCoder(), forCellReuseIdentifier: resuseID)
+        tabView.register(KTVTableViewCell.classForCoder(), forCellReuseIdentifier: resuseID)
         return tabView
     }()
     
@@ -66,12 +66,12 @@ class KTVTestVC: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        modelsSub = BehaviorSubject(value: LGCacheManager.manager.fetachLGModelData())
+        modelsSub = BehaviorSubject(value: KTVCacheManager.manager.fetachKTVModelData())
         modelsSub?.subscribe(onNext: { [weak self](items) in
             self?.modelItems = items
             self?.tableView.reloadData()
             self?.deleteBtn.isEnabled = !items.isEmpty
-            LGCacheManager.manager.updataAllData(models: items)
+            KTVCacheManager.manager.updataAllData(models: items)
             let num = items.filter({ (model) -> Bool in
                 return !model.isFinished
             }).count
@@ -95,9 +95,9 @@ class KTVTestVC: UIViewController {
         pushToDetailVC(model: nil)
     }
     
-    fileprivate func pushToDetailVC(model:LGModel?){
+    fileprivate func pushToDetailVC(model:KTVModel?){
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        detailVC = (sb.instantiateViewController(withIdentifier: "LGDetailViewController") as! LGDetailViewController)
+        detailVC = (sb.instantiateViewController(withIdentifier: "KTVDetailVC") as! KTVDetailVC)
         
         if let model = model {
             detailVC?.model = model
@@ -127,7 +127,7 @@ extension KTVTestVC: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = LGTableViewCell.init(style: .default, reuseIdentifier: resuseID)
+        let cell = KTVTableViewCell.init(style: .default, reuseIdentifier: resuseID)
         cell.upDataUIWithModle(model: modelItems[indexPath.row])
         return cell
     }

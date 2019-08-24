@@ -139,6 +139,14 @@
                                     <action selector="btnTestTable:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="g4u-Qg-UVB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-M4-mwv">
+                                <rect key="frame" x="162" y="221" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="rxUI绑定"/>
+                                <connections>
+                                    <action selector="btnShowRxBinderUI:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="JuU-59-vco"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FVO-v9-ftW"/>
