@@ -107,6 +107,14 @@
                                     <action selector="btnTagClicked:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="gBA-W0-miA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-Fh-mKc">
+                                <rect key="frame" x="134" y="154" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="循环引用"/>
+                                <connections>
+                                    <action selector="btnTestCircleRetain:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="O8b-gd-Eyk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FVO-v9-ftW"/>

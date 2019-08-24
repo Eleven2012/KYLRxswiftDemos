@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5299A3A2310C2D40024E29A /* KCTestMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299A392310C2D40024E29A /* KCTestMemoryViewController.swift */; };
 		A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E98230D18F800AF7693 /* AppDelegate.swift */; };
 		A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482E9C230D18F800AF7693 /* Main.storyboard */; };
 		A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		10FB71694B560F97634EB9FB /* Pods-kylRxMemoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxMemoryDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7D12B7A76C92946E2B3192A1 /* Pods-kylRxMemoryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxMemoryDemo.release.xcconfig"; path = "Target Support Files/Pods-kylRxMemoryDemo/Pods-kylRxMemoryDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A5299A392310C2D40024E29A /* KCTestMemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTestMemoryViewController.swift; sourceTree = "<group>"; };
 		A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxMemoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482E98230D18F800AF7693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5482E9D230D18F800AF7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */,
 				A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */,
 				A5482ECD230D1A7000AF7693 /* KPerson.swift */,
+				A5299A392310C2D40024E29A /* KCTestMemoryViewController.swift */,
 			);
 			path = testMemory;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				A5F665D5230E971D0010F1AD /* KTestTagTableVC.swift in Sources */,
 				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
 				A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */,
+				A5299A3A2310C2D40024E29A /* KCTestMemoryViewController.swift in Sources */,
 				A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */,
 				A5482EE1230D1BC900AF7693 /* KYLJSApiTest.swift in Sources */,
 				A5482EE8230D1BE200AF7693 /* KYLFPSLabel.swift in Sources */,

@@ -16,7 +16,10 @@ class RxSecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnTestCircleRetain(_ sender: Any) {
+        navigationController?.pushViewController(KCHomeViewController(), animated: true)
+    }
+    
     @IBAction func btnTagClicked(_ sender: Any) {
         self.navigationController?.pushViewController(KTestTagViewController(), animated: true)
     }

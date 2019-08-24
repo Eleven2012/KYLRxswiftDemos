@@ -242,11 +242,11 @@ extension KTestTagViewController {
         }
         
         tagsField.onDidSelectTagView = { _, tagView in
-            print("Select \(tagView)")
+            print("Select \(tagView.displayText)")
         }
         
         tagsField.onDidUnselectTagView = { _, tagView in
-            print("Unselect \(tagView)")
+            print("Unselect \(tagView.displayText)")
         }
     }
     
