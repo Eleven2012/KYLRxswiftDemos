@@ -16,6 +16,8 @@
 		A5299A4B2310C97A0024E29A /* KCTestBinderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5299A492310C97A0024E29A /* KCTestBinderVC.xib */; };
 		A5299A4E2310CC950024E29A /* KTestHigherFunctionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299A4C2310CC950024E29A /* KTestHigherFunctionVC.swift */; };
 		A5299A4F2310CC950024E29A /* KTestHigherFunctionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5299A4D2310CC950024E29A /* KTestHigherFunctionVC.xib */; };
+		A5299A522310D14D0024E29A /* KRxTextFieldTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299A502310D14D0024E29A /* KRxTextFieldTestVC.swift */; };
+		A5299A532310D14D0024E29A /* KRxTextFieldTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5299A512310D14D0024E29A /* KRxTextFieldTestVC.xib */; };
 		A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E98230D18F800AF7693 /* AppDelegate.swift */; };
 		A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482E9C230D18F800AF7693 /* Main.storyboard */; };
 		A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */; };
@@ -73,6 +75,8 @@
 		A5299A492310C97A0024E29A /* KCTestBinderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KCTestBinderVC.xib; sourceTree = "<group>"; };
 		A5299A4C2310CC950024E29A /* KTestHigherFunctionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestHigherFunctionVC.swift; sourceTree = "<group>"; };
 		A5299A4D2310CC950024E29A /* KTestHigherFunctionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTestHigherFunctionVC.xib; sourceTree = "<group>"; };
+		A5299A502310D14D0024E29A /* KRxTextFieldTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRxTextFieldTestVC.swift; sourceTree = "<group>"; };
+		A5299A512310D14D0024E29A /* KRxTextFieldTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRxTextFieldTestVC.xib; sourceTree = "<group>"; };
 		A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxMemoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482E98230D18F800AF7693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5482E9D230D18F800AF7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 		A5482ED6230D1B6400AF7693 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A5299A502310D14D0024E29A /* KRxTextFieldTestVC.swift */,
+				A5299A512310D14D0024E29A /* KRxTextFieldTestVC.xib */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5482EE0230D1BC900AF7693 /* test.html in Resources */,
+				A5299A532310D14D0024E29A /* KRxTextFieldTestVC.xib in Resources */,
 				A5299A4F2310CC950024E29A /* KTestHigherFunctionVC.xib in Resources */,
 				A5482EA6230D18F900AF7693 /* LaunchScreen.storyboard in Resources */,
 				A5299A4B2310C97A0024E29A /* KCTestBinderVC.xib in Resources */,
@@ -533,6 +540,7 @@
 				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
 				A5299A4A2310C97A0024E29A /* KCTestBinderVC.swift in Sources */,
 				A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */,
+				A5299A522310D14D0024E29A /* KRxTextFieldTestVC.swift in Sources */,
 				A5299A3A2310C2D40024E29A /* KCTestMemoryViewController.swift in Sources */,
 				A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */,
 				A5482EE1230D1BC900AF7693 /* KYLJSApiTest.swift in Sources */,
