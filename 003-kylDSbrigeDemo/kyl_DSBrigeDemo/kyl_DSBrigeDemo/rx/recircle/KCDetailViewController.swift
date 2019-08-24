@@ -15,7 +15,7 @@ class KCDetailViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     var observer: AnyObserver<Any>?
-    let person: KPerson = KPerson()
+    let person: LGPerson = LGPerson()
     
     fileprivate var mySubject = PublishSubject<Any>()
     var publicOB : Observable<Any>{
@@ -26,7 +26,7 @@ class KCDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //print("\(#function)*****KCDetailViewController出现了:RxSwift的引用计数: \(RxSwift.Resources.total)")
+        print("*****LGDetialViewController出现了:RxSwift的引用计数: \(RxSwift.Resources.total)")
         print("****************************************")
     }
     
@@ -40,6 +40,23 @@ class KCDetailViewController: UIViewController {
         self.title = "首页详情页面"
         self.view.backgroundColor = UIColor.lightGray
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .done, target: self, action: #selector(didClickRightItem))
+        
+        person.rx.observe(String.self, "name")
+            .subscribe(onNext: { (text) in
+                print("text = \(String(describing: text))")
+            }, onError: { (error) in
+                print("订阅到了错误:\(error)")
+            }, onCompleted: {
+                print("完成了")
+            }) {
+                print("销毁了")
+            }
+            .disposed(by: disposeBag)
+        
+        rx.deallocating
+        
+        rx.deallocated
+        
     }
     
     @objc func didClickRightItem(){
@@ -47,7 +64,10 @@ class KCDetailViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        mySubject.onNext("Cooci")
+        /// mySubject.onNext("Cooci")
+        print("*****LGDetialViewController:touchesBegan:RxSwift的引用计数: \(RxSwift.Resources.total)")
+        print("****************************************")
+        
     }
     
     deinit {

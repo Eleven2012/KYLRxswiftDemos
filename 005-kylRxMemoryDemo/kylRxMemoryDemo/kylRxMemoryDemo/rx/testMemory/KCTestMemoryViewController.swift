@@ -34,13 +34,14 @@ class KCTestMemoryViewController: UIViewController {
         self.view.addSubview(self.accountTF)
         
         //         retainCycleDemo()
-        rxRetainCycleDemo1()
+        // rxRetainCycleDemo1()
         // rxRetainCycleDemo2()
         // rxRetainCycleDemo3()
+        deallocDemo()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //        let vc = LGDetialViewController()
+        let vc = KCDetailViewController()
         _ = vc.publicOB
             .subscribe(onNext: { (item) in
                 print("订阅到 \(item)")
@@ -120,6 +121,22 @@ class KCTestMemoryViewController: UIViewController {
         //            })
         //        }
         //        self.myClosure!()
+    }
+    
+    func deallocDemo(){
+        
+        _ = rx.deallocating.subscribe(onNext: { () in
+            print("准备走了")
+        })
+        
+        // deinit - dealloc - 监听 dealloc
+        // 交换方法 - 什么时候调用 dealloc -- 来我自己的实现的时候 deallocating - dealloc - deallocated
+        
+        _ = rx.deallocated.subscribe(onNext: { () in
+            print("已经走了")
+        })
+        
+        
     }
     
     deinit {
