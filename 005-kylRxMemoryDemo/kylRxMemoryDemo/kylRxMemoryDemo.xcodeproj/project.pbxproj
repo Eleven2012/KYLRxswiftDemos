@@ -29,6 +29,9 @@
 		A5299A6A2310F5F70024E29A /* KRxRegisterTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299A682310F5F70024E29A /* KRxRegisterTestVC.swift */; };
 		A5299A6B2310F5F70024E29A /* KRxRegisterTestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5299A692310F5F70024E29A /* KRxRegisterTestVC.xib */; };
 		A5299A6D2310F66B0024E29A /* KDataPickerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299A6C2310F66B0024E29A /* KDataPickerValidator.swift */; };
+		A5299A6F231108040024E29A /* KTVDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5299A6E231108040024E29A /* KTVDetailVC.xib */; };
+		A5299A76231108B10024E29A /* KTVDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5299A74231108B10024E29A /* KTVDetailTableVC.swift */; };
+		A5299A77231108B10024E29A /* KTVDetailTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5299A75231108B10024E29A /* KTVDetailTableVC.xib */; };
 		A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482E98230D18F800AF7693 /* AppDelegate.swift */; };
 		A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482E9C230D18F800AF7693 /* Main.storyboard */; };
 		A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5482E9F230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld */; };
@@ -99,6 +102,9 @@
 		A5299A682310F5F70024E29A /* KRxRegisterTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRxRegisterTestVC.swift; sourceTree = "<group>"; };
 		A5299A692310F5F70024E29A /* KRxRegisterTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRxRegisterTestVC.xib; sourceTree = "<group>"; };
 		A5299A6C2310F66B0024E29A /* KDataPickerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDataPickerValidator.swift; sourceTree = "<group>"; };
+		A5299A6E231108040024E29A /* KTVDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTVDetailVC.xib; sourceTree = "<group>"; };
+		A5299A74231108B10024E29A /* KTVDetailTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTVDetailTableVC.swift; sourceTree = "<group>"; };
+		A5299A75231108B10024E29A /* KTVDetailTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTVDetailTableVC.xib; sourceTree = "<group>"; };
 		A5482E95230D18F800AF7693 /* kylRxMemoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxMemoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482E98230D18F800AF7693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5482E9D230D18F800AF7693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -240,6 +246,9 @@
 				A5299A622310F2E50024E29A /* KTVTestVC.swift */,
 				A5299A642310F3030024E29A /* KTVDetailVC.swift */,
 				A5299A662310F3290024E29A /* KTVPhotoListVC.swift */,
+				A5299A6E231108040024E29A /* KTVDetailVC.xib */,
+				A5299A74231108B10024E29A /* KTVDetailTableVC.swift */,
+				A5299A75231108B10024E29A /* KTVDetailTableVC.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -516,6 +525,8 @@
 				A5299A6B2310F5F70024E29A /* KRxRegisterTestVC.xib in Resources */,
 				A5299A532310D14D0024E29A /* KRxTextFieldTestVC.xib in Resources */,
 				A5299A4F2310CC950024E29A /* KTestHigherFunctionVC.xib in Resources */,
+				A5299A77231108B10024E29A /* KTVDetailTableVC.xib in Resources */,
+				A5299A6F231108040024E29A /* KTVDetailVC.xib in Resources */,
 				A5482EA6230D18F900AF7693 /* LaunchScreen.storyboard in Resources */,
 				A5299A4B2310C97A0024E29A /* KCTestBinderVC.xib in Resources */,
 				A5482EA3230D18F900AF7693 /* Assets.xcassets in Resources */,
@@ -596,6 +607,7 @@
 				A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */,
 				A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */,
 				A5299A632310F2E50024E29A /* KTVTestVC.swift in Sources */,
+				A5299A76231108B10024E29A /* KTVDetailTableVC.swift in Sources */,
 				A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */,
 				A5299A4E2310CC950024E29A /* KTestHigherFunctionVC.swift in Sources */,
 				A5482EE4230D1BD400AF7693 /* SwiftyFitsize.swift in Sources */,

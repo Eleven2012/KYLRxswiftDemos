@@ -1,5 +1,5 @@
 //
-//  KTVDetailVC.swift
+//  KTVDetailTableVC.swift
 //  kylRxMemoryDemo
 //
 //  Created by yulu kong on 2019/8/24.
@@ -10,8 +10,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class KTVDetailVC: UITableViewController {
-    
+class KTVDetailTableVC: UITableViewController {
+        
     @IBOutlet weak var todoNameTF: UITextField!
     @IBOutlet weak var isFinishedSwitch: UISwitch!
     @IBOutlet weak var choosePictureBtn: UIButton!
@@ -69,40 +69,59 @@ class KTVDetailVC: UITableViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-}
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-//extension KTVDetailVC {
-//    fileprivate func getDocumentsDir() -> URL {
-//        return FileManager.default.urls(
-//            for: .documentDirectory,
-//            in: .userDomainMask)[0]
-//    }
-//
-//    // 重置按钮
-//    fileprivate func resetMemoBtn() {
-//        choosePictureBtn.setBackgroundImage(nil, for: .normal)
-//        choosePictureBtn.setTitle("点击,选择你报备忘的相片", for: .normal)
-//    }
-//
-//    // 设置按钮背景图片
-//    fileprivate func setMemoBtn(bkImage: UIImage) {
-//        choosePictureBtn.setBackgroundImage(bkImage, for: .normal)
-//        choosePictureBtn.setTitle("", for: .normal)
-//    }
-//
-//    // 保存图片
-//    fileprivate func savePictureMemos() -> String {
-//
-//        if let todoCollectedImage = self.todoCollectedImage,
-//            let data = todoCollectedImage.pngData() {
-//            let path = getDocumentsDir()
-//            let filename = self.todoNameTF.text! + UUID().uuidString + ".png"
-//            let memoImageUrl = path.appendingPathComponent(filename)
-//
-//            try? data.write(to: memoImageUrl)
-//            return filename
-//        }
-//
-//        return self.model.pictureMemo
-//    }
-//}
+        // Configure the cell...
+
+        return cell
+    }
+    */
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+}

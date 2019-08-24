@@ -98,7 +98,7 @@ class KTVTestVC: UIViewController {
     fileprivate func pushToDetailVC(model:KTVModel?){
         let sb = UIStoryboard(name: "Main", bundle: nil)
         detailVC = (sb.instantiateViewController(withIdentifier: "KTVDetailVC") as! KTVDetailVC)
-        
+        //detailVC = KTVDetailVC()
         if let model = model {
             detailVC?.model = model
         }
