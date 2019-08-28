@@ -24,6 +24,7 @@ class KYLMViewModel: NSObject {
     let models = Variable<[KYLMModel]>([])
     // 记录当前的索引值
     var index: Int = 1
+    let disposeBag = DisposeBag()
 }
 
 extension KYLMViewModel: KYLMViewModelType {
@@ -76,8 +77,8 @@ extension KYLMViewModel: KYLMViewModelType {
                     case .completed:
                         output.refreshStatus.value = isReloadData ? .endHeaderRefresh : .endFooterRefresh
                     }
-                }).disposed(by: DisposeBag()) //disposed(by: self.rx.disposeBag)
-        }).disposed(by: DisposeBag())
+                }).disposed(by: self.disposeBag) //disposed(by: self.rx.disposeBag)
+        }).disposed(by: disposeBag)
         
         return output
     }

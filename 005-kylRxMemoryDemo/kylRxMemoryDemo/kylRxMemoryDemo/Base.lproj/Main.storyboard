@@ -147,6 +147,14 @@
                                     <action selector="btnShowRxBinderUI:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="JuU-59-vco"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-Jq-UxZ">
+                                <rect key="frame" x="283" y="221" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="moya"/>
+                                <connections>
+                                    <action selector="btnMoyaTest:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="2Hy-TM-Nah"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FVO-v9-ftW"/>

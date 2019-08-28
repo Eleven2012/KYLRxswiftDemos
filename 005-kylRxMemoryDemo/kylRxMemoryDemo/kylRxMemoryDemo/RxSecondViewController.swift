@@ -42,4 +42,9 @@ class RxSecondViewController: UIViewController {
         navigationController?.pushViewController(KRxTextFieldTestVC(), animated: true)
     }
     
+    @IBAction func btnMoyaTest(_ sender: Any) {
+        navigationController?.pushViewController(KYLMoyaTestViewController(), animated: true)
+    }
+    
+    
 }
