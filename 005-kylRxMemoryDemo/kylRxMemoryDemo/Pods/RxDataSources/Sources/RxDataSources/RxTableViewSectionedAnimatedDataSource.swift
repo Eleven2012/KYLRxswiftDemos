@@ -15,11 +15,11 @@ import RxCocoa
 #endif
 import Differentiator
 
-open class RxTableViewSectionedAnimatedDataSource<Section: AnimatableSectionModelType>
-    : TableViewSectionedDataSource<Section>
+open class RxTableViewSectionedAnimatedDataSource<S: AnimatableSectionModelType>
+    : TableViewSectionedDataSource<S>
     , RxTableViewDataSourceType {
-    public typealias Element = [Section]
-    public typealias DecideViewTransition = (TableViewSectionedDataSource<Section>, UITableView, [Changeset<Section>]) -> ViewTransition
+    public typealias Element = [S]
+    public typealias DecideViewTransition = (TableViewSectionedDataSource<S>, UITableView, [Changeset<S>]) -> ViewTransition
 
     /// Animation configuration for data source
     public var animationConfiguration: AnimationConfiguration
@@ -78,53 +78,43 @@ open class RxTableViewSectionedAnimatedDataSource<Section: AnimatableSectionMode
     open func tableView(_ tableView: UITableView, observedEvent: Event<Element>) {
         Binder(self) { dataSource, newSections in
             #if DEBUG
-                dataSource._dataSourceBound = true
+                self._dataSourceBound = true
             #endif
-            if !dataSource.dataSet {
-                dataSource.dataSet = true
+            if !self.dataSet {
+                self.dataSet = true
                 dataSource.setSections(newSections)
                 tableView.reloadData()
             }
             else {
-                // if view is not in view hierarchy, performing batch updates will crash the app
-                if tableView.window == nil {
-                    dataSource.setSections(newSections)
-                    tableView.reloadData()
-                    return
-                }
-                let oldSections = dataSource.sectionModels
-                do {
-                    let differences = try Diff.differencesForSectionedView(initialSections: oldSections, finalSections: newSections)
-                    
-                    switch dataSource.decideViewTransition(dataSource, tableView, differences) {
-                    case .animated:
-                        // each difference must be run in a separate 'performBatchUpdates', otherwise it crashes.
-                        // this is a limitation of Diff tool
-                        for difference in differences {
-                            let updateBlock = {
-                                // sections must be set within updateBlock in 'performBatchUpdates'
-                                dataSource.setSections(difference.finalSections)
-                                tableView.batchUpdates(difference, animationConfiguration: dataSource.animationConfiguration)
-                            }
-                            if #available(iOS 11, tvOS 11, *) {
-                                tableView.performBatchUpdates(updateBlock, completion: nil)
-                            } else {
-                                tableView.beginUpdates()
-                                updateBlock()
-                                tableView.endUpdates()
-                            }
-                        }
-                        
-                    case .reload:
+                DispatchQueue.main.async {
+                    // if view is not in view hierarchy, performing batch updates will crash the app
+                    if tableView.window == nil {
                         dataSource.setSections(newSections)
                         tableView.reloadData()
                         return
                     }
-                }
-                catch let e {
-                    rxDebugFatalError(e)
-                    dataSource.setSections(newSections)
-                    tableView.reloadData()
+                    let oldSections = dataSource.sectionModels
+                    do {
+                        let differences = try Diff.differencesForSectionedView(initialSections: oldSections, finalSections: newSections)
+
+                        switch self.decideViewTransition(self, tableView, differences) {
+                        case .animated:
+                            for difference in differences {
+                                dataSource.setSections(difference.finalSections)
+
+                                tableView.performBatchUpdates(difference, animationConfiguration: self.animationConfiguration)
+                            }
+                        case .reload:
+                            self.setSections(newSections)
+                            tableView.reloadData()
+                            return
+                        }
+                    }
+                    catch let e {
+                        rxDebugFatalError(e)
+                        self.setSections(newSections)
+                        tableView.reloadData()
+                    }
                 }
             }
         }.on(observedEvent)

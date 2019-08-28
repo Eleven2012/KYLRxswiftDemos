@@ -47,12 +47,3 @@ extension AnimatableSectionModel
     }
 
 }
-
-extension AnimatableSectionModel
-    : Equatable where Section: Equatable {
-    
-    public static func == (lhs: AnimatableSectionModel, rhs: AnimatableSectionModel) -> Bool {
-        return lhs.model == rhs.model
-            && lhs.items == rhs.items
-    }
-}

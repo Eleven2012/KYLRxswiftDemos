@@ -63,7 +63,7 @@ extension Reactive where Base: NSObject {
      - parameter retainSelf: Retains self during observation if set `true`.
      - returns: Observable sequence of objects on `keyPath`.
      */
-    public func observe<Element>(_ type: Element.Type, _ keyPath: String, options: KeyValueObservingOptions = [.new, .initial], retainSelf: Bool = true) -> Observable<Element?> {
+    public func observe<E>(_ type: E.Type, _ keyPath: String, options: KeyValueObservingOptions = [.new, .initial], retainSelf: Bool = true) -> Observable<E?> {
         return KVOObservable(object: self.base, keyPath: keyPath, options: options, retainTarget: retainSelf).asObservable()
     }
 }
@@ -87,10 +87,10 @@ extension Reactive where Base: NSObject {
      - parameter options: KVO mechanism notification options.
      - returns: Observable sequence of objects on `keyPath`.
      */
-    public func observeWeakly<Element>(_ type: Element.Type, _ keyPath: String, options: KeyValueObservingOptions = [.new, .initial]) -> Observable<Element?> {
+    public func observeWeakly<E>(_ type: E.Type, _ keyPath: String, options: KeyValueObservingOptions = [.new, .initial]) -> Observable<E?> {
         return observeWeaklyKeyPathFor(self.base, keyPath: keyPath, options: options)
             .map { n in
-                return n as? Element
+                return n as? E
             }
     }
 }
@@ -254,7 +254,7 @@ extension Reactive where Base: AnyObject {
     fileprivate final class DeallocatingProxy
         : MessageInterceptorSubject
         , RXDeallocatingObserver {
-        typealias Element = ()
+        typealias E = ()
 
         let messageSent = ReplaySubject<()>.create(bufferSize: 1)
 
@@ -279,7 +279,7 @@ extension Reactive where Base: AnyObject {
     fileprivate final class MessageSentProxy
         : MessageInterceptorSubject
         , RXMessageSentObserver {
-        typealias Element = [AnyObject]
+        typealias E = [AnyObject]
 
         let messageSent = PublishSubject<[Any]>()
         let methodInvoked = PublishSubject<[Any]>()
@@ -364,7 +364,7 @@ fileprivate final class KVOObserver
 fileprivate final class KVOObservable<Element>
     : ObservableType
     , KVOObservableProtocol {
-    typealias Element = Element?
+    typealias E = Element?
 
     unowned var target: AnyObject
     var strongTarget: AnyObject?
@@ -383,7 +383,7 @@ fileprivate final class KVOObservable<Element>
         }
     }
 
-    func subscribe<Observer: ObserverType>(_ observer: Observer) -> Disposable where Observer.Element == Element? {
+    func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.E == Element? {
         let observer = KVOObserver(parent: self) { value in
             if value as? NSNull != nil {
                 observer.on(.next(nil))
@@ -438,7 +438,7 @@ fileprivate extension KeyValueObservingOptions {
         return properyRuntimeInfo.range(of: ",W,") != nil
     }
 
-    fileprivate extension ObservableType where Element == AnyObject? {
+    fileprivate extension ObservableType where E == AnyObject? {
         func finishWithNilWhenDealloc(_ target: NSObject)
             -> Observable<AnyObject?> {
                 let deallocating = target.rx.deallocating

@@ -15,8 +15,8 @@ extension ObservableType {
      - parameter keySelector: A function to extract the key for each element.
      - returns: A sequence of observable groups, each of which corresponds to a unique key value, containing all elements that share that same key value.
      */
-    public func groupBy<Key: Hashable>(keySelector: @escaping (Element) throws -> Key)
-        -> Observable<GroupedObservable<Key, Element>> {
+    public func groupBy<K: Hashable>(keySelector: @escaping (E) throws -> K)
+        -> Observable<GroupedObservable<K,E>> {
         return GroupBy(source: self.asObservable(), selector: keySelector)
     }
 }
@@ -30,7 +30,7 @@ final private class GroupedObservableImpl<Element>: Observable<Element> {
         self._refCount = refCount
     }
 
-    override public func subscribe<Observer: ObserverType>(_ observer: Observer) -> Disposable where Observer.Element == Element {
+    override public func subscribe<O: ObserverType>(_ observer: O) -> Disposable where O.E == E {
         let release = self._refCount.retain()
         let subscription = self._subject.subscribe(observer)
         return Disposables.create(release, subscription)
@@ -38,10 +38,11 @@ final private class GroupedObservableImpl<Element>: Observable<Element> {
 }
 
 
-final private class GroupBySink<Key: Hashable, Element, Observer: ObserverType>
-    : Sink<Observer>
-    , ObserverType where Observer.Element == GroupedObservable<Key, Element> {
-    typealias ResultType = Observer.Element 
+final private class GroupBySink<Key: Hashable, Element, O: ObserverType>
+    : Sink<O>
+    , ObserverType where O.E == GroupedObservable<Key, Element> {
+    typealias E = Element
+    typealias ResultType = O.E
     typealias Parent = GroupBy<Key, Element>
 
     private let _parent: Parent
@@ -49,7 +50,7 @@ final private class GroupBySink<Key: Hashable, Element, Observer: ObserverType>
     private var _refCountDisposable: RefCountDisposable!
     private var _groupedSubjectTable: [Key: PublishSubject<Element>]
     
-    init(parent: Parent, observer: Observer, cancel: Cancelable) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         self._parent = parent
         self._groupedSubjectTable = [Key: PublishSubject<Element>]()
         super.init(observer: observer, cancel: cancel)
@@ -126,7 +127,7 @@ final private class GroupBy<Key: Hashable, Element>: Producer<GroupedObservable<
         self._selector = selector
     }
 
-    override func run<Observer: ObserverType>(_ observer: Observer, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where Observer.Element == GroupedObservable<Key,Element> {
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == GroupedObservable<Key,Element> {
         let sink = GroupBySink(parent: self, observer: observer, cancel: cancel)
         return (sink: sink, subscription: sink.run())
     }

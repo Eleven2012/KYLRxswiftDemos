@@ -16,21 +16,21 @@ enum TailRecursiveSinkCommand {
 #endif
 
 /// This class is usually used with `Generator` version of the operators.
-class TailRecursiveSink<Sequence: Swift.Sequence, Observer: ObserverType>
-    : Sink<Observer>
-    , InvocableWithValueType where Sequence.Element: ObservableConvertibleType, Sequence.Element.Element == Observer.Element {
+class TailRecursiveSink<S: Sequence, O: ObserverType>
+    : Sink<O>
+    , InvocableWithValueType where S.Iterator.Element: ObservableConvertibleType, S.Iterator.Element.E == O.E {
     typealias Value = TailRecursiveSinkCommand
-    typealias Element = Observer.Element 
-    typealias SequenceGenerator = (generator: Sequence.Iterator, remaining: IntMax?)
+    typealias E = O.E
+    typealias SequenceGenerator = (generator: S.Iterator, remaining: IntMax?)
 
     var _generators: [SequenceGenerator] = []
     var _isDisposed = false
     var _subscription = SerialDisposable()
 
     // this is thread safe object
-    var _gate = AsyncLock<InvocableScheduledItem<TailRecursiveSink<Sequence, Observer>>>()
+    var _gate = AsyncLock<InvocableScheduledItem<TailRecursiveSink<S, O>>>()
 
-    override init(observer: Observer, cancel: Cancelable) {
+    override init(observer: O, cancel: Cancelable) {
         super.init(observer: observer, cancel: cancel)
     }
 
@@ -61,14 +61,14 @@ class TailRecursiveSink<Sequence: Swift.Sequence, Observer: ObserverType>
         self.dispose()
     }
 
-    func extract(_ observable: Observable<Element>) -> SequenceGenerator? {
+    func extract(_ observable: Observable<E>) -> SequenceGenerator? {
         rxAbstractMethod()
     }
 
     // should be done on gate locked
 
     private func moveNextCommand() {
-        var next: Observable<Element>?
+        var next: Observable<E>?
 
         repeat {
             guard let (g, left) = self._generators.last else {
@@ -130,7 +130,7 @@ class TailRecursiveSink<Sequence: Swift.Sequence, Observer: ObserverType>
         disposable.setDisposable(self.subscribeToNext(existingNext))
     }
 
-    func subscribeToNext(_ source: Observable<Element>) -> Disposable {
+    func subscribeToNext(_ source: Observable<E>) -> Disposable {
         rxAbstractMethod()
     }
 

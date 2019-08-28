@@ -8,13 +8,13 @@
 
 import Foundation
 
-public struct Changeset<Section: SectionModelType> {
-    public typealias Item = Section.Item
+public struct Changeset<S: SectionModelType> {
+    public typealias I = S.Item
 
     public let reloadData: Bool
 
-    public let originalSections: [Section]
-    public let finalSections: [Section]
+    public let originalSections: [S]
+    public let finalSections: [S]
 
     public let insertedSections: [Int]
     public let deletedSections: [Int]
@@ -27,8 +27,8 @@ public struct Changeset<Section: SectionModelType> {
     public let updatedItems: [ItemPath]
 
     init(reloadData: Bool = false,
-        originalSections: [Section] = [],
-        finalSections: [Section] = [],
+        originalSections: [S] = [],
+        finalSections: [S] = [],
         insertedSections: [Int] = [],
         deletedSections: [Int] = [],
         movedSections: [(from: Int, to: Int)] = [],
@@ -55,8 +55,8 @@ public struct Changeset<Section: SectionModelType> {
         self.updatedItems = updatedItems
     }
 
-    public static func initialValue(_ sections: [Section]) -> Changeset<Section> {
-        return Changeset<Section>(
+    public static func initialValue(_ sections: [S]) -> Changeset<S> {
+        return Changeset<S>(
             reloadData: true,
             finalSections: sections,
             insertedSections: Array(0 ..< sections.count) as [Int]

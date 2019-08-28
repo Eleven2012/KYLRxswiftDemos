@@ -11,6 +11,10 @@
 import RxSwift
 import UIKit
 
+#if swift(>=4.2)
+    public typealias UITableViewCellEditingStyle = UITableViewCell.EditingStyle
+#endif
+
 // Items
 
 extension Reactive where Base: UITableView {
@@ -39,13 +43,13 @@ extension Reactive where Base: UITableView {
          .disposed(by: disposeBag)
 
      */
-    public func items<Sequence: Swift.Sequence, Source: ObservableType>
-        (_ source: Source)
-        -> (_ cellFactory: @escaping (UITableView, Int, Sequence.Element) -> UITableViewCell)
+    public func items<S: Sequence, O: ObservableType>
+        (_ source: O)
+        -> (_ cellFactory: @escaping (UITableView, Int, S.Iterator.Element) -> UITableViewCell)
         -> Disposable
-        where Source.Element == Sequence {
+        where O.E == S {
             return { cellFactory in
-                let dataSource = RxTableViewReactiveArrayDataSourceSequenceWrapper<Sequence>(cellFactory: cellFactory)
+                let dataSource = RxTableViewReactiveArrayDataSourceSequenceWrapper<S>(cellFactory: cellFactory)
                 return self.items(dataSource: dataSource)(source)
             }
     }
@@ -73,15 +77,15 @@ extension Reactive where Base: UITableView {
              }
              .disposed(by: disposeBag)
     */
-    public func items<Sequence: Swift.Sequence, Cell: UITableViewCell, Source: ObservableType>
+    public func items<S: Sequence, Cell: UITableViewCell, O : ObservableType>
         (cellIdentifier: String, cellType: Cell.Type = Cell.self)
-        -> (_ source: Source)
-        -> (_ configureCell: @escaping (Int, Sequence.Element, Cell) -> Void)
+        -> (_ source: O)
+        -> (_ configureCell: @escaping (Int, S.Iterator.Element, Cell) -> Void)
         -> Disposable
-        where Source.Element == Sequence {
+        where O.E == S {
         return { source in
             return { configureCell in
-                let dataSource = RxTableViewReactiveArrayDataSourceSequenceWrapper<Sequence> { tv, i, item in
+                let dataSource = RxTableViewReactiveArrayDataSourceSequenceWrapper<S> { tv, i, item in
                     let indexPath = IndexPath(item: i, section: 0)
                     let cell = tv.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! Cell
                     configureCell(i, item, cell)
@@ -106,11 +110,11 @@ extension Reactive where Base: UITableView {
     */
     public func items<
             DataSource: RxTableViewDataSourceType & UITableViewDataSource,
-            Source: ObservableType>
+            O: ObservableType>
         (dataSource: DataSource)
-        -> (_ source: Source)
+        -> (_ source: O)
         -> Disposable
-        where DataSource.Element == Source.Element {
+        where DataSource.Element == O.E {
         return { source in
             // This is called for sideeffects only, and to make sure delegate proxy is in place when
             // data source is being bound.
@@ -199,7 +203,7 @@ extension Reactive where Base: UITableView {
     public var itemInserted: ControlEvent<IndexPath> {
         let source = self.dataSource.methodInvoked(#selector(UITableViewDataSource.tableView(_:commit:forRowAt:)))
             .filter { a in
-                return UITableViewCell.EditingStyle(rawValue: (try castOrThrow(NSNumber.self, a[1])).intValue) == .insert
+                return UITableViewCellEditingStyle(rawValue: (try castOrThrow(NSNumber.self, a[1])).intValue) == .insert
             }
             .map { a in
                 return (try castOrThrow(IndexPath.self, a[2]))
@@ -214,7 +218,7 @@ extension Reactive where Base: UITableView {
     public var itemDeleted: ControlEvent<IndexPath> {
         let source = self.dataSource.methodInvoked(#selector(UITableViewDataSource.tableView(_:commit:forRowAt:)))
             .filter { a in
-                return UITableViewCell.EditingStyle(rawValue: (try castOrThrow(NSNumber.self, a[1])).intValue) == .delete
+                return UITableViewCellEditingStyle(rawValue: (try castOrThrow(NSNumber.self, a[1])).intValue) == .delete
             }
             .map { a in
                 return try castOrThrow(IndexPath.self, a[2])

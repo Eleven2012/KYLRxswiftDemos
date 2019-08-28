@@ -6,7 +6,7 @@
 //  Copyright © 2017 Krunoslav Zaher. All rights reserved.
 //
 
-extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Never {
+extension PrimitiveSequenceType where TraitType == CompletableTrait, ElementType == Never {
     /**
      Concatenates the second observable sequence to `self` upon successful termination of `self`.
 
@@ -15,7 +15,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Neve
      - parameter second: Second observable sequence.
      - returns: An observable sequence that contains the elements of `self`, followed by those of the second sequence.
      */
-    public func andThen<Element>(_ second: Single<Element>) -> Single<Element> {
+    public func andThen<E>(_ second: Single<E>) -> Single<E> {
         let completable = self.primitiveSequence.asObservable()
         return Single(raw: ConcatCompletable(completable: completable, second: second.asObservable()))
     }
@@ -28,7 +28,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Neve
      - parameter second: Second observable sequence.
      - returns: An observable sequence that contains the elements of `self`, followed by those of the second sequence.
      */
-    public func andThen<Element>(_ second: Maybe<Element>) -> Maybe<Element> {
+    public func andThen<E>(_ second: Maybe<E>) -> Maybe<E> {
         let completable = self.primitiveSequence.asObservable()
         return Maybe(raw: ConcatCompletable(completable: completable, second: second.asObservable()))
     }
@@ -54,7 +54,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Neve
      - parameter second: Second observable sequence.
      - returns: An observable sequence that contains the elements of `self`, followed by those of the second sequence.
      */
-    public func andThen<Element>(_ second: Observable<Element>) -> Observable<Element> {
+    public func andThen<E>(_ second: Observable<E>) -> Observable<E> {
         let completable = self.primitiveSequence.asObservable()
         return ConcatCompletable(completable: completable, second: second.asObservable())
     }
@@ -69,28 +69,28 @@ final private class ConcatCompletable<Element>: Producer<Element> {
         self._second = second
     }
 
-    override func run<Observer: ObserverType>(_ observer: Observer, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where Observer.Element == Element {
+    override func run<O>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O : ObserverType, O.E == Element {
         let sink = ConcatCompletableSink(parent: self, observer: observer, cancel: cancel)
         let subscription = sink.run()
         return (sink: sink, subscription: subscription)
     }
 }
 
-final private class ConcatCompletableSink<Observer: ObserverType>
-    : Sink<Observer>
+final private class ConcatCompletableSink<O: ObserverType>
+    : Sink<O>
     , ObserverType {
-    typealias Element = Never
-    typealias Parent = ConcatCompletable<Observer.Element>
+    typealias E = Never
+    typealias Parent = ConcatCompletable<O.E>
 
     private let _parent: Parent
     private let _subscription = SerialDisposable()
     
-    init(parent: Parent, observer: Observer, cancel: Cancelable) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         self._parent = parent
         super.init(observer: observer, cancel: cancel)
     }
 
-    func on(_ event: Event<Element>) {
+    func on(_ event: Event<E>) {
         switch event {
         case .error(let error):
             self.forwardOn(.error(error))
@@ -111,11 +111,11 @@ final private class ConcatCompletableSink<Observer: ObserverType>
     }
 }
 
-final private class ConcatCompletableSinkOther<Observer: ObserverType>
+final private class ConcatCompletableSinkOther<O: ObserverType>
     : ObserverType {
-    typealias Element = Observer.Element 
+    typealias E = O.E
 
-    typealias Parent = ConcatCompletableSink<Observer>
+    typealias Parent = ConcatCompletableSink<O>
     
     private let _parent: Parent
 
@@ -123,7 +123,7 @@ final private class ConcatCompletableSinkOther<Observer: ObserverType>
         self._parent = parent
     }
 
-    func on(_ event: Event<Observer.Element>) {
+    func on(_ event: Event<O.E>) {
         self._parent.forwardOn(event)
         if event.isStopEvent {
             self._parent.dispose()

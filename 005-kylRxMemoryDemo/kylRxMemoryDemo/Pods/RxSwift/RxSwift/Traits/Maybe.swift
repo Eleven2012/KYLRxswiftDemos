@@ -26,8 +26,8 @@ public enum MaybeEvent<Element> {
     case completed
 }
 
-extension PrimitiveSequenceType where Trait == MaybeTrait {
-    public typealias MaybeObserver = (MaybeEvent<Element>) -> Void
+extension PrimitiveSequenceType where TraitType == MaybeTrait {
+    public typealias MaybeObserver = (MaybeEvent<ElementType>) -> Void
     
     /**
      Creates an observable sequence from a specified subscribe method implementation.
@@ -37,8 +37,8 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter subscribe: Implementation of the resulting observable sequence's `subscribe` method.
      - returns: The observable sequence with the specified implementation for the `subscribe` method.
      */
-    public static func create(subscribe: @escaping (@escaping MaybeObserver) -> Disposable) -> PrimitiveSequence<Trait, Element> {
-        let source = Observable<Element>.create { observer in
+    public static func create(subscribe: @escaping (@escaping MaybeObserver) -> Disposable) -> PrimitiveSequence<TraitType, ElementType> {
+        let source = Observable<ElementType>.create { observer in
             return subscribe { event in
                 switch event {
                 case .success(let element):
@@ -60,7 +60,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      
      - returns: Subscription for `observer` that can be used to cancel production of sequence elements and free resources.
      */
-    public func subscribe(_ observer: @escaping (MaybeEvent<Element>) -> Void) -> Disposable {
+    public func subscribe(_ observer: @escaping (MaybeEvent<ElementType>) -> Void) -> Disposable {
         var stopped = false
         return self.primitiveSequence.asObservable().subscribe { event in
             if stopped { return }
@@ -85,7 +85,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter onCompleted: Action to invoke upon graceful termination of the observable sequence.
      - returns: Subscription object used to unsubscribe from the observable sequence.
      */
-    public func subscribe(onSuccess: ((Element) -> Void)? = nil,
+    public func subscribe(onSuccess: ((ElementType) -> Void)? = nil,
                           onError: ((Swift.Error) -> Void)? = nil,
                           onCompleted: (() -> Void)? = nil) -> Disposable {
         #if DEBUG
@@ -111,7 +111,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
     }
 }
 
-extension PrimitiveSequenceType where Trait == MaybeTrait {
+extension PrimitiveSequenceType where TraitType == MaybeTrait {
     /**
      Returns an observable sequence that contains a single element.
      
@@ -120,7 +120,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter element: Single element in the resulting observable sequence.
      - returns: An observable sequence containing the single specified element.
      */
-    public static func just(_ element: Element) -> Maybe<Element> {
+    public static func just(_ element: ElementType) -> Maybe<ElementType> {
         return Maybe(raw: Observable.just(element))
     }
     
@@ -133,7 +133,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter scheduler: Scheduler to send the single element on.
      - returns: An observable sequence containing the single specified element.
      */
-    public static func just(_ element: Element, scheduler: ImmediateSchedulerType) -> Maybe<Element> {
+    public static func just(_ element: ElementType, scheduler: ImmediateSchedulerType) -> Maybe<ElementType> {
         return Maybe(raw: Observable.just(element, scheduler: scheduler))
     }
 
@@ -144,7 +144,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
 
      - returns: The observable sequence that terminates with specified error.
      */
-    public static func error(_ error: Swift.Error) -> Maybe<Element> {
+    public static func error(_ error: Swift.Error) -> Maybe<ElementType> {
         return PrimitiveSequence(raw: Observable.error(error))
     }
 
@@ -155,7 +155,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
 
      - returns: An observable sequence whose observers will never get called.
      */
-    public static func never() -> Maybe<Element> {
+    public static func never() -> Maybe<ElementType> {
         return PrimitiveSequence(raw: Observable.never())
     }
 
@@ -166,45 +166,36 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
 
      - returns: An observable sequence with no elements.
      */
-    public static func empty() -> Maybe<Element> {
+    public static func empty() -> Maybe<ElementType> {
         return Maybe(raw: Observable.empty())
     }
 }
 
-extension PrimitiveSequenceType where Trait == MaybeTrait {
+extension PrimitiveSequenceType where TraitType == MaybeTrait {
     /**
      Invokes an action for each event in the observable sequence, and propagates all observer messages through the result sequence.
      
      - seealso: [do operator on reactivex.io](http://reactivex.io/documentation/operators/do.html)
      
      - parameter onNext: Action to invoke for each element in the observable sequence.
-     - parameter afterNext: Action to invoke for each element after the observable has passed an onNext event along to its downstream.
      - parameter onError: Action to invoke upon errored termination of the observable sequence.
-     - parameter afterError: Action to invoke after errored termination of the observable sequence.
      - parameter onCompleted: Action to invoke upon graceful termination of the observable sequence.
-     - parameter afterCompleted: Action to invoke after graceful termination of the observable sequence.
      - parameter onSubscribe: Action to invoke before subscribing to source observable sequence.
      - parameter onSubscribed: Action to invoke after subscribing to source observable sequence.
      - parameter onDispose: Action to invoke after subscription to source observable has been disposed for any reason. It can be either because sequence terminates for some reason or observer subscription being disposed.
      - returns: The source sequence with the side-effecting behavior applied.
      */
-    public func `do`(onNext: ((Element) throws -> Void)? = nil,
-                     afterNext: ((Element) throws -> Void)? = nil,
+    public func `do`(onNext: ((ElementType) throws -> Void)? = nil,
                      onError: ((Swift.Error) throws -> Void)? = nil,
-                     afterError: ((Swift.Error) throws -> Void)? = nil,
                      onCompleted: (() throws -> Void)? = nil,
-                     afterCompleted: (() throws -> Void)? = nil,
                      onSubscribe: (() -> Void)? = nil,
                      onSubscribed: (() -> Void)? = nil,
                      onDispose: (() -> Void)? = nil)
-        -> Maybe<Element> {
+        -> Maybe<ElementType> {
             return Maybe(raw: self.primitiveSequence.source.do(
                 onNext: onNext,
-                afterNext: afterNext,
                 onError: onError,
-                afterError: afterError,
                 onCompleted: onCompleted,
-                afterCompleted: afterCompleted,
                 onSubscribe: onSubscribe,
                 onSubscribed: onSubscribed,
                 onDispose: onDispose)
@@ -219,8 +210,8 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter predicate: A function to test each source element for a condition.
      - returns: An observable sequence that contains elements from the input sequence that satisfy the condition.
      */
-    public func filter(_ predicate: @escaping (Element) throws -> Bool)
-        -> Maybe<Element> {
+    public func filter(_ predicate: @escaping (ElementType) throws -> Bool)
+        -> Maybe<ElementType> {
             return Maybe(raw: self.primitiveSequence.source.filter(predicate))
     }
     
@@ -233,8 +224,8 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - returns: An observable sequence whose elements are the result of invoking the transform function on each element of source.
      
      */
-    public func map<Result>(_ transform: @escaping (Element) throws -> Result)
-        -> Maybe<Result> {
+    public func map<R>(_ transform: @escaping (ElementType) throws -> R)
+        -> Maybe<R> {
             return Maybe(raw: self.primitiveSequence.source.map(transform))
     }
 
@@ -246,9 +237,9 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter selector: A transform function to apply to each element.
      - returns: An observable sequence whose elements are the result of invoking the one-to-many transform function on each element of the input sequence.
      */
-    public func flatMap<Result>(_ selector: @escaping (Element) throws -> Maybe<Result>)
-        -> Maybe<Result> {
-            return Maybe<Result>(raw: self.primitiveSequence.source.flatMap(selector))
+    public func flatMap<R>(_ selector: @escaping (ElementType) throws -> Maybe<R>)
+        -> Maybe<R> {
+            return Maybe<R>(raw: self.primitiveSequence.source.flatMap(selector))
     }
 
     /**
@@ -259,7 +250,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter default: Default element to be sent if the source does not emit any elements
      - returns: An observable sequence which emits default element end completes in case the original sequence is empty
      */
-    public func ifEmpty(default: Element) -> Single<Element> {
+    public func ifEmpty(default: ElementType) -> Single<ElementType> {
         return Single(raw: self.primitiveSequence.source.ifEmpty(default: `default`))
     }
 
@@ -271,7 +262,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter switchTo: Observable sequence being returned when source sequence is empty.
      - returns: Observable sequence that contains elements from switchTo sequence if source is empty, otherwise returns source sequence elements.
      */
-    public func ifEmpty(switchTo other: Maybe<Element>) -> Maybe<Element> {
+    public func ifEmpty(switchTo other: Maybe<ElementType>) -> Maybe<ElementType> {
         return Maybe(raw: self.primitiveSequence.source.ifEmpty(switchTo: other.primitiveSequence.source))
     }
 
@@ -283,7 +274,7 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter switchTo: Observable sequence being returned when source sequence is empty.
      - returns: Observable sequence that contains elements from switchTo sequence if source is empty, otherwise returns source sequence elements.
      */
-    public func ifEmpty(switchTo other: Single<Element>) -> Single<Element> {
+    public func ifEmpty(switchTo other: Single<ElementType>) -> Single<ElementType> {
         return Single(raw: self.primitiveSequence.source.ifEmpty(switchTo: other.primitiveSequence.source))
     }
 
@@ -295,8 +286,8 @@ extension PrimitiveSequenceType where Trait == MaybeTrait {
      - parameter element: Last element in an observable sequence in case error occurs.
      - returns: An observable sequence containing the source sequence's elements, followed by the `element` in case an error occurred.
      */
-    public func catchErrorJustReturn(_ element: Element)
-        -> PrimitiveSequence<Trait, Element> {
+    public func catchErrorJustReturn(_ element: ElementType)
+        -> PrimitiveSequence<TraitType, ElementType> {
         return PrimitiveSequence(raw: self.primitiveSequence.source.catchErrorJustReturn(element))
     }
 }

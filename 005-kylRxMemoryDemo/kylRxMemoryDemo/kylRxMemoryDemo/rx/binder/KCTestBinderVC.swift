@@ -178,7 +178,7 @@ class KCTestBinderVC: UIViewController {
          */
         let result = self.textFiled.rx.text.orEmpty
             .asDriver() // 普通序列转化为
-            .throttle(.milliseconds(500))
+            .throttle(0.5)
             .flatMap {
                 self.dealwithData(inputText: $0)
                     .asDriver(onErrorJustReturn: "检测到了错误")
@@ -205,7 +205,7 @@ class KCTestBinderVC: UIViewController {
          */
         let result = self.textFiled.rx.text.orEmpty
             .asSignal(onErrorJustReturn: "没有值") // 普通序列转化为signle
-            .throttle(.milliseconds(500))
+            .throttle(5)
             .flatMap {
                 self.dealwithData(inputText: $0)
                     .asSignal(onErrorJustReturn: "检测到了错误")

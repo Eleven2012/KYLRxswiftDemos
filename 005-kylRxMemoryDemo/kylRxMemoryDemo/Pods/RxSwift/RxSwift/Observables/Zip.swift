@@ -13,8 +13,8 @@ protocol ZipSinkProtocol : class
     func done(_ index: Int)
 }
 
-class ZipSink<Observer: ObserverType> : Sink<Observer>, ZipSinkProtocol {
-    typealias Element = Observer.Element
+class ZipSink<O: ObserverType> : Sink<O>, ZipSinkProtocol {
+    typealias Element = O.E
     
     let _arity: Int
 
@@ -23,7 +23,7 @@ class ZipSink<Observer: ObserverType> : Sink<Observer>, ZipSinkProtocol {
     // state
     private var _isDone: [Bool]
     
-    init(arity: Int, observer: Observer, cancel: Cancelable) {
+    init(arity: Int, observer: O, cancel: Cancelable) {
         self._isDone = [Bool](repeating: false, count: arity)
         self._arity = arity
         
@@ -58,6 +58,22 @@ class ZipSink<Observer: ObserverType> : Sink<Observer>, ZipSinkProtocol {
                 self.dispose()
             }
         }
+        else {
+            var allOthersDone = true
+            
+            let arity = self._isDone.count
+            for i in 0 ..< arity {
+                if i != index && !self._isDone[i] {
+                    allOthersDone = false
+                    break
+                }
+            }
+            
+            if allOthersDone {
+                self.forwardOn(.completed)
+                self.dispose()
+            }
+        }
     }
     
     func fail(_ error: Swift.Error) {
@@ -82,11 +98,12 @@ class ZipSink<Observer: ObserverType> : Sink<Observer>, ZipSinkProtocol {
     }
 }
 
-final class ZipObserver<Element>
+final class ZipObserver<ElementType>
     : ObserverType
     , LockOwnerType
     , SynchronizedOnType {
-    typealias ValueSetter = (Element) -> Void
+    typealias E = ElementType
+    typealias ValueSetter = (ElementType) -> Void
 
     private var _parent: ZipSinkProtocol?
     
@@ -105,11 +122,11 @@ final class ZipObserver<Element>
         self._setNextValue = setNextValue
     }
     
-    func on(_ event: Event<Element>) {
+    func on(_ event: Event<E>) {
         self.synchronizedOn(event)
     }
 
-    func _synchronized_on(_ event: Event<Element>) {
+    func _synchronized_on(_ event: Event<E>) {
         if self._parent != nil {
             switch event {
             case .next:

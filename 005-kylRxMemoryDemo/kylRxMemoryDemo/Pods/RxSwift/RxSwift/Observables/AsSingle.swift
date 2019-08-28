@@ -6,12 +6,13 @@
 //  Copyright © 2017 Krunoslav Zaher. All rights reserved.
 //
 
-fileprivate final class AsSingleSink<Observer: ObserverType> : Sink<Observer>, ObserverType { 
-    typealias Element = Observer.Element
+fileprivate final class AsSingleSink<O: ObserverType> : Sink<O>, ObserverType {
+    typealias ElementType = O.E
+    typealias E = ElementType
 
-    private var _element: Event<Element>?
+    private var _element: Event<E>?
 
-    func on(_ event: Event<Element>) {
+    func on(_ event: Event<E>) {
         switch event {
         case .next:
             if self._element != nil {
@@ -43,7 +44,7 @@ final class AsSingle<Element>: Producer<Element> {
         self._source = source
     }
 
-    override func run<Observer: ObserverType>(_ observer: Observer, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where Observer.Element == Element {
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
         let sink = AsSingleSink(observer: observer, cancel: cancel)
         let subscription = self._source.subscribe(sink)
         return (sink: sink, subscription: subscription)

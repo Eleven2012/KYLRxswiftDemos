@@ -6,10 +6,12 @@
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-class ObserverBase<Element> : Disposable, ObserverType {
+class ObserverBase<ElementType> : Disposable, ObserverType {
+    typealias E = ElementType
+
     private let _isStopped = AtomicInt(0)
 
-    func on(_ event: Event<Element>) {
+    func on(_ event: Event<E>) {
         switch event {
         case .next:
             if load(self._isStopped) == 0 {
@@ -22,7 +24,7 @@ class ObserverBase<Element> : Disposable, ObserverType {
         }
     }
 
-    func onCore(_ event: Event<Element>) {
+    func onCore(_ event: Event<E>) {
         rxAbstractMethod()
     }
 

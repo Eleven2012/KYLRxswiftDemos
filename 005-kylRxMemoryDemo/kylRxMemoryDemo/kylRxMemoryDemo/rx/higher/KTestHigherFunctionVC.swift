@@ -137,7 +137,7 @@ extension KTestHigherFunctionVC {
         // 首先拥有和publish一样的能力，共享 Observable sequence， 其次使用replay还需要我们传入一个参数（buffer size）来缓存已发送的事件，当有新的订阅者订阅了，会把缓存的事件发送给新的订阅者
         print("*****replay*****")
         
-        let interval = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance).replay(5)
+        let interval = Observable<Int>.interval(1, scheduler: MainScheduler.instance).replay(5)
         
         interval.subscribe(onNext: { print(Date.time,"订阅: 1, 事件: \($0)") })
             .disposed(by: self.disposeBag)
@@ -183,7 +183,7 @@ extension KTestHigherFunctionVC {
         // 注意:需要调用connect之后才会开始发送事件
         print("*****testPushConnect*****")
         
-        let interval = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance).publish()
+        let interval = Observable<Int>.interval(1, scheduler: MainScheduler.instance).publish()
         
         interval.subscribe(onNext: { print("订阅: 1, 事件: \($0)") })
             .disposed(by: disposeBag)
@@ -222,7 +222,7 @@ extension KTestHigherFunctionVC {
         
         print("*****testWithoutConnect*****")
         
-        let interval = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+        let interval = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
         
         interval.subscribe(onNext: { print("订阅: 1, 事件: \($0)") })
             .disposed(by: disposeBag)
@@ -855,7 +855,7 @@ extension KTestHigherFunctionVC {
     
     func intervalObservableTest(){
         
-        self.intervalOB = Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.init())
+        self.intervalOB = Observable<Int>.interval(1, scheduler: MainScheduler.init())
         
         self.intervalOB.subscribe(onNext: { (num) in
             self.showSencondNum.text = String(num)

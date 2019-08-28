@@ -143,11 +143,10 @@ To use one of the two animated data sources, you must take a few extra steps on 
 
 ## Requirements
 
-Xcode 10.2
+Xcode 9.0
 
-Swift 5.0
+Swift 4.0
 
-For Swift 4.x version please use versions `3.0.0 ... 3.1.0`
 For Swift 3.x version please use versions `1.0 ... 2.0.2`
 For Swift 2.3 version please use versions `0.1 ... 0.9`
 

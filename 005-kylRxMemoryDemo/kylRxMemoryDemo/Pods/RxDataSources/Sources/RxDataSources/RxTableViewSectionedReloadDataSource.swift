@@ -15,15 +15,15 @@ import RxCocoa
 #endif
 import Differentiator
 
-open class RxTableViewSectionedReloadDataSource<Section: SectionModelType>
-    : TableViewSectionedDataSource<Section>
+open class RxTableViewSectionedReloadDataSource<S: SectionModelType>
+    : TableViewSectionedDataSource<S>
     , RxTableViewDataSourceType {
-    public typealias Element = [Section]
+    public typealias Element = [S]
 
     open func tableView(_ tableView: UITableView, observedEvent: Event<Element>) {
         Binder(self) { dataSource, element in
             #if DEBUG
-                dataSource._dataSourceBound = true
+                self._dataSourceBound = true
             #endif
             dataSource.setSections(element)
             tableView.reloadData()

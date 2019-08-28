@@ -6,11 +6,11 @@
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import enum Dispatch.DispatchTimeInterval
+import struct Foundation.TimeInterval
 import struct Foundation.Date
 
 // Type that represents time interval in the context of RxSwift.
-public typealias RxTimeInterval = DispatchTimeInterval
+public typealias RxTimeInterval = TimeInterval
 
 /// Type that represents absolute time in the context of RxSwift.
 public typealias RxTime = Date

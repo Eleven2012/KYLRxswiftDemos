@@ -15,16 +15,16 @@ import RxCocoa
 #endif
 import Differentiator
 
-open class RxCollectionViewSectionedReloadDataSource<Section: SectionModelType>
-    : CollectionViewSectionedDataSource<Section>
+open class RxCollectionViewSectionedReloadDataSource<S: SectionModelType>
+    : CollectionViewSectionedDataSource<S>
     , RxCollectionViewDataSourceType {
     
-    public typealias Element = [Section]
+    public typealias Element = [S]
 
     open func collectionView(_ collectionView: UICollectionView, observedEvent: Event<Element>) {
         Binder(self) { dataSource, element in
             #if DEBUG
-                dataSource._dataSourceBound = true
+                self._dataSourceBound = true
             #endif
             dataSource.setSections(element)
             collectionView.reloadData()

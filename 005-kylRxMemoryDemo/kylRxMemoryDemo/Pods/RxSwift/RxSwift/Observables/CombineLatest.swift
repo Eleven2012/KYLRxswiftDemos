@@ -12,10 +12,10 @@ protocol CombineLatestProtocol : class {
     func done(_ index: Int)
 }
 
-class CombineLatestSink<Observer: ObserverType>
-    : Sink<Observer>
+class CombineLatestSink<O: ObserverType>
+    : Sink<O>
     , CombineLatestProtocol {
-    typealias Element = Observer.Element 
+    typealias Element = O.E
    
     let _lock = RecursiveLock()
 
@@ -25,7 +25,7 @@ class CombineLatestSink<Observer: ObserverType>
     private var _hasValue: [Bool]
     private var _isDone: [Bool]
    
-    init(arity: Int, observer: Observer, cancel: Cancelable) {
+    init(arity: Int, observer: O, cancel: Cancelable) {
         self._arity = arity
         self._hasValue = [Bool](repeating: false, count: arity)
         self._isDone = [Bool](repeating: false, count: arity)
@@ -90,10 +90,11 @@ class CombineLatestSink<Observer: ObserverType>
     }
 }
 
-final class CombineLatestObserver<Element>
+final class CombineLatestObserver<ElementType>
     : ObserverType
     , LockOwnerType
     , SynchronizedOnType {
+    typealias Element = ElementType
     typealias ValueSetter = (Element) -> Void
     
     private let _parent: CombineLatestProtocol

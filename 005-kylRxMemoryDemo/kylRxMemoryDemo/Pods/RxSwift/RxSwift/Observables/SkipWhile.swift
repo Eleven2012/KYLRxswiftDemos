@@ -16,19 +16,19 @@ extension ObservableType {
      - parameter predicate: A function to test each element for a condition.
      - returns: An observable sequence that contains the elements from the input sequence starting at the first element in the linear series that does not pass the test specified by predicate.
      */
-    public func skipWhile(_ predicate: @escaping (Element) throws -> Bool) -> Observable<Element> {
+    public func skipWhile(_ predicate: @escaping (E) throws -> Bool) -> Observable<E> {
         return SkipWhile(source: self.asObservable(), predicate: predicate)
     }
 }
 
-final private class SkipWhileSink<Observer: ObserverType>: Sink<Observer>, ObserverType {
-    typealias Element = Observer.Element 
+final private class SkipWhileSink<O: ObserverType>: Sink<O>, ObserverType {
+    typealias Element = O.E
     typealias Parent = SkipWhile<Element>
 
     fileprivate let _parent: Parent
     fileprivate var _running = false
 
-    init(parent: Parent, observer: Observer, cancel: Cancelable) {
+    init(parent: Parent, observer: O, cancel: Cancelable) {
         self._parent = parent
         super.init(observer: observer, cancel: cancel)
     }
@@ -67,7 +67,7 @@ final private class SkipWhile<Element>: Producer<Element> {
         self._predicate = predicate
     }
 
-    override func run<Observer: ObserverType>(_ observer: Observer, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where Observer.Element == Element {
+    override func run<O : ObserverType>(_ observer: O, cancel: Cancelable) -> (sink: Disposable, subscription: Disposable) where O.E == Element {
         let sink = SkipWhileSink(parent: self, observer: observer, cancel: cancel)
         let subscription = self._source.subscribe(sink)
         return (sink: sink, subscription: subscription)

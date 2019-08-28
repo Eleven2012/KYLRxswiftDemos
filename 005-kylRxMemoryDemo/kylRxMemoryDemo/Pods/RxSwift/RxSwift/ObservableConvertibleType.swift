@@ -6,16 +6,13 @@
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-/// Type that can be converted to observable sequence (`Observable<Element>`).
+/// Type that can be converted to observable sequence (`Observable<E>`).
 public protocol ObservableConvertibleType {
     /// Type of elements in sequence.
-    associatedtype Element
-
-    @available(*, deprecated, message: "Use `Element` instead.")
-    typealias E = Element
+    associatedtype E
 
     /// Converts `self` to `Observable` sequence.
     ///
     /// - returns: Observable sequence that represents `self`.
-    func asObservable() -> Observable<Element>
+    func asObservable() -> Observable<E>
 }

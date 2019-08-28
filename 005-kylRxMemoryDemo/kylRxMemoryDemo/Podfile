@@ -6,23 +6,22 @@ target 'kylRxMemoryDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'NSObject+Rx'
-  #pod 'Moya/RxSwift'
+  pod 'Moya/RxSwift'
   pod 'ObjectMapper'
   pod 'RxDataSources'
   pod 'Then'
   pod 'Kingfisher'
-  pod 'SnapKit', '~> 5.0.0'
+  pod 'SnapKit'
   pod 'Reusable'
   pod 'MJRefresh'
   pod 'SVProgressHUD'
   
   pod 'dsBridge'
   pod 'HandyJSON'
-  pod 'Alamofire'
-  pod 'Moya'
+
   pod 'SwiftyJSON'
   pod 'JXPhotoBrowser'
   pod 'BayMaxProtector'
