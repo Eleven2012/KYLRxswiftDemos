@@ -12,10 +12,21 @@ PODS:
     - Kingfisher
   - Kingfisher (5.7.1)
   - MJRefresh (3.2.0)
-  - Moya/Core (13.0.1):
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-ObjectMapper (2.8):
+    - Moya-ObjectMapper/Core (= 2.8)
+  - Moya-ObjectMapper/Core (2.8):
+    - Moya (~> 12.0)
+    - ObjectMapper (~> 3.4)
+  - Moya-ObjectMapper/RxSwift (2.8):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift (~> 4)
+  - Moya/Core (12.0.1):
     - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - Moya/RxSwift (13.0.1):
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
     - Moya/Core
     - RxSwift (~> 4.0)
   - "NSObject+Rx (4.4.1)":
@@ -46,19 +57,23 @@ PODS:
   - WCDBOptimizedSQLCipher (1.2.1)
 
 DEPENDENCIES:
+  - Alamofire
   - BayMaxProtector
   - dsBridge
   - HandyJSON
   - JXPhotoBrowser
   - Kingfisher
   - MJRefresh
+  - Moya (~> 12.0.1)
+  - Moya-ObjectMapper
+  - Moya-ObjectMapper/RxSwift
   - Moya/RxSwift
   - "NSObject+Rx"
   - ObjectMapper
   - Reusable
   - RxCocoa
   - RxDataSources
-  - RxSwift
+  - RxSwift (~> 4.4)
   - SnapKit
   - SVProgressHUD
   - SwiftyJSON
@@ -76,6 +91,7 @@ SPEC REPOS:
     - Kingfisher
     - MJRefresh
     - Moya
+    - Moya-ObjectMapper
     - "NSObject+Rx"
     - ObjectMapper
     - Result
@@ -100,7 +116,8 @@ SPEC CHECKSUMS:
   JXPhotoBrowser: 44657e0dc05a710c6ea86a8b4686badd760760f7
   Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
@@ -116,6 +133,6 @@ SPEC CHECKSUMS:
   WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
 
-PODFILE CHECKSUM: bca2d324cc319de625ee18bc42b5e5bede4ebeb7
+PODFILE CHECKSUM: e1e794f599532da49626962a54c90e69ce64367d
 
 COCOAPODS: 1.7.5

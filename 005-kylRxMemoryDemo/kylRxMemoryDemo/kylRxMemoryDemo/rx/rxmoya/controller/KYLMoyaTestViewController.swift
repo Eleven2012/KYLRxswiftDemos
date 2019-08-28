@@ -20,6 +20,7 @@ import MJRefresh
 class KYLMoyaTestViewController: UIViewController {
 
     let viewModel = KYLMViewModel()
+
     let tableView = UITableView().then {
         $0.backgroundColor = UIColor.red
         $0.register(cellType: KYLMTableViewCell.self)

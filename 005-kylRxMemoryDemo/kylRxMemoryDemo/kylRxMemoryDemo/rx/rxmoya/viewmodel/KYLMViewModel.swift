@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import NSObject_Rx
 
 enum KYLMRefreshStatus {
     case none
@@ -24,7 +25,6 @@ class KYLMViewModel: NSObject {
     let models = Variable<[KYLMModel]>([])
     // 记录当前的索引值
     var index: Int = 1
-    let disposeBag = DisposeBag()
 }
 
 extension KYLMViewModel: KYLMViewModelType {
@@ -77,8 +77,8 @@ extension KYLMViewModel: KYLMViewModelType {
                     case .completed:
                         output.refreshStatus.value = isReloadData ? .endHeaderRefresh : .endFooterRefresh
                     }
-                }).disposed(by: self.disposeBag) //disposed(by: self.rx.disposeBag)
-        }).disposed(by: disposeBag)
+                }).disposed(by: self.rx.disposeBag)
+        }).disposed(by: rx.disposeBag)
         
         return output
     }

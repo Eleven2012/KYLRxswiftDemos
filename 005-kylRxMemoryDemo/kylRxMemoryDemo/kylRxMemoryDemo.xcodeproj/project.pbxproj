@@ -60,6 +60,11 @@
 		A566630623165EFF00922AC8 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630523165EFF00922AC8 /* Response+ObjectMapper.swift */; };
 		A566630823165F1500922AC8 /* KYLMNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630723165F1500922AC8 /* KYLMNetworkTool.swift */; };
 		A566630A23165F4200922AC8 /* KYLMProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630923165F4200922AC8 /* KYLMProgressHUD.swift */; };
+		A566630D231697FE00922AC8 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630C231697FE00922AC8 /* GitHubAPI.swift */; };
+		A566630F2316980D00922AC8 /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630E2316980D00922AC8 /* GitHubModel.swift */; };
+		A56663112316982600922AC8 /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663102316982600922AC8 /* GitHubNetworkService.swift */; };
+		A56663132316984400922AC8 /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663122316984400922AC8 /* GitHubViewModel.swift */; };
+		A56663152316986800922AC8 /* KTestSearchGitHubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663142316986800922AC8 /* KTestSearchGitHubVC.swift */; };
 		A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */; };
 		A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C7230E7DD90010F1AD /* KYLTagField.swift */; };
 		A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */; };
@@ -148,6 +153,11 @@
 		A566630523165EFF00922AC8 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
 		A566630723165F1500922AC8 /* KYLMNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMNetworkTool.swift; sourceTree = "<group>"; };
 		A566630923165F4200922AC8 /* KYLMProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMProgressHUD.swift; sourceTree = "<group>"; };
+		A566630C231697FE00922AC8 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		A566630E2316980D00922AC8 /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
+		A56663102316982600922AC8 /* GitHubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkService.swift; sourceTree = "<group>"; };
+		A56663122316984400922AC8 /* GitHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewModel.swift; sourceTree = "<group>"; };
+		A56663142316986800922AC8 /* KTestSearchGitHubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestSearchGitHubVC.swift; sourceTree = "<group>"; };
 		A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagView.swift; sourceTree = "<group>"; };
 		A5F665C7230E7DD90010F1AD /* KYLTagField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagField.swift; sourceTree = "<group>"; };
 		A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestTagViewController.swift; sourceTree = "<group>"; };
@@ -335,6 +345,7 @@
 		A5482EC9230D1A4C00AF7693 /* rx */ = {
 			isa = PBXGroup;
 			children = (
+				A566630B231697A900922AC8 /* searchGitHub */,
 				A56662F12316531800922AC8 /* rxmoya */,
 				A5299A542310F1E30024E29A /* tableview */,
 				A5299A452310C91E0024E29A /* binder */,
@@ -493,6 +504,18 @@
 				A56662FB231654B400922AC8 /* KYLMModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		A566630B231697A900922AC8 /* searchGitHub */ = {
+			isa = PBXGroup;
+			children = (
+				A566630C231697FE00922AC8 /* GitHubAPI.swift */,
+				A566630E2316980D00922AC8 /* GitHubModel.swift */,
+				A56663102316982600922AC8 /* GitHubNetworkService.swift */,
+				A56663122316984400922AC8 /* GitHubViewModel.swift */,
+				A56663142316986800922AC8 /* KTestSearchGitHubVC.swift */,
+			);
+			path = searchGitHub;
 			sourceTree = "<group>";
 		};
 		A5F665C4230E7D6D0010F1AD /* tagView */ = {
@@ -690,9 +713,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */,
+				A56663132316984400922AC8 /* GitHubViewModel.swift in Sources */,
 				A566630223165EAD00922AC8 /* KYLMViewModel.swift in Sources */,
 				A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */,
 				A5299A612310F2D30024E29A /* UIImage+Compound.swift in Sources */,
+				A56663152316986800922AC8 /* KTestSearchGitHubVC.swift in Sources */,
+				A566630D231697FE00922AC8 /* GitHubAPI.swift in Sources */,
 				A5299A652310F3030024E29A /* KTVDetailVC.swift in Sources */,
 				A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */,
 				A5299A432310C72F0024E29A /* KTestProxyVC.swift in Sources */,
@@ -710,6 +736,7 @@
 				A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */,
 				A56662FF2316556900922AC8 /* KYLMTableViewCell.swift in Sources */,
 				A5299A412310C6DE0024E29A /* KCProxy.swift in Sources */,
+				A56663112316982600922AC8 /* GitHubNetworkService.swift in Sources */,
 				A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */,
 				A5299A3F2310C5D40024E29A /* KTestModel.swift in Sources */,
 				A5482EDF230D1BC900AF7693 /* KYLWebViewVC.swift in Sources */,
@@ -720,6 +747,7 @@
 				A5299A562310F22F0024E29A /* KTVPhotoCell.swift in Sources */,
 				A56662FC231654B400922AC8 /* KYLMModel.swift in Sources */,
 				A566630623165EFF00922AC8 /* Response+ObjectMapper.swift in Sources */,
+				A566630F2316980D00922AC8 /* GitHubModel.swift in Sources */,
 				A5F665D5230E971D0010F1AD /* KTestTagTableVC.swift in Sources */,
 				A56662FA2316542300922AC8 /* KYLMViewModelType.swift in Sources */,
 				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
