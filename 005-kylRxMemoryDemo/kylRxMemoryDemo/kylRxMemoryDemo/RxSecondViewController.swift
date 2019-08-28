@@ -46,5 +46,8 @@ class RxSecondViewController: UIViewController {
         navigationController?.pushViewController(KYLMoyaTestViewController(), animated: true)
     }
     
+    @IBAction func btnGithubSearchTest(_ sender: Any) {
+        navigationController?.pushViewController(KTestSearchGitHubVC(), animated: true)
+    }
     
 }

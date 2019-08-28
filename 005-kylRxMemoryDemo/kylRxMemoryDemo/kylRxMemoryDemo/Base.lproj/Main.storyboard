@@ -155,6 +155,14 @@
                                     <action selector="btnMoyaTest:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="2Hy-TM-Nah"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCe-yz-gVr">
+                                <rect key="frame" x="48" y="288" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="githubs"/>
+                                <connections>
+                                    <action selector="btnGithubSearchTest:" destination="qXQ-sz-zm3" eventType="touchUpInside" id="3t0-ex-zxI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FVO-v9-ftW"/>
