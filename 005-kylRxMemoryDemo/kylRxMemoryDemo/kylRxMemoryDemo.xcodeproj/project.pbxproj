@@ -51,6 +51,15 @@
 		A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE3230D1BD400AF7693 /* KLayout.swift */; };
 		A5482EE8230D1BE200AF7693 /* KYLFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */; };
 		A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */; };
+		A56662FA2316542300922AC8 /* KYLMViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56662F92316542300922AC8 /* KYLMViewModelType.swift */; };
+		A56662FC231654B400922AC8 /* KYLMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56662FB231654B400922AC8 /* KYLMModel.swift */; };
+		A56662FF2316556900922AC8 /* KYLMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56662FD2316556900922AC8 /* KYLMTableViewCell.swift */; };
+		A56663002316556900922AC8 /* KYLMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A56662FE2316556900922AC8 /* KYLMTableViewCell.xib */; };
+		A566630223165EAD00922AC8 /* KYLMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630123165EAD00922AC8 /* KYLMViewModel.swift */; };
+		A566630423165EE100922AC8 /* KYLMoyaTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630323165EE100922AC8 /* KYLMoyaTestViewController.swift */; };
+		A566630623165EFF00922AC8 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630523165EFF00922AC8 /* Response+ObjectMapper.swift */; };
+		A566630823165F1500922AC8 /* KYLMNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630723165F1500922AC8 /* KYLMNetworkTool.swift */; };
+		A566630A23165F4200922AC8 /* KYLMProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566630923165F4200922AC8 /* KYLMProgressHUD.swift */; };
 		A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */; };
 		A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C7230E7DD90010F1AD /* KYLTagField.swift */; };
 		A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */; };
@@ -130,6 +139,15 @@
 		A5482EE3230D1BD400AF7693 /* KLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLayout.swift; sourceTree = "<group>"; };
 		A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLFPSLabel.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLFPSLabel.swift"; sourceTree = "<group>"; };
 		A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLCornerCutter.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLCornerCutter.swift"; sourceTree = "<group>"; };
+		A56662F92316542300922AC8 /* KYLMViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMViewModelType.swift; sourceTree = "<group>"; };
+		A56662FB231654B400922AC8 /* KYLMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMModel.swift; sourceTree = "<group>"; };
+		A56662FD2316556900922AC8 /* KYLMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMTableViewCell.swift; sourceTree = "<group>"; };
+		A56662FE2316556900922AC8 /* KYLMTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KYLMTableViewCell.xib; sourceTree = "<group>"; };
+		A566630123165EAD00922AC8 /* KYLMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMViewModel.swift; sourceTree = "<group>"; };
+		A566630323165EE100922AC8 /* KYLMoyaTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMoyaTestViewController.swift; sourceTree = "<group>"; };
+		A566630523165EFF00922AC8 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		A566630723165F1500922AC8 /* KYLMNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMNetworkTool.swift; sourceTree = "<group>"; };
+		A566630923165F4200922AC8 /* KYLMProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMProgressHUD.swift; sourceTree = "<group>"; };
 		A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagView.swift; sourceTree = "<group>"; };
 		A5F665C7230E7DD90010F1AD /* KYLTagField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagField.swift; sourceTree = "<group>"; };
 		A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestTagViewController.swift; sourceTree = "<group>"; };
@@ -317,6 +335,7 @@
 		A5482EC9230D1A4C00AF7693 /* rx */ = {
 			isa = PBXGroup;
 			children = (
+				A56662F12316531800922AC8 /* rxmoya */,
 				A5299A542310F1E30024E29A /* tableview */,
 				A5299A452310C91E0024E29A /* binder */,
 				A5299A442310C7850024E29A /* higher */,
@@ -402,6 +421,78 @@
 			);
 			name = html;
 			path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/html";
+			sourceTree = "<group>";
+		};
+		A56662F12316531800922AC8 /* rxmoya */ = {
+			isa = PBXGroup;
+			children = (
+				A56662F82316538900922AC8 /* model */,
+				A56662F72316538200922AC8 /* view */,
+				A56662F62316537300922AC8 /* viewmodel */,
+				A56662F52316536600922AC8 /* controller */,
+				A56662F42316535500922AC8 /* extension */,
+				A56662F32316534B00922AC8 /* tool */,
+				A56662F22316534100922AC8 /* protocol */,
+			);
+			path = rxmoya;
+			sourceTree = "<group>";
+		};
+		A56662F22316534100922AC8 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A56662F92316542300922AC8 /* KYLMViewModelType.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		A56662F32316534B00922AC8 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				A566630723165F1500922AC8 /* KYLMNetworkTool.swift */,
+				A566630923165F4200922AC8 /* KYLMProgressHUD.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		A56662F42316535500922AC8 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				A566630523165EFF00922AC8 /* Response+ObjectMapper.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		A56662F52316536600922AC8 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A566630323165EE100922AC8 /* KYLMoyaTestViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A56662F62316537300922AC8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				A566630123165EAD00922AC8 /* KYLMViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		A56662F72316538200922AC8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A56662FD2316556900922AC8 /* KYLMTableViewCell.swift */,
+				A56662FE2316556900922AC8 /* KYLMTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A56662F82316538900922AC8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A56662FB231654B400922AC8 /* KYLMModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		A5F665C4230E7D6D0010F1AD /* tagView */ = {
@@ -531,6 +622,7 @@
 				A5299A4B2310C97A0024E29A /* KCTestBinderVC.xib in Resources */,
 				A5482EA3230D18F900AF7693 /* Assets.xcassets in Resources */,
 				A5482E9E230D18F800AF7693 /* Main.storyboard in Resources */,
+				A56663002316556900922AC8 /* KYLMTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +690,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */,
+				A566630223165EAD00922AC8 /* KYLMViewModel.swift in Sources */,
 				A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */,
 				A5299A612310F2D30024E29A /* UIImage+Compound.swift in Sources */,
 				A5299A652310F3030024E29A /* KTVDetailVC.swift in Sources */,
@@ -607,12 +700,15 @@
 				A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */,
 				A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */,
 				A5299A632310F2E50024E29A /* KTVTestVC.swift in Sources */,
+				A566630823165F1500922AC8 /* KYLMNetworkTool.swift in Sources */,
+				A566630423165EE100922AC8 /* KYLMoyaTestViewController.swift in Sources */,
 				A5299A76231108B10024E29A /* KTVDetailTableVC.swift in Sources */,
 				A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */,
 				A5299A4E2310CC950024E29A /* KTestHigherFunctionVC.swift in Sources */,
 				A5482EE4230D1BD400AF7693 /* SwiftyFitsize.swift in Sources */,
 				A5299A6A2310F5F70024E29A /* KRxRegisterTestVC.swift in Sources */,
 				A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */,
+				A56662FF2316556900922AC8 /* KYLMTableViewCell.swift in Sources */,
 				A5299A412310C6DE0024E29A /* KCProxy.swift in Sources */,
 				A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */,
 				A5299A3F2310C5D40024E29A /* KTestModel.swift in Sources */,
@@ -620,8 +716,12 @@
 				A5299A3D2310C57E0024E29A /* KTestKVOVC.swift in Sources */,
 				A5F665D3230E95390010F1AD /* RxSecondViewController.swift in Sources */,
 				A5299A5F2310F2BD0024E29A /* KTVCacheManager.swift in Sources */,
+				A566630A23165F4200922AC8 /* KYLMProgressHUD.swift in Sources */,
 				A5299A562310F22F0024E29A /* KTVPhotoCell.swift in Sources */,
+				A56662FC231654B400922AC8 /* KYLMModel.swift in Sources */,
+				A566630623165EFF00922AC8 /* Response+ObjectMapper.swift in Sources */,
 				A5F665D5230E971D0010F1AD /* KTestTagTableVC.swift in Sources */,
+				A56662FA2316542300922AC8 /* KYLMViewModelType.swift in Sources */,
 				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
 				A5299A4A2310C97A0024E29A /* KCTestBinderVC.swift in Sources */,
 				A5299A6D2310F66B0024E29A /* KDataPickerValidator.swift in Sources */,
