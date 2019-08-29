@@ -39,18 +39,8 @@
 		A5482EA6230D18F900AF7693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5482EA4230D18F900AF7693 /* LaunchScreen.storyboard */; };
 		A5482EB1230D18F900AF7693 /* kylRxMemoryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EB0230D18F900AF7693 /* kylRxMemoryDemoTests.swift */; };
 		A5482EBC230D18F900AF7693 /* kylRxMemoryDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EBB230D18F900AF7693 /* kylRxMemoryDemoUITests.swift */; };
-		A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */; };
-		A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */; };
-		A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECD230D1A7000AF7693 /* KPerson.swift */; };
-		A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */; };
-		A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */; };
-		A5482EDF230D1BC900AF7693 /* KYLWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EDB230D1BC900AF7693 /* KYLWebViewVC.swift */; };
-		A5482EE0230D1BC900AF7693 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = A5482EDD230D1BC900AF7693 /* test.html */; };
-		A5482EE1230D1BC900AF7693 /* KYLJSApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EDE230D1BC900AF7693 /* KYLJSApiTest.swift */; };
 		A5482EE4230D1BD400AF7693 /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE2230D1BD400AF7693 /* SwiftyFitsize.swift */; };
 		A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE3230D1BD400AF7693 /* KLayout.swift */; };
-		A5482EE8230D1BE200AF7693 /* KYLFPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */; };
-		A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */; };
 		A56662FA2316542300922AC8 /* KYLMViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56662F92316542300922AC8 /* KYLMViewModelType.swift */; };
 		A56662FC231654B400922AC8 /* KYLMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56662FB231654B400922AC8 /* KYLMModel.swift */; };
 		A56662FF2316556900922AC8 /* KYLMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56662FD2316556900922AC8 /* KYLMTableViewCell.swift */; };
@@ -65,6 +55,11 @@
 		A56663112316982600922AC8 /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663102316982600922AC8 /* GitHubNetworkService.swift */; };
 		A56663132316984400922AC8 /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663122316984400922AC8 /* GitHubViewModel.swift */; };
 		A56663152316986800922AC8 /* KTestSearchGitHubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663142316986800922AC8 /* KTestSearchGitHubVC.swift */; };
+		A56663272317D26400922AC8 /* KCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663222317D26300922AC8 /* KCHomeViewController.swift */; };
+		A56663282317D26400922AC8 /* KCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663232317D26300922AC8 /* KCTableViewController.swift */; };
+		A56663292317D26400922AC8 /* KPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663242317D26300922AC8 /* KPerson.swift */; };
+		A566632A2317D26400922AC8 /* KCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56663252317D26400922AC8 /* KCTableViewCell.swift */; };
+		A566632C2317D2E000922AC8 /* KCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566632B2317D2E000922AC8 /* KCDetailViewController.swift */; };
 		A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */; };
 		A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665C7230E7DD90010F1AD /* KYLTagField.swift */; };
 		A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */; };
@@ -132,18 +127,8 @@
 		A5482EB7230D18F900AF7693 /* kylRxMemoryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxMemoryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482EBB230D18F900AF7693 /* kylRxMemoryDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxMemoryDemoUITests.swift; sourceTree = "<group>"; };
 		A5482EBD230D18F900AF7693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCTableViewCell.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCTableViewCell.swift"; sourceTree = "<group>"; };
-		A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCTableViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCTableViewController.swift"; sourceTree = "<group>"; };
-		A5482ECD230D1A7000AF7693 /* KPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KPerson.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KPerson.swift"; sourceTree = "<group>"; };
-		A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCDetailViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCDetailViewController.swift"; sourceTree = "<group>"; };
-		A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCHomeViewController.swift; path = "../../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/rx/recircle/KCHomeViewController.swift"; sourceTree = "<group>"; };
-		A5482EDB230D1BC900AF7693 /* KYLWebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLWebViewVC.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/KYLWebViewVC.swift"; sourceTree = "<group>"; };
-		A5482EDD230D1BC900AF7693 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
-		A5482EDE230D1BC900AF7693 /* KYLJSApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLJSApiTest.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/KYLJSApiTest.swift"; sourceTree = "<group>"; };
 		A5482EE2230D1BD400AF7693 /* SwiftyFitsize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFitsize.swift; sourceTree = "<group>"; };
 		A5482EE3230D1BD400AF7693 /* KLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLayout.swift; sourceTree = "<group>"; };
-		A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLFPSLabel.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLFPSLabel.swift"; sourceTree = "<group>"; };
-		A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLCornerCutter.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLCornerCutter.swift"; sourceTree = "<group>"; };
 		A56662F92316542300922AC8 /* KYLMViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMViewModelType.swift; sourceTree = "<group>"; };
 		A56662FB231654B400922AC8 /* KYLMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMModel.swift; sourceTree = "<group>"; };
 		A56662FD2316556900922AC8 /* KYLMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLMTableViewCell.swift; sourceTree = "<group>"; };
@@ -158,6 +143,13 @@
 		A56663102316982600922AC8 /* GitHubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkService.swift; sourceTree = "<group>"; };
 		A56663122316984400922AC8 /* GitHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewModel.swift; sourceTree = "<group>"; };
 		A56663142316986800922AC8 /* KTestSearchGitHubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestSearchGitHubVC.swift; sourceTree = "<group>"; };
+		A566631D2317D04100922AC8 /* KYLCornerCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLCornerCutter.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLCornerCutter.swift"; sourceTree = "<group>"; };
+		A566631E2317D04100922AC8 /* KYLFPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KYLFPSLabel.swift; path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/tool/KYLFPSLabel.swift"; sourceTree = "<group>"; };
+		A56663222317D26300922AC8 /* KCHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCHomeViewController.swift; sourceTree = "<group>"; };
+		A56663232317D26300922AC8 /* KCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCTableViewController.swift; sourceTree = "<group>"; };
+		A56663242317D26300922AC8 /* KPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KPerson.swift; sourceTree = "<group>"; };
+		A56663252317D26400922AC8 /* KCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCTableViewCell.swift; sourceTree = "<group>"; };
+		A566632B2317D2E000922AC8 /* KCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCDetailViewController.swift; sourceTree = "<group>"; };
 		A5F665C5230E7DBE0010F1AD /* KYLTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagView.swift; sourceTree = "<group>"; };
 		A5F665C7230E7DD90010F1AD /* KYLTagField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLTagField.swift; sourceTree = "<group>"; };
 		A5F665CC230E8EFA0010F1AD /* KTestTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestTagViewController.swift; sourceTree = "<group>"; };
@@ -307,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				A5F665C4230E7D6D0010F1AD /* tagView */,
-				A5482EDA230D1BB200AF7693 /* dsbridge */,
 				A5482ED9230D1BA300AF7693 /* fitsize */,
 				A5482ED8230D1B9400AF7693 /* extension */,
 				A5482ED7230D1B8A00AF7693 /* tools */,
@@ -361,11 +352,11 @@
 		A5482ECA230D1A5B00AF7693 /* testMemory */ = {
 			isa = PBXGroup;
 			children = (
-				A5482ECE230D1A7000AF7693 /* KCDetailViewController.swift */,
-				A5482ECF230D1A7000AF7693 /* KCHomeViewController.swift */,
-				A5482ECB230D1A7000AF7693 /* KCTableViewCell.swift */,
-				A5482ECC230D1A7000AF7693 /* KCTableViewController.swift */,
-				A5482ECD230D1A7000AF7693 /* KPerson.swift */,
+				A566632B2317D2E000922AC8 /* KCDetailViewController.swift */,
+				A56663222317D26300922AC8 /* KCHomeViewController.swift */,
+				A56663252317D26400922AC8 /* KCTableViewCell.swift */,
+				A56663232317D26300922AC8 /* KCTableViewController.swift */,
+				A56663242317D26300922AC8 /* KPerson.swift */,
 				A5299A392310C2D40024E29A /* KCTestMemoryViewController.swift */,
 			);
 			path = testMemory;
@@ -393,8 +384,8 @@
 		A5482ED7230D1B8A00AF7693 /* tools */ = {
 			isa = PBXGroup;
 			children = (
-				A5482EE7230D1BE200AF7693 /* KYLCornerCutter.swift */,
-				A5482EE6230D1BE200AF7693 /* KYLFPSLabel.swift */,
+				A566631D2317D04100922AC8 /* KYLCornerCutter.swift */,
+				A566631E2317D04100922AC8 /* KYLFPSLabel.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -413,25 +404,6 @@
 				A5482EE3230D1BD400AF7693 /* KLayout.swift */,
 			);
 			path = fitsize;
-			sourceTree = "<group>";
-		};
-		A5482EDA230D1BB200AF7693 /* dsbridge */ = {
-			isa = PBXGroup;
-			children = (
-				A5482EDC230D1BC900AF7693 /* html */,
-				A5482EDE230D1BC900AF7693 /* KYLJSApiTest.swift */,
-				A5482EDB230D1BC900AF7693 /* KYLWebViewVC.swift */,
-			);
-			path = dsbridge;
-			sourceTree = "<group>";
-		};
-		A5482EDC230D1BC900AF7693 /* html */ = {
-			isa = PBXGroup;
-			children = (
-				A5482EDD230D1BC900AF7693 /* test.html */,
-			);
-			name = html;
-			path = "../../../../003-kylDSbrigeDemo/kyl_DSBrigeDemo/kyl_DSBrigeDemo/dsbrige/html";
 			sourceTree = "<group>";
 		};
 		A56662F12316531800922AC8 /* rxmoya */ = {
@@ -635,7 +607,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5482EE0230D1BC900AF7693 /* test.html in Resources */,
 				A5299A6B2310F5F70024E29A /* KRxRegisterTestVC.xib in Resources */,
 				A5299A532310D14D0024E29A /* KRxTextFieldTestVC.xib in Resources */,
 				A5299A4F2310CC950024E29A /* KTestHigherFunctionVC.xib in Resources */,
@@ -712,45 +683,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5482EE9230D1BE200AF7693 /* KYLCornerCutter.swift in Sources */,
 				A56663132316984400922AC8 /* GitHubViewModel.swift in Sources */,
 				A566630223165EAD00922AC8 /* KYLMViewModel.swift in Sources */,
 				A5F665C6230E7DBE0010F1AD /* KYLTagView.swift in Sources */,
 				A5299A612310F2D30024E29A /* UIImage+Compound.swift in Sources */,
+				A56663292317D26400922AC8 /* KPerson.swift in Sources */,
 				A56663152316986800922AC8 /* KTestSearchGitHubVC.swift in Sources */,
 				A566630D231697FE00922AC8 /* GitHubAPI.swift in Sources */,
 				A5299A652310F3030024E29A /* KTVDetailVC.swift in Sources */,
-				A5482ED3230D1A7000AF7693 /* KCDetailViewController.swift in Sources */,
 				A5299A432310C72F0024E29A /* KTestProxyVC.swift in Sources */,
 				A5299A582310F2600024E29A /* KTVTableViewCell.swift in Sources */,
-				A5482ED1230D1A7000AF7693 /* KCTableViewController.swift in Sources */,
 				A5F665CD230E8EFA0010F1AD /* KTestTagViewController.swift in Sources */,
 				A5299A632310F2E50024E29A /* KTVTestVC.swift in Sources */,
+				A56663282317D26400922AC8 /* KCTableViewController.swift in Sources */,
 				A566630823165F1500922AC8 /* KYLMNetworkTool.swift in Sources */,
 				A566630423165EE100922AC8 /* KYLMoyaTestViewController.swift in Sources */,
 				A5299A76231108B10024E29A /* KTVDetailTableVC.swift in Sources */,
-				A5482ED4230D1A7000AF7693 /* KCHomeViewController.swift in Sources */,
 				A5299A4E2310CC950024E29A /* KTestHigherFunctionVC.swift in Sources */,
+				A56663272317D26400922AC8 /* KCHomeViewController.swift in Sources */,
 				A5482EE4230D1BD400AF7693 /* SwiftyFitsize.swift in Sources */,
 				A5299A6A2310F5F70024E29A /* KRxRegisterTestVC.swift in Sources */,
-				A5482ED0230D1A7000AF7693 /* KCTableViewCell.swift in Sources */,
 				A56662FF2316556900922AC8 /* KYLMTableViewCell.swift in Sources */,
 				A5299A412310C6DE0024E29A /* KCProxy.swift in Sources */,
 				A56663112316982600922AC8 /* GitHubNetworkService.swift in Sources */,
 				A5482E99230D18F800AF7693 /* AppDelegate.swift in Sources */,
+				A566632A2317D26400922AC8 /* KCTableViewCell.swift in Sources */,
 				A5299A3F2310C5D40024E29A /* KTestModel.swift in Sources */,
-				A5482EDF230D1BC900AF7693 /* KYLWebViewVC.swift in Sources */,
 				A5299A3D2310C57E0024E29A /* KTestKVOVC.swift in Sources */,
 				A5F665D3230E95390010F1AD /* RxSecondViewController.swift in Sources */,
 				A5299A5F2310F2BD0024E29A /* KTVCacheManager.swift in Sources */,
 				A566630A23165F4200922AC8 /* KYLMProgressHUD.swift in Sources */,
+				A566632C2317D2E000922AC8 /* KCDetailViewController.swift in Sources */,
 				A5299A562310F22F0024E29A /* KTVPhotoCell.swift in Sources */,
 				A56662FC231654B400922AC8 /* KYLMModel.swift in Sources */,
 				A566630623165EFF00922AC8 /* Response+ObjectMapper.swift in Sources */,
 				A566630F2316980D00922AC8 /* GitHubModel.swift in Sources */,
 				A5F665D5230E971D0010F1AD /* KTestTagTableVC.swift in Sources */,
 				A56662FA2316542300922AC8 /* KYLMViewModelType.swift in Sources */,
-				A5482ED2230D1A7000AF7693 /* KPerson.swift in Sources */,
 				A5299A4A2310C97A0024E29A /* KCTestBinderVC.swift in Sources */,
 				A5299A6D2310F66B0024E29A /* KDataPickerValidator.swift in Sources */,
 				A5482EE5230D1BD400AF7693 /* KLayout.swift in Sources */,
@@ -758,8 +727,6 @@
 				A5299A3A2310C2D40024E29A /* KCTestMemoryViewController.swift in Sources */,
 				A5F665C8230E7DD90010F1AD /* KYLTagField.swift in Sources */,
 				A5299A5D2310F2AC0024E29A /* KTVModel.swift in Sources */,
-				A5482EE1230D1BC900AF7693 /* KYLJSApiTest.swift in Sources */,
-				A5482EE8230D1BE200AF7693 /* KYLFPSLabel.swift in Sources */,
 				A5299A672310F3290024E29A /* KTVPhotoListVC.swift in Sources */,
 				A5482EA1230D18F800AF7693 /* kylRxMemoryDemo.xcdatamodeld in Sources */,
 				A5F665D1230E950A0010F1AD /* RxFirstTableViewController.swift in Sources */,
