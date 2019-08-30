@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		A586CD382318C5E400F45BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A586CD362318C5E400F45BC6 /* LaunchScreen.storyboard */; };
 		A586CD432318C5E400F45BC6 /* kylRxFitSizeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CD422318C5E400F45BC6 /* kylRxFitSizeDemoTests.swift */; };
 		A586CD4E2318C5E400F45BC6 /* kylRxFitSizeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CD4D2318C5E400F45BC6 /* kylRxFitSizeDemoUITests.swift */; };
+		A586CDD62318CC5E00F45BC6 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CDD42318CC5E00F45BC6 /* KLayout.swift */; };
+		A586CDD72318CC5E00F45BC6 /* SwiftyFitsize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CDD52318CC5E00F45BC6 /* SwiftyFitsize.swift */; };
 		EB90BF962856B75592ED10E8 /* Pods_kylRxFitSizeDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C870E75E1A7A6CF34FB3A9E /* Pods_kylRxFitSizeDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		A586CD492318C5E400F45BC6 /* kylRxFitSizeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxFitSizeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A586CD4D2318C5E400F45BC6 /* kylRxFitSizeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxFitSizeDemoUITests.swift; sourceTree = "<group>"; };
 		A586CD4F2318C5E400F45BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A586CDD42318CC5E00F45BC6 /* KLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KLayout.swift; path = "../../../../005-kylRxMemoryDemo/kylRxMemoryDemo/kylRxMemoryDemo/fitsize/KLayout.swift"; sourceTree = "<group>"; };
+		A586CDD52318CC5E00F45BC6 /* SwiftyFitsize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyFitsize.swift; path = "../../../../005-kylRxMemoryDemo/kylRxMemoryDemo/kylRxMemoryDemo/fitsize/SwiftyFitsize.swift"; sourceTree = "<group>"; };
 		C68A491C7AD41933D3475B30 /* Pods-kylRxFitSizeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxFitSizeDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylRxFitSizeDemo/Pods-kylRxFitSizeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CBDFCDDFBF98B86A01326A17 /* Pods-kylRxFitSizeDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxFitSizeDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylRxFitSizeDemoUITests/Pods-kylRxFitSizeDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +105,6 @@
 				61ED54CAEC782CE0383CE497 /* Pods-kylRxFitSizeDemoUITests.debug.xcconfig */,
 				CBDFCDDFBF98B86A01326A17 /* Pods-kylRxFitSizeDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +133,7 @@
 		A586CD2A2318C5E200F45BC6 /* kylRxFitSizeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A586CDD32318CC3300F45BC6 /* fitsize */,
 				A586CD2B2318C5E200F45BC6 /* AppDelegate.swift */,
 				A586CD2D2318C5E200F45BC6 /* FirstViewController.swift */,
 				A586CD2F2318C5E200F45BC6 /* SecondViewController.swift */,
@@ -157,6 +161,15 @@
 				A586CD4F2318C5E400F45BC6 /* Info.plist */,
 			);
 			path = kylRxFitSizeDemoUITests;
+			sourceTree = "<group>";
+		};
+		A586CDD32318CC3300F45BC6 /* fitsize */ = {
+			isa = PBXGroup;
+			children = (
+				A586CDD42318CC5E00F45BC6 /* KLayout.swift */,
+				A586CDD52318CC5E00F45BC6 /* SwiftyFitsize.swift */,
+			);
+			path = fitsize;
 			sourceTree = "<group>";
 		};
 		C3655A904DECA6935588B2A2 /* Frameworks */ = {
@@ -391,6 +404,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A586CD302318C5E200F45BC6 /* SecondViewController.swift in Sources */,
+				A586CDD72318CC5E00F45BC6 /* SwiftyFitsize.swift in Sources */,
+				A586CDD62318CC5E00F45BC6 /* KLayout.swift in Sources */,
 				A586CD2C2318C5E200F45BC6 /* AppDelegate.swift in Sources */,
 				A586CD2E2318C5E200F45BC6 /* FirstViewController.swift in Sources */,
 			);
