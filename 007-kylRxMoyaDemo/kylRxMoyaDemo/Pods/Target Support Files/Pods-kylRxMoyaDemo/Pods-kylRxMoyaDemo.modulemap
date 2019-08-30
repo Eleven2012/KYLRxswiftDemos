@@ -1,0 +1,6 @@
+framework module Pods_kylRxMoyaDemo {
+  umbrella header "Pods-kylRxMoyaDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

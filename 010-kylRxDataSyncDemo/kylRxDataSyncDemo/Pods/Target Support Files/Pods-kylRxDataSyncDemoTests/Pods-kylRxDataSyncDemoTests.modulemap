@@ -1,0 +1,6 @@
+framework module Pods_kylRxDataSyncDemoTests {
+  umbrella header "Pods-kylRxDataSyncDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

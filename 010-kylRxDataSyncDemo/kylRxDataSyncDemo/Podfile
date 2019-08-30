@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'kylRxDataSyncDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for kylRxDataSyncDemo
+  pod 'WCDB.swift'
+  pod 'RxSwift' ,    '~> 4.4'
+  pod 'RxCocoa'
+  pod 'NSObject+Rx'
+  pod 'Moya/RxSwift'
+  pod 'ObjectMapper'
+  pod 'SnapKit'
+
+  target 'kylRxDataSyncDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'kylRxDataSyncDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

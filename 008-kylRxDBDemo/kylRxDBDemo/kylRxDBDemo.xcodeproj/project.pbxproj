@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		252CFD2B85502509EBDF26B6 /* Pods_kylRxDBDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7773C1F361B25D72CCBE62 /* Pods_kylRxDBDemoTests.framework */; };
+		26D9AC937A52143A4F6DB519 /* Pods_kylRxDBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723F71CA3AD6AA5AA04628A0 /* Pods_kylRxDBDemo.framework */; };
+		A586CCF02318C35500F45BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CCEF2318C35500F45BC6 /* AppDelegate.swift */; };
+		A586CCF22318C35500F45BC6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CCF12318C35500F45BC6 /* FirstViewController.swift */; };
+		A586CCF42318C35500F45BC6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CCF32318C35500F45BC6 /* SecondViewController.swift */; };
+		A586CCF72318C35500F45BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A586CCF52318C35500F45BC6 /* Main.storyboard */; };
+		A586CCF92318C35700F45BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A586CCF82318C35700F45BC6 /* Assets.xcassets */; };
+		A586CCFC2318C35700F45BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A586CCFA2318C35700F45BC6 /* LaunchScreen.storyboard */; };
+		A586CD072318C35700F45BC6 /* kylRxDBDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CD062318C35700F45BC6 /* kylRxDBDemoTests.swift */; };
+		A586CD122318C35800F45BC6 /* kylRxDBDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CD112318C35800F45BC6 /* kylRxDBDemoUITests.swift */; };
+		CA2978BC22F07F16C0211A85 /* Pods_kylRxDBDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1E0B3DD69614B434DA436E /* Pods_kylRxDBDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A586CD032318C35700F45BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A586CCE42318C35500F45BC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A586CCEB2318C35500F45BC6;
+			remoteInfo = kylRxDBDemo;
+		};
+		A586CD0E2318C35800F45BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A586CCE42318C35500F45BC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A586CCEB2318C35500F45BC6;
+			remoteInfo = kylRxDBDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24050F356FCA2A4EFBC1C0E3 /* Pods-kylRxDBDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxDBDemoTests.release.xcconfig"; path = "Target Support Files/Pods-kylRxDBDemoTests/Pods-kylRxDBDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		254CD67E06B91E1C4AB8C155 /* Pods-kylRxDBDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxDBDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxDBDemoTests/Pods-kylRxDBDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		549D012920266EE0C5A04AA0 /* Pods-kylRxDBDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxDBDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylRxDBDemoUITests/Pods-kylRxDBDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D1E0B3DD69614B434DA436E /* Pods_kylRxDBDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxDBDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9513187716D453182D2A5F /* Pods-kylRxDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxDBDemo.release.xcconfig"; path = "Target Support Files/Pods-kylRxDBDemo/Pods-kylRxDBDemo.release.xcconfig"; sourceTree = "<group>"; };
+		723F71CA3AD6AA5AA04628A0 /* Pods_kylRxDBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxDBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7773C1F361B25D72CCBE62 /* Pods_kylRxDBDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRxDBDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8237068A26DABD7B3872EDEE /* Pods-kylRxDBDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxDBDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxDBDemoUITests/Pods-kylRxDBDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A586CCEC2318C35500F45BC6 /* kylRxDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A586CCEF2318C35500F45BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A586CCF12318C35500F45BC6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A586CCF32318C35500F45BC6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A586CCF62318C35500F45BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A586CCF82318C35700F45BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A586CCFB2318C35700F45BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A586CCFD2318C35700F45BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A586CD022318C35700F45BC6 /* kylRxDBDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxDBDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A586CD062318C35700F45BC6 /* kylRxDBDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxDBDemoTests.swift; sourceTree = "<group>"; };
+		A586CD082318C35700F45BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A586CD0D2318C35800F45BC6 /* kylRxDBDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylRxDBDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A586CD112318C35800F45BC6 /* kylRxDBDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylRxDBDemoUITests.swift; sourceTree = "<group>"; };
+		A586CD132318C35800F45BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7D42A6751498FF945BFF7B /* Pods-kylRxDBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxDBDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylRxDBDemo/Pods-kylRxDBDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A586CCE92318C35500F45BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D9AC937A52143A4F6DB519 /* Pods_kylRxDBDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586CCFF2318C35700F45BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252CFD2B85502509EBDF26B6 /* Pods_kylRxDBDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586CD0A2318C35800F45BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2978BC22F07F16C0211A85 /* Pods_kylRxDBDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D2540A06082ED1097F1AEED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				723F71CA3AD6AA5AA04628A0 /* Pods_kylRxDBDemo.framework */,
+				7E7773C1F361B25D72CCBE62 /* Pods_kylRxDBDemoTests.framework */,
+				6D1E0B3DD69614B434DA436E /* Pods_kylRxDBDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76B35EB47A854122AC2628CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF7D42A6751498FF945BFF7B /* Pods-kylRxDBDemo.debug.xcconfig */,
+				6D9513187716D453182D2A5F /* Pods-kylRxDBDemo.release.xcconfig */,
+				254CD67E06B91E1C4AB8C155 /* Pods-kylRxDBDemoTests.debug.xcconfig */,
+				24050F356FCA2A4EFBC1C0E3 /* Pods-kylRxDBDemoTests.release.xcconfig */,
+				8237068A26DABD7B3872EDEE /* Pods-kylRxDBDemoUITests.debug.xcconfig */,
+				549D012920266EE0C5A04AA0 /* Pods-kylRxDBDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A586CCE32318C35500F45BC6 = {
+			isa = PBXGroup;
+			children = (
+				A586CCEE2318C35500F45BC6 /* kylRxDBDemo */,
+				A586CD052318C35700F45BC6 /* kylRxDBDemoTests */,
+				A586CD102318C35800F45BC6 /* kylRxDBDemoUITests */,
+				A586CCED2318C35500F45BC6 /* Products */,
+				76B35EB47A854122AC2628CC /* Pods */,
+				0D2540A06082ED1097F1AEED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A586CCED2318C35500F45BC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A586CCEC2318C35500F45BC6 /* kylRxDBDemo.app */,
+				A586CD022318C35700F45BC6 /* kylRxDBDemoTests.xctest */,
+				A586CD0D2318C35800F45BC6 /* kylRxDBDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A586CCEE2318C35500F45BC6 /* kylRxDBDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A586CCEF2318C35500F45BC6 /* AppDelegate.swift */,
+				A586CCF12318C35500F45BC6 /* FirstViewController.swift */,
+				A586CCF32318C35500F45BC6 /* SecondViewController.swift */,
+				A586CCF52318C35500F45BC6 /* Main.storyboard */,
+				A586CCF82318C35700F45BC6 /* Assets.xcassets */,
+				A586CCFA2318C35700F45BC6 /* LaunchScreen.storyboard */,
+				A586CCFD2318C35700F45BC6 /* Info.plist */,
+			);
+			path = kylRxDBDemo;
+			sourceTree = "<group>";
+		};
+		A586CD052318C35700F45BC6 /* kylRxDBDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A586CD062318C35700F45BC6 /* kylRxDBDemoTests.swift */,
+				A586CD082318C35700F45BC6 /* Info.plist */,
+			);
+			path = kylRxDBDemoTests;
+			sourceTree = "<group>";
+		};
+		A586CD102318C35800F45BC6 /* kylRxDBDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A586CD112318C35800F45BC6 /* kylRxDBDemoUITests.swift */,
+				A586CD132318C35800F45BC6 /* Info.plist */,
+			);
+			path = kylRxDBDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A586CCEB2318C35500F45BC6 /* kylRxDBDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A586CD162318C35800F45BC6 /* Build configuration list for PBXNativeTarget "kylRxDBDemo" */;
+			buildPhases = (
+				F0CECE85F5594375692DA977 /* [CP] Check Pods Manifest.lock */,
+				A586CCE82318C35500F45BC6 /* Sources */,
+				A586CCE92318C35500F45BC6 /* Frameworks */,
+				A586CCEA2318C35500F45BC6 /* Resources */,
+				ABA67AC639B2A7E9A9A48FE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kylRxDBDemo;
+			productName = kylRxDBDemo;
+			productReference = A586CCEC2318C35500F45BC6 /* kylRxDBDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A586CD012318C35700F45BC6 /* kylRxDBDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A586CD192318C35800F45BC6 /* Build configuration list for PBXNativeTarget "kylRxDBDemoTests" */;
+			buildPhases = (
+				574E51924CD6C15F4384D75E /* [CP] Check Pods Manifest.lock */,
+				A586CCFE2318C35700F45BC6 /* Sources */,
+				A586CCFF2318C35700F45BC6 /* Frameworks */,
+				A586CD002318C35700F45BC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A586CD042318C35700F45BC6 /* PBXTargetDependency */,
+			);
+			name = kylRxDBDemoTests;
+			productName = kylRxDBDemoTests;
+			productReference = A586CD022318C35700F45BC6 /* kylRxDBDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A586CD0C2318C35800F45BC6 /* kylRxDBDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A586CD1C2318C35800F45BC6 /* Build configuration list for PBXNativeTarget "kylRxDBDemoUITests" */;
+			buildPhases = (
+				662FFCE83A87EF8E6A9B44BF /* [CP] Check Pods Manifest.lock */,
+				A586CD092318C35800F45BC6 /* Sources */,
+				A586CD0A2318C35800F45BC6 /* Frameworks */,
+				A586CD0B2318C35800F45BC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A586CD0F2318C35800F45BC6 /* PBXTargetDependency */,
+			);
+			name = kylRxDBDemoUITests;
+			productName = kylRxDBDemoUITests;
+			productReference = A586CD0D2318C35800F45BC6 /* kylRxDBDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A586CCE42318C35500F45BC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A586CCEB2318C35500F45BC6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A586CD012318C35700F45BC6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A586CCEB2318C35500F45BC6;
+					};
+					A586CD0C2318C35800F45BC6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A586CCEB2318C35500F45BC6;
+					};
+				};
+			};
+			buildConfigurationList = A586CCE72318C35500F45BC6 /* Build configuration list for PBXProject "kylRxDBDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A586CCE32318C35500F45BC6;
+			productRefGroup = A586CCED2318C35500F45BC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A586CCEB2318C35500F45BC6 /* kylRxDBDemo */,
+				A586CD012318C35700F45BC6 /* kylRxDBDemoTests */,
+				A586CD0C2318C35800F45BC6 /* kylRxDBDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A586CCEA2318C35500F45BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A586CCFC2318C35700F45BC6 /* LaunchScreen.storyboard in Resources */,
+				A586CCF92318C35700F45BC6 /* Assets.xcassets in Resources */,
+				A586CCF72318C35500F45BC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586CD002318C35700F45BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586CD0B2318C35800F45BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		574E51924CD6C15F4384D75E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxDBDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662FFCE83A87EF8E6A9B44BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxDBDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA67AC639B2A7E9A9A48FE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxDBDemo/Pods-kylRxDBDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylRxDBDemo/Pods-kylRxDBDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylRxDBDemo/Pods-kylRxDBDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0CECE85F5594375692DA977 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylRxDBDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A586CCE82318C35500F45BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A586CCF42318C35500F45BC6 /* SecondViewController.swift in Sources */,
+				A586CCF02318C35500F45BC6 /* AppDelegate.swift in Sources */,
+				A586CCF22318C35500F45BC6 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586CCFE2318C35700F45BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A586CD072318C35700F45BC6 /* kylRxDBDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A586CD092318C35800F45BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A586CD122318C35800F45BC6 /* kylRxDBDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A586CD042318C35700F45BC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A586CCEB2318C35500F45BC6 /* kylRxDBDemo */;
+			targetProxy = A586CD032318C35700F45BC6 /* PBXContainerItemProxy */;
+		};
+		A586CD0F2318C35800F45BC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A586CCEB2318C35500F45BC6 /* kylRxDBDemo */;
+			targetProxy = A586CD0E2318C35800F45BC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A586CCF52318C35500F45BC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A586CCF62318C35500F45BC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A586CCFA2318C35700F45BC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A586CCFB2318C35700F45BC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A586CD142318C35800F45BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A586CD152318C35800F45BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A586CD172318C35800F45BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7D42A6751498FF945BFF7B /* Pods-kylRxDBDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxDBDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxDBDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A586CD182318C35800F45BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9513187716D453182D2A5F /* Pods-kylRxDBDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxDBDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxDBDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A586CD1A2318C35800F45BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254CD67E06B91E1C4AB8C155 /* Pods-kylRxDBDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxDBDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxDBDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylRxDBDemo.app/kylRxDBDemo";
+			};
+			name = Debug;
+		};
+		A586CD1B2318C35800F45BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24050F356FCA2A4EFBC1C0E3 /* Pods-kylRxDBDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxDBDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxDBDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylRxDBDemo.app/kylRxDBDemo";
+			};
+			name = Release;
+		};
+		A586CD1D2318C35800F45BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8237068A26DABD7B3872EDEE /* Pods-kylRxDBDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxDBDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxDBDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylRxDBDemo;
+			};
+			name = Debug;
+		};
+		A586CD1E2318C35800F45BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549D012920266EE0C5A04AA0 /* Pods-kylRxDBDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylRxDBDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylRxDBDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylRxDBDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A586CCE72318C35500F45BC6 /* Build configuration list for PBXProject "kylRxDBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A586CD142318C35800F45BC6 /* Debug */,
+				A586CD152318C35800F45BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A586CD162318C35800F45BC6 /* Build configuration list for PBXNativeTarget "kylRxDBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A586CD172318C35800F45BC6 /* Debug */,
+				A586CD182318C35800F45BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A586CD192318C35800F45BC6 /* Build configuration list for PBXNativeTarget "kylRxDBDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A586CD1A2318C35800F45BC6 /* Debug */,
+				A586CD1B2318C35800F45BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A586CD1C2318C35800F45BC6 /* Build configuration list for PBXNativeTarget "kylRxDBDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A586CD1D2318C35800F45BC6 /* Debug */,
+				A586CD1E2318C35800F45BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A586CCE42318C35500F45BC6 /* Project object */;
+}

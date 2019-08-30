@@ -1,0 +1,6 @@
+framework module Pods_kylRxUIDemo {
+  umbrella header "Pods-kylRxUIDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

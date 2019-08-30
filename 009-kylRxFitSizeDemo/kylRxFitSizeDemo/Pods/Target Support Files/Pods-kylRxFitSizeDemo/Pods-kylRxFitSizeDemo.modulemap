@@ -1,0 +1,6 @@
+framework module Pods_kylRxFitSizeDemo {
+  umbrella header "Pods-kylRxFitSizeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
