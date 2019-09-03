@@ -70,8 +70,8 @@ extension KRxFirstVC:UITableViewDelegate {
 //        self.navigationController?.pushViewController(vc, animated: true)
         
         switch model.className {
-        case "RxTestHigherFunctionVC":
-            navigationController?.pushViewController(RxTestHigherFunctionVC(), animated: true)
+        case "RxTestBaseUseVC":
+            navigationController?.pushViewController(RxTestBaseUseVC(), animated: true)
             
         case "KRxTableViewEditTestVC":
             navigationController?.pushViewController(KRxTableViewEditTestVC(), animated: true)

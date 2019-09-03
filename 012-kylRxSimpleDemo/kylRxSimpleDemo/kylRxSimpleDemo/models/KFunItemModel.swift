@@ -71,6 +71,23 @@ class KSectionHighFunData {
         ])
 }
 
+class KSectionBaseFunData {
+    let sectionData = Observable.just([
+        KFunItemSectionDataModel(lgheader: "Rx基本使用", items: [
+            KFunItemSectionModel(name: "基础使用篇--实例2.1", gitHubID: "2.1"),
+            KFunItemSectionModel(name: "Andrew Breckenridge", gitHubID: "AndrewSB"),
+            KFunItemSectionModel(name: "Anton Efimenko", gitHubID: "reloni"),
+            KFunItemSectionModel(name: "Ash Furrow", gitHubID: "ashfurrow"),
+            ]),
+        KFunItemSectionDataModel(lgheader: "B", items: [
+            KFunItemSectionModel(name: "Ben Emdon", gitHubID: "BenEmdon"),
+            KFunItemSectionModel(name: "Bob Spryn", gitHubID: "sprynmr"),
+            ])
+        ])
+}
+
+
+
 class KHighFunData {
     var githubData : Observable<[SectionModel<String, KFunItemSectionModel>]> {
         get{

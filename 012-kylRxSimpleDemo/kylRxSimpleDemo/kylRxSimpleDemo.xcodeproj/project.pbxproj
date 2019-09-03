@@ -34,6 +34,9 @@
 		A5E2FCBE231E6BAF00CEA0E0 /* KFunItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCBD231E6BAF00CEA0E0 /* KFunItemModel.swift */; };
 		A5E2FCC0231E6CB100CEA0E0 /* KHigherFunSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCBF231E6CB100CEA0E0 /* KHigherFunSectionVC.swift */; };
 		A5E2FCC2231E6E9300CEA0E0 /* KFunItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCC1231E6E9300CEA0E0 /* KFunItemCell.swift */; };
+		A5E2FCC4231E7DBB00CEA0E0 /* KTestRxTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCC3231E7DBB00CEA0E0 /* KTestRxTableViewVC.swift */; };
+		A5E2FCC6231E7EF100CEA0E0 /* KMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCC5231E7EF100CEA0E0 /* KMusicModel.swift */; };
+		A5E2FCC8231E7F0000CEA0E0 /* KMusicModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCC7231E7F0000CEA0E0 /* KMusicModelView.swift */; };
 		D144FC78E3826B43B80C45D2 /* Pods_kylRxSimpleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D054F3C3E217D999786BF93 /* Pods_kylRxSimpleDemo.framework */; };
 		E004513353E84DAA7A4B3D3B /* Pods_kylRxSimpleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785DBB08DCEE1AAC579F6D7D /* Pods_kylRxSimpleDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -93,6 +96,9 @@
 		A5E2FCBD231E6BAF00CEA0E0 /* KFunItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFunItemModel.swift; sourceTree = "<group>"; };
 		A5E2FCBF231E6CB100CEA0E0 /* KHigherFunSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHigherFunSectionVC.swift; sourceTree = "<group>"; };
 		A5E2FCC1231E6E9300CEA0E0 /* KFunItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFunItemCell.swift; sourceTree = "<group>"; };
+		A5E2FCC3231E7DBB00CEA0E0 /* KTestRxTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestRxTableViewVC.swift; sourceTree = "<group>"; };
+		A5E2FCC5231E7EF100CEA0E0 /* KMusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMusicModel.swift; sourceTree = "<group>"; };
+		A5E2FCC7231E7F0000CEA0E0 /* KMusicModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMusicModelView.swift; sourceTree = "<group>"; };
 		C18286999CB152A82B70A863 /* Pods-kylRxSimpleDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemoTests/Pods-kylRxSimpleDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A6E18EC191F3492355651 /* Pods-kylRxSimpleDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemoUITests/Pods-kylRxSimpleDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5435B8E3D5F919188BAB433 /* Pods-kylRxSimpleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemoUITests/Pods-kylRxSimpleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +214,7 @@
 			children = (
 				A586CE172318CE5400F45BC6 /* RxTestBaseUseVC.swift */,
 				A586CE182318CE5400F45BC6 /* RxTestBaseUseVC.xib */,
+				A5E2FCC3231E7DBB00CEA0E0 /* KTestRxTableViewVC.swift */,
 			);
 			path = base_use;
 			sourceTree = "<group>";
@@ -245,6 +252,7 @@
 			children = (
 				A5E2FCA9231E3C9F00CEA0E0 /* LGModel.swift */,
 				A5E2FCBD231E6BAF00CEA0E0 /* KFunItemModel.swift */,
+				A5E2FCC5231E7EF100CEA0E0 /* KMusicModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 			children = (
 				A586CE372318FA4200F45BC6 /* KPersonTableViewCell.swift */,
 				A5E2FCC1231E6E9300CEA0E0 /* KFunItemCell.swift */,
+				A5E2FCC7231E7F0000CEA0E0 /* KMusicModelView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -520,12 +529,14 @@
 			files = (
 				A5E2FCAE231E43CD00CEA0E0 /* KGlobalDefine.swift in Sources */,
 				A586CE362318F92500F45BC6 /* KBaseViewController.swift in Sources */,
+				A5E2FCC4231E7DBB00CEA0E0 /* KTestRxTableViewVC.swift in Sources */,
 				A5E2FCBE231E6BAF00CEA0E0 /* KFunItemModel.swift in Sources */,
 				A586CE292318F3DE00F45BC6 /* KRxFirstVC.swift in Sources */,
 				A5E2FCC2231E6E9300CEA0E0 /* KFunItemCell.swift in Sources */,
 				A586CE212318CEB900F45BC6 /* RxTestMemoryVC.swift in Sources */,
 				A5E2FCC0231E6CB100CEA0E0 /* KHigherFunSectionVC.swift in Sources */,
 				A5E2FCAC231E3D1800CEA0E0 /* LGViewModel.swift in Sources */,
+				A5E2FCC8231E7F0000CEA0E0 /* KMusicModelView.swift in Sources */,
 				A5E2FCAA231E3C9F00CEA0E0 /* LGModel.swift in Sources */,
 				A586CE342318F83F00F45BC6 /* FPSLabel.swift in Sources */,
 				A5E2FCBA231E60C000CEA0E0 /* KRxTableViewEditTestVC.swift in Sources */,
@@ -534,6 +545,7 @@
 				A586CE1D2318CEA000F45BC6 /* RxTestHigherFunctionVC.swift in Sources */,
 				A586CDE52318CD2B00F45BC6 /* AppDelegate.swift in Sources */,
 				A586CE192318CE5400F45BC6 /* RxTestBaseUseVC.swift in Sources */,
+				A5E2FCC6231E7EF100CEA0E0 /* KMusicModel.swift in Sources */,
 				A586CE2B2318F3F200F45BC6 /* KRxSecondVC.swift in Sources */,
 				A586CE332318F83F00F45BC6 /* LGCornerCutter.swift in Sources */,
 			);
