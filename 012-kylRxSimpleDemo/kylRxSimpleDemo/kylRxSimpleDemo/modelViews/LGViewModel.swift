@@ -9,7 +9,6 @@
 import UIKit
 
 class LGViewModel: NSObject {
-    
     @objc dynamic var dataArray = [Any]()
     
     override init() {

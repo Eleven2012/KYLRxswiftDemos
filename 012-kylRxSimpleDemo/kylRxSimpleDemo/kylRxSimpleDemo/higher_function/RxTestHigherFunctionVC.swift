@@ -27,6 +27,7 @@ class RxTestHigherFunctionVC: UIViewController {
     
 }
 
+
 // MARK - binder,single,Completable,ControlEvent,Driver
 extension RxTestHigherFunctionVC {
     func observerDemo() {
