@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		7709F3E68BE50AE7024F97FC /* Pods_kylRxSimpleDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90941DD59516F5043DDC5350 /* Pods_kylRxSimpleDemoUITests.framework */; };
 		A586CDE52318CD2B00F45BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CDE42318CD2B00F45BC6 /* AppDelegate.swift */; };
-		A586CDE72318CD2B00F45BC6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CDE62318CD2B00F45BC6 /* FirstViewController.swift */; };
-		A586CDE92318CD2B00F45BC6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CDE82318CD2B00F45BC6 /* SecondViewController.swift */; };
 		A586CDEC2318CD2B00F45BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A586CDEA2318CD2B00F45BC6 /* Main.storyboard */; };
 		A586CDEE2318CD2D00F45BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A586CDED2318CD2D00F45BC6 /* Assets.xcassets */; };
 		A586CDF12318CD2D00F45BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A586CDEF2318CD2D00F45BC6 /* LaunchScreen.storyboard */; };
@@ -22,6 +20,15 @@
 		A586CE1E2318CEA000F45BC6 /* RxTestHigherFunctionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A586CE1C2318CEA000F45BC6 /* RxTestHigherFunctionVC.xib */; };
 		A586CE212318CEB900F45BC6 /* RxTestMemoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE1F2318CEB900F45BC6 /* RxTestMemoryVC.swift */; };
 		A586CE222318CEB900F45BC6 /* RxTestMemoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A586CE202318CEB900F45BC6 /* RxTestMemoryVC.xib */; };
+		A586CE292318F3DE00F45BC6 /* KRxFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE282318F3DE00F45BC6 /* KRxFirstVC.swift */; };
+		A586CE2B2318F3F200F45BC6 /* KRxSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE2A2318F3F200F45BC6 /* KRxSecondVC.swift */; };
+		A586CE332318F83F00F45BC6 /* LGCornerCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE312318F83E00F45BC6 /* LGCornerCutter.swift */; };
+		A586CE342318F83F00F45BC6 /* FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE322318F83E00F45BC6 /* FPSLabel.swift */; };
+		A586CE362318F92500F45BC6 /* KBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE352318F92500F45BC6 /* KBaseViewController.swift */; };
+		A586CE382318FA4200F45BC6 /* KPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586CE372318FA4200F45BC6 /* KPersonTableViewCell.swift */; };
+		A5E2FCAA231E3C9F00CEA0E0 /* LGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCA9231E3C9F00CEA0E0 /* LGModel.swift */; };
+		A5E2FCAC231E3D1800CEA0E0 /* LGViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCAB231E3D1800CEA0E0 /* LGViewModel.swift */; };
+		A5E2FCAE231E43CD00CEA0E0 /* KGlobalDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FCAD231E43CD00CEA0E0 /* KGlobalDefine.swift */; };
 		D144FC78E3826B43B80C45D2 /* Pods_kylRxSimpleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D054F3C3E217D999786BF93 /* Pods_kylRxSimpleDemo.framework */; };
 		E004513353E84DAA7A4B3D3B /* Pods_kylRxSimpleDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785DBB08DCEE1AAC579F6D7D /* Pods_kylRxSimpleDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,8 +58,6 @@
 		9735D9A91F83A54F9A593EF6 /* Pods-kylRxSimpleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemo.release.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemo/Pods-kylRxSimpleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A586CDE12318CD2B00F45BC6 /* kylRxSimpleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylRxSimpleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A586CDE42318CD2B00F45BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A586CDE62318CD2B00F45BC6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A586CDE82318CD2B00F45BC6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A586CDEB2318CD2B00F45BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A586CDED2318CD2D00F45BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A586CDF02318CD2D00F45BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +74,15 @@
 		A586CE1C2318CEA000F45BC6 /* RxTestHigherFunctionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxTestHigherFunctionVC.xib; sourceTree = "<group>"; };
 		A586CE1F2318CEB900F45BC6 /* RxTestMemoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTestMemoryVC.swift; sourceTree = "<group>"; };
 		A586CE202318CEB900F45BC6 /* RxTestMemoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxTestMemoryVC.xib; sourceTree = "<group>"; };
+		A586CE282318F3DE00F45BC6 /* KRxFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRxFirstVC.swift; sourceTree = "<group>"; };
+		A586CE2A2318F3F200F45BC6 /* KRxSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRxSecondVC.swift; sourceTree = "<group>"; };
+		A586CE312318F83E00F45BC6 /* LGCornerCutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGCornerCutter.swift; sourceTree = "<group>"; };
+		A586CE322318F83E00F45BC6 /* FPSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSLabel.swift; sourceTree = "<group>"; };
+		A586CE352318F92500F45BC6 /* KBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBaseViewController.swift; sourceTree = "<group>"; };
+		A586CE372318FA4200F45BC6 /* KPersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPersonTableViewCell.swift; sourceTree = "<group>"; };
+		A5E2FCA9231E3C9F00CEA0E0 /* LGModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGModel.swift; sourceTree = "<group>"; };
+		A5E2FCAB231E3D1800CEA0E0 /* LGViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGViewModel.swift; sourceTree = "<group>"; };
+		A5E2FCAD231E43CD00CEA0E0 /* KGlobalDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGlobalDefine.swift; sourceTree = "<group>"; };
 		C18286999CB152A82B70A863 /* Pods-kylRxSimpleDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemoTests/Pods-kylRxSimpleDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D12A6E18EC191F3492355651 /* Pods-kylRxSimpleDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemoUITests/Pods-kylRxSimpleDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5435B8E3D5F919188BAB433 /* Pods-kylRxSimpleDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRxSimpleDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylRxSimpleDemoUITests/Pods-kylRxSimpleDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,17 +155,22 @@
 		A586CDE32318CD2B00F45BC6 /* kylRxSimpleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A586CE302318F83000F45BC6 /* tools */,
+				A586CE2F2318F51E00F45BC6 /* controllers */,
+				A586CE2E2318F51200F45BC6 /* modelViews */,
+				A586CE2D2318F50900F45BC6 /* views */,
+				A586CE2C2318F4FE00F45BC6 /* models */,
 				A586CE232318CEC000F45BC6 /* rxUI */,
 				A586CE162318CDB800F45BC6 /* recircle_memory */,
 				A586CE152318CDA200F45BC6 /* higher_function */,
 				A586CE142318CD9000F45BC6 /* base_use */,
 				A586CDE42318CD2B00F45BC6 /* AppDelegate.swift */,
-				A586CDE62318CD2B00F45BC6 /* FirstViewController.swift */,
-				A586CDE82318CD2B00F45BC6 /* SecondViewController.swift */,
 				A586CDEA2318CD2B00F45BC6 /* Main.storyboard */,
 				A586CDED2318CD2D00F45BC6 /* Assets.xcassets */,
 				A586CDEF2318CD2D00F45BC6 /* LaunchScreen.storyboard */,
 				A586CDF22318CD2D00F45BC6 /* Info.plist */,
+				A586CE282318F3DE00F45BC6 /* KRxFirstVC.swift */,
+				A586CE2A2318F3F200F45BC6 /* KRxSecondVC.swift */,
 			);
 			path = kylRxSimpleDemo;
 			sourceTree = "<group>";
@@ -206,6 +225,48 @@
 			children = (
 			);
 			path = rxUI;
+			sourceTree = "<group>";
+		};
+		A586CE2C2318F4FE00F45BC6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FCA9231E3C9F00CEA0E0 /* LGModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A586CE2D2318F50900F45BC6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A586CE372318FA4200F45BC6 /* KPersonTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A586CE2E2318F51200F45BC6 /* modelViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FCAB231E3D1800CEA0E0 /* LGViewModel.swift */,
+			);
+			path = modelViews;
+			sourceTree = "<group>";
+		};
+		A586CE2F2318F51E00F45BC6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A586CE352318F92500F45BC6 /* KBaseViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A586CE302318F83000F45BC6 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				A586CE322318F83E00F45BC6 /* FPSLabel.swift */,
+				A586CE312318F83E00F45BC6 /* LGCornerCutter.swift */,
+				A5E2FCAD231E43CD00CEA0E0 /* KGlobalDefine.swift */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		CEE436CBA49E60503CA8E22B /* Frameworks */ = {
@@ -442,12 +503,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A586CDE92318CD2B00F45BC6 /* SecondViewController.swift in Sources */,
+				A5E2FCAE231E43CD00CEA0E0 /* KGlobalDefine.swift in Sources */,
+				A586CE362318F92500F45BC6 /* KBaseViewController.swift in Sources */,
+				A586CE292318F3DE00F45BC6 /* KRxFirstVC.swift in Sources */,
 				A586CE212318CEB900F45BC6 /* RxTestMemoryVC.swift in Sources */,
+				A5E2FCAC231E3D1800CEA0E0 /* LGViewModel.swift in Sources */,
+				A5E2FCAA231E3C9F00CEA0E0 /* LGModel.swift in Sources */,
+				A586CE342318F83F00F45BC6 /* FPSLabel.swift in Sources */,
+				A586CE382318FA4200F45BC6 /* KPersonTableViewCell.swift in Sources */,
 				A586CE1D2318CEA000F45BC6 /* RxTestHigherFunctionVC.swift in Sources */,
 				A586CDE52318CD2B00F45BC6 /* AppDelegate.swift in Sources */,
-				A586CDE72318CD2B00F45BC6 /* FirstViewController.swift in Sources */,
 				A586CE192318CE5400F45BC6 /* RxTestBaseUseVC.swift in Sources */,
+				A586CE2B2318F3F200F45BC6 /* KRxSecondVC.swift in Sources */,
+				A586CE332318F83F00F45BC6 /* LGCornerCutter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

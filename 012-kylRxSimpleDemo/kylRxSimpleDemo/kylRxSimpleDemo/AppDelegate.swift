@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupFPS()
         return true
     }
 
@@ -42,5 +43,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    private func setupFPS() {
+        
+        DispatchQueue.main.async {
+            let label = FPSLabel(frame: CGRect(x: Int((self.window!.bounds.width) - 55 - 8), y: Int(kNavBarTotalH), width: 55, height: 20))
+            label.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
+            self.window!.addSubview(label)
+        }
+    }
 }
 
