@@ -10,7 +10,7 @@ import UIKit
 
 class KRxFirstVC: KBaseViewController {
     
-    let viewModel = KRxTestViewModel()
+    let viewModel = LGViewModel()
     
     lazy var tableView: UITableView = {
         let tabView = UITableView.init(frame: self.view.bounds, style: .plain)
@@ -42,8 +42,8 @@ extension KRxFirstVC:UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = KRxFuntionItemCell.init(style: .default, reuseIdentifier: resuseID)
-        guard let model = viewModel.dataArray[indexPath.row] as? KRxTestModel else {
+        let cell = KPersonTableViewCell.init(style: .default, reuseIdentifier: resuseID)
+        guard let model = viewModel.dataArray[indexPath.row] as? LGModel else {
             return cell
         }
         cell.setUIData(model)
@@ -58,7 +58,7 @@ extension KRxFirstVC:UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let model = viewModel.dataArray[indexPath.row] as? KRxTestModel else {
+        guard let model = viewModel.dataArray[indexPath.row] as? LGModel else {
             return
         }
         debugPrint("点击:\(model.name), desc:\(model.desc), class:\(model.className)")
@@ -70,10 +70,15 @@ extension KRxFirstVC:UITableViewDelegate {
 //        self.navigationController?.pushViewController(vc, animated: true)
         
         switch model.className {
-        case "KRxHigherFunctionTestVC":
-            navigationController?.pushViewController(KRxHigherFunctionTestVC(), animated: true)
+        case "RxTestHigherFunctionVC":
+            navigationController?.pushViewController(RxTestHigherFunctionVC(), animated: true)
+            
         case "KRxTableViewEditTestVC":
             navigationController?.pushViewController(KRxTableViewEditTestVC(), animated: true)
+        case "LGSectionViewController":
+            navigationController?.pushViewController(LGSectionViewController(), animated: true)
+        case "KHigherFunSectionVC":
+            navigationController?.pushViewController(KHigherFunSectionVC(), animated: true)
         default:
             debugPrint("不处理")
         }

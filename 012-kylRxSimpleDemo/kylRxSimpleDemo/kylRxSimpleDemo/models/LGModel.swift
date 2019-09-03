@@ -17,6 +17,7 @@ class LGModel: HandyJSON {
     var name:String = ""
     var iconPath:String = ""
     var className:String = ""
+    var desc:String = ""
     
     required init() {
     }

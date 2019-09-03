@@ -85,7 +85,7 @@ class KPersonTableViewCell: UITableViewCell {
         
         self.iconView.image = UIImage.init(named: model.name)
         self.nameLabel.text = model.name
-        self.classLabel.text = model.className
+        self.classLabel.text = model.desc
         
         let iconViewSize = CGSize(width: 44, height: 44)
         self.iconView.lg_roundCorner(cornerRadii: iconViewSize.width/2)

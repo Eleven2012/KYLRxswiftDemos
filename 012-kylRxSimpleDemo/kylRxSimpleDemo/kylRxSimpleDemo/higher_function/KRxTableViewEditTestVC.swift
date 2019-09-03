@@ -64,13 +64,6 @@ class KRxTableViewEditTestVC: KBaseViewController {
     /// tableView -- RX
     func setupTableViewRX() {
         let dataOB = BehaviorSubject.init(value: self.viewModel.dataArray)
-        // 骚起来
-        //        dataOB.bind(to: self.tableView.rx.items){(tabView,row,model) ->LGTableViewCell in
-        //            let cell = tabView.dequeueReusableCell(withIdentifier: resuseID) as! LGTableViewCell
-        //            cell.setUIData(model as! LGModel)
-        //            return cell
-        //        }.disposed(by: disposeBag)
-        
         dataOB.asObserver().bind(to: self.tableView.rx.items(cellIdentifier: resuseID, cellType: KPersonTableViewCell.self)){
             (row,model,cell) in
             cell.setUIData(model as! LGModel)
