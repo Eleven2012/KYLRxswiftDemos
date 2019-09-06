@@ -1,0 +1,6 @@
+framework module Pods_kylUIFitSizeDemo {
+  umbrella header "Pods-kylUIFitSizeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

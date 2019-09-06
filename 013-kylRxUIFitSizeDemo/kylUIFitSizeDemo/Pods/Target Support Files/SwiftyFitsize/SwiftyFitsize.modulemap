@@ -1,0 +1,6 @@
+framework module SwiftyFitsize {
+  umbrella header "SwiftyFitsize-umbrella.h"
+
+  export *
+  module * { export * }
+}

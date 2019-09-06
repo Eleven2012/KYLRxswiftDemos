@@ -15,7 +15,7 @@ class KCDetailViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     var observer: AnyObserver<Any>?
-    let person: LGPerson = LGPerson()
+    let person: KPerson = KPerson()
     
     fileprivate var mySubject = PublishSubject<Any>()
     var publicOB : Observable<Any>{
