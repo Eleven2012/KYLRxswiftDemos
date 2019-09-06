@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26DA981E1D5B1CBC03CDF3C1 /* Pods_kylUIFitSizeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D18EB98A7A0527E8899ED8D /* Pods_kylUIFitSizeDemo.framework */; };
+		9498FEBC8631A96FA43A3019 /* Pods_kylUIFitSizeDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FA97D04A8D1BBE51DEAA98 /* Pods_kylUIFitSizeDemoUITests.framework */; };
+		A5E2FD1223222B0300CEA0E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD1123222B0300CEA0E0 /* AppDelegate.swift */; };
+		A5E2FD1423222B0300CEA0E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD1323222B0300CEA0E0 /* ViewController.swift */; };
+		A5E2FD1723222B0300CEA0E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E2FD1523222B0300CEA0E0 /* Main.storyboard */; };
+		A5E2FD1A23222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD1823222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodeld */; };
+		A5E2FD1C23222B0500CEA0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E2FD1B23222B0500CEA0E0 /* Assets.xcassets */; };
+		A5E2FD1F23222B0500CEA0E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E2FD1D23222B0500CEA0E0 /* LaunchScreen.storyboard */; };
+		A5E2FD2A23222B0500CEA0E0 /* kylUIFitSizeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD2923222B0500CEA0E0 /* kylUIFitSizeDemoTests.swift */; };
+		A5E2FD3523222B0500CEA0E0 /* kylUIFitSizeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD3423222B0500CEA0E0 /* kylUIFitSizeDemoUITests.swift */; };
+		A5E2FD4323222D5C00CEA0E0 /* KLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD4223222D5C00CEA0E0 /* KLayout.swift */; };
+		A5E2FD4723222F1D00CEA0E0 /* FitsizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2FD4523222F1D00CEA0E0 /* FitsizeView.swift */; };
+		A5E2FD4823222F1D00CEA0E0 /* FitsizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E2FD4623222F1D00CEA0E0 /* FitsizeView.xib */; };
+		CAEFCA496DF5C90EBA964AF8 /* Pods_kylUIFitSizeDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82B5322B59E384642D6EDD0 /* Pods_kylUIFitSizeDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5E2FD2623222B0500CEA0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E2FD0623222B0300CEA0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E2FD0D23222B0300CEA0E0;
+			remoteInfo = kylUIFitSizeDemo;
+		};
+		A5E2FD3123222B0500CEA0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E2FD0623222B0300CEA0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E2FD0D23222B0300CEA0E0;
+			remoteInfo = kylUIFitSizeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		395F8689CA5FADDF501FBB2B /* Pods-kylUIFitSizeDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylUIFitSizeDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylUIFitSizeDemoUITests/Pods-kylUIFitSizeDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D18EB98A7A0527E8899ED8D /* Pods_kylUIFitSizeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylUIFitSizeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5FD097D27358911DB20B6C /* Pods-kylUIFitSizeDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylUIFitSizeDemoTests.release.xcconfig"; path = "Target Support Files/Pods-kylUIFitSizeDemoTests/Pods-kylUIFitSizeDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E853FACA10FB46505BE014B /* Pods-kylUIFitSizeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylUIFitSizeDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylUIFitSizeDemo/Pods-kylUIFitSizeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E2FD0E23222B0300CEA0E0 /* kylUIFitSizeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylUIFitSizeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E2FD1123222B0300CEA0E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E2FD1323222B0300CEA0E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5E2FD1623222B0300CEA0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E2FD1923222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kylUIFitSizeDemo.xcdatamodel; sourceTree = "<group>"; };
+		A5E2FD1B23222B0500CEA0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E2FD1E23222B0500CEA0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E2FD2023222B0500CEA0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E2FD2523222B0500CEA0E0 /* kylUIFitSizeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylUIFitSizeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E2FD2923222B0500CEA0E0 /* kylUIFitSizeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylUIFitSizeDemoTests.swift; sourceTree = "<group>"; };
+		A5E2FD2B23222B0500CEA0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E2FD3023222B0500CEA0E0 /* kylUIFitSizeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylUIFitSizeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E2FD3423222B0500CEA0E0 /* kylUIFitSizeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylUIFitSizeDemoUITests.swift; sourceTree = "<group>"; };
+		A5E2FD3623222B0500CEA0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E2FD4223222D5C00CEA0E0 /* KLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLayout.swift; sourceTree = "<group>"; };
+		A5E2FD4523222F1D00CEA0E0 /* FitsizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitsizeView.swift; sourceTree = "<group>"; };
+		A5E2FD4623222F1D00CEA0E0 /* FitsizeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitsizeView.xib; sourceTree = "<group>"; };
+		B38EBAAC1066C15707A695E7 /* Pods-kylUIFitSizeDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylUIFitSizeDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylUIFitSizeDemoUITests/Pods-kylUIFitSizeDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA6FB1103EB2050D87C6DACC /* Pods-kylUIFitSizeDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylUIFitSizeDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylUIFitSizeDemoTests/Pods-kylUIFitSizeDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FA97D04A8D1BBE51DEAA98 /* Pods_kylUIFitSizeDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylUIFitSizeDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F616B77369D55E7AD503DB5F /* Pods-kylUIFitSizeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylUIFitSizeDemo.release.xcconfig"; path = "Target Support Files/Pods-kylUIFitSizeDemo/Pods-kylUIFitSizeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F82B5322B59E384642D6EDD0 /* Pods_kylUIFitSizeDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylUIFitSizeDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E2FD0B23222B0300CEA0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26DA981E1D5B1CBC03CDF3C1 /* Pods_kylUIFitSizeDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E2FD2223222B0500CEA0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAEFCA496DF5C90EBA964AF8 /* Pods_kylUIFitSizeDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E2FD2D23222B0500CEA0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9498FEBC8631A96FA43A3019 /* Pods_kylUIFitSizeDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5E2FD0523222B0300CEA0E0 = {
+			isa = PBXGroup;
+			children = (
+				A5E2FD1023222B0300CEA0E0 /* kylUIFitSizeDemo */,
+				A5E2FD2823222B0500CEA0E0 /* kylUIFitSizeDemoTests */,
+				A5E2FD3323222B0500CEA0E0 /* kylUIFitSizeDemoUITests */,
+				A5E2FD0F23222B0300CEA0E0 /* Products */,
+				E299DA641CD38114E6B9EA5A /* Pods */,
+				F76A43D1D8B1A1A707CD510A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E2FD0F23222B0300CEA0E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FD0E23222B0300CEA0E0 /* kylUIFitSizeDemo.app */,
+				A5E2FD2523222B0500CEA0E0 /* kylUIFitSizeDemoTests.xctest */,
+				A5E2FD3023222B0500CEA0E0 /* kylUIFitSizeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E2FD1023222B0300CEA0E0 /* kylUIFitSizeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FD4423222EF300CEA0E0 /* view */,
+				A5E2FD4223222D5C00CEA0E0 /* KLayout.swift */,
+				A5E2FD1123222B0300CEA0E0 /* AppDelegate.swift */,
+				A5E2FD1323222B0300CEA0E0 /* ViewController.swift */,
+				A5E2FD1523222B0300CEA0E0 /* Main.storyboard */,
+				A5E2FD1B23222B0500CEA0E0 /* Assets.xcassets */,
+				A5E2FD1D23222B0500CEA0E0 /* LaunchScreen.storyboard */,
+				A5E2FD2023222B0500CEA0E0 /* Info.plist */,
+				A5E2FD1823222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodeld */,
+			);
+			path = kylUIFitSizeDemo;
+			sourceTree = "<group>";
+		};
+		A5E2FD2823222B0500CEA0E0 /* kylUIFitSizeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FD2923222B0500CEA0E0 /* kylUIFitSizeDemoTests.swift */,
+				A5E2FD2B23222B0500CEA0E0 /* Info.plist */,
+			);
+			path = kylUIFitSizeDemoTests;
+			sourceTree = "<group>";
+		};
+		A5E2FD3323222B0500CEA0E0 /* kylUIFitSizeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FD3423222B0500CEA0E0 /* kylUIFitSizeDemoUITests.swift */,
+				A5E2FD3623222B0500CEA0E0 /* Info.plist */,
+			);
+			path = kylUIFitSizeDemoUITests;
+			sourceTree = "<group>";
+		};
+		A5E2FD4423222EF300CEA0E0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A5E2FD4523222F1D00CEA0E0 /* FitsizeView.swift */,
+				A5E2FD4623222F1D00CEA0E0 /* FitsizeView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E299DA641CD38114E6B9EA5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E853FACA10FB46505BE014B /* Pods-kylUIFitSizeDemo.debug.xcconfig */,
+				F616B77369D55E7AD503DB5F /* Pods-kylUIFitSizeDemo.release.xcconfig */,
+				DA6FB1103EB2050D87C6DACC /* Pods-kylUIFitSizeDemoTests.debug.xcconfig */,
+				4A5FD097D27358911DB20B6C /* Pods-kylUIFitSizeDemoTests.release.xcconfig */,
+				395F8689CA5FADDF501FBB2B /* Pods-kylUIFitSizeDemoUITests.debug.xcconfig */,
+				B38EBAAC1066C15707A695E7 /* Pods-kylUIFitSizeDemoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F76A43D1D8B1A1A707CD510A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D18EB98A7A0527E8899ED8D /* Pods_kylUIFitSizeDemo.framework */,
+				F82B5322B59E384642D6EDD0 /* Pods_kylUIFitSizeDemoTests.framework */,
+				F0FA97D04A8D1BBE51DEAA98 /* Pods_kylUIFitSizeDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E2FD0D23222B0300CEA0E0 /* kylUIFitSizeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E2FD3923222B0500CEA0E0 /* Build configuration list for PBXNativeTarget "kylUIFitSizeDemo" */;
+			buildPhases = (
+				FA57BA919C5A3AC9DE2799BF /* [CP] Check Pods Manifest.lock */,
+				A5E2FD0A23222B0300CEA0E0 /* Sources */,
+				A5E2FD0B23222B0300CEA0E0 /* Frameworks */,
+				A5E2FD0C23222B0300CEA0E0 /* Resources */,
+				886938C6DBEB578FC5BD39EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kylUIFitSizeDemo;
+			productName = kylUIFitSizeDemo;
+			productReference = A5E2FD0E23222B0300CEA0E0 /* kylUIFitSizeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5E2FD2423222B0500CEA0E0 /* kylUIFitSizeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E2FD3C23222B0500CEA0E0 /* Build configuration list for PBXNativeTarget "kylUIFitSizeDemoTests" */;
+			buildPhases = (
+				86F365EE9959D250B25A8DD1 /* [CP] Check Pods Manifest.lock */,
+				A5E2FD2123222B0500CEA0E0 /* Sources */,
+				A5E2FD2223222B0500CEA0E0 /* Frameworks */,
+				A5E2FD2323222B0500CEA0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E2FD2723222B0500CEA0E0 /* PBXTargetDependency */,
+			);
+			name = kylUIFitSizeDemoTests;
+			productName = kylUIFitSizeDemoTests;
+			productReference = A5E2FD2523222B0500CEA0E0 /* kylUIFitSizeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5E2FD2F23222B0500CEA0E0 /* kylUIFitSizeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E2FD3F23222B0500CEA0E0 /* Build configuration list for PBXNativeTarget "kylUIFitSizeDemoUITests" */;
+			buildPhases = (
+				FA995CFCA6EE4F70C6E7D56B /* [CP] Check Pods Manifest.lock */,
+				A5E2FD2C23222B0500CEA0E0 /* Sources */,
+				A5E2FD2D23222B0500CEA0E0 /* Frameworks */,
+				A5E2FD2E23222B0500CEA0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E2FD3223222B0500CEA0E0 /* PBXTargetDependency */,
+			);
+			name = kylUIFitSizeDemoUITests;
+			productName = kylUIFitSizeDemoUITests;
+			productReference = A5E2FD3023222B0500CEA0E0 /* kylUIFitSizeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E2FD0623222B0300CEA0E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A5E2FD0D23222B0300CEA0E0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A5E2FD2423222B0500CEA0E0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5E2FD0D23222B0300CEA0E0;
+					};
+					A5E2FD2F23222B0500CEA0E0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5E2FD0D23222B0300CEA0E0;
+					};
+				};
+			};
+			buildConfigurationList = A5E2FD0923222B0300CEA0E0 /* Build configuration list for PBXProject "kylUIFitSizeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E2FD0523222B0300CEA0E0;
+			productRefGroup = A5E2FD0F23222B0300CEA0E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E2FD0D23222B0300CEA0E0 /* kylUIFitSizeDemo */,
+				A5E2FD2423222B0500CEA0E0 /* kylUIFitSizeDemoTests */,
+				A5E2FD2F23222B0500CEA0E0 /* kylUIFitSizeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E2FD0C23222B0300CEA0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2FD1F23222B0500CEA0E0 /* LaunchScreen.storyboard in Resources */,
+				A5E2FD4823222F1D00CEA0E0 /* FitsizeView.xib in Resources */,
+				A5E2FD1C23222B0500CEA0E0 /* Assets.xcassets in Resources */,
+				A5E2FD1723222B0300CEA0E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E2FD2323222B0500CEA0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E2FD2E23222B0500CEA0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86F365EE9959D250B25A8DD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylUIFitSizeDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		886938C6DBEB578FC5BD39EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylUIFitSizeDemo/Pods-kylUIFitSizeDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylUIFitSizeDemo/Pods-kylUIFitSizeDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylUIFitSizeDemo/Pods-kylUIFitSizeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA57BA919C5A3AC9DE2799BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylUIFitSizeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA995CFCA6EE4F70C6E7D56B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylUIFitSizeDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E2FD0A23222B0300CEA0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2FD4723222F1D00CEA0E0 /* FitsizeView.swift in Sources */,
+				A5E2FD1423222B0300CEA0E0 /* ViewController.swift in Sources */,
+				A5E2FD4323222D5C00CEA0E0 /* KLayout.swift in Sources */,
+				A5E2FD1A23222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodeld in Sources */,
+				A5E2FD1223222B0300CEA0E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E2FD2123222B0500CEA0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2FD2A23222B0500CEA0E0 /* kylUIFitSizeDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E2FD2C23222B0500CEA0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2FD3523222B0500CEA0E0 /* kylUIFitSizeDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E2FD2723222B0500CEA0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E2FD0D23222B0300CEA0E0 /* kylUIFitSizeDemo */;
+			targetProxy = A5E2FD2623222B0500CEA0E0 /* PBXContainerItemProxy */;
+		};
+		A5E2FD3223222B0500CEA0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E2FD0D23222B0300CEA0E0 /* kylUIFitSizeDemo */;
+			targetProxy = A5E2FD3123222B0500CEA0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5E2FD1523222B0300CEA0E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E2FD1623222B0300CEA0E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E2FD1D23222B0500CEA0E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E2FD1E23222B0500CEA0E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E2FD3723222B0500CEA0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5E2FD3823222B0500CEA0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E2FD3A23222B0500CEA0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E853FACA10FB46505BE014B /* Pods-kylUIFitSizeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylUIFitSizeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylUIFitSizeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E2FD3B23222B0500CEA0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F616B77369D55E7AD503DB5F /* Pods-kylUIFitSizeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylUIFitSizeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylUIFitSizeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5E2FD3D23222B0500CEA0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6FB1103EB2050D87C6DACC /* Pods-kylUIFitSizeDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylUIFitSizeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylUIFitSizeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylUIFitSizeDemo.app/kylUIFitSizeDemo";
+			};
+			name = Debug;
+		};
+		A5E2FD3E23222B0500CEA0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5FD097D27358911DB20B6C /* Pods-kylUIFitSizeDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylUIFitSizeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylUIFitSizeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylUIFitSizeDemo.app/kylUIFitSizeDemo";
+			};
+			name = Release;
+		};
+		A5E2FD4023222B0500CEA0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395F8689CA5FADDF501FBB2B /* Pods-kylUIFitSizeDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylUIFitSizeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylUIFitSizeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylUIFitSizeDemo;
+			};
+			name = Debug;
+		};
+		A5E2FD4123222B0500CEA0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B38EBAAC1066C15707A695E7 /* Pods-kylUIFitSizeDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylUIFitSizeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylUIFitSizeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylUIFitSizeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E2FD0923222B0300CEA0E0 /* Build configuration list for PBXProject "kylUIFitSizeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E2FD3723222B0500CEA0E0 /* Debug */,
+				A5E2FD3823222B0500CEA0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E2FD3923222B0500CEA0E0 /* Build configuration list for PBXNativeTarget "kylUIFitSizeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E2FD3A23222B0500CEA0E0 /* Debug */,
+				A5E2FD3B23222B0500CEA0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E2FD3C23222B0500CEA0E0 /* Build configuration list for PBXNativeTarget "kylUIFitSizeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E2FD3D23222B0500CEA0E0 /* Debug */,
+				A5E2FD3E23222B0500CEA0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E2FD3F23222B0500CEA0E0 /* Build configuration list for PBXNativeTarget "kylUIFitSizeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E2FD4023222B0500CEA0E0 /* Debug */,
+				A5E2FD4123222B0500CEA0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5E2FD1823222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5E2FD1923222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodel */,
+			);
+			currentVersion = A5E2FD1923222B0300CEA0E0 /* kylUIFitSizeDemo.xcdatamodel */;
+			path = kylUIFitSizeDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5E2FD0623222B0300CEA0E0 /* Project object */;
+}
