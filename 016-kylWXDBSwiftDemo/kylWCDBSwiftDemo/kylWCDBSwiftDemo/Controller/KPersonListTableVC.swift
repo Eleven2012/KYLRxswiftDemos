@@ -10,6 +10,8 @@ import UIKit
 
 import SVProgressHUD
 
+let TB_Person = "tb_person"
+
 class KPersonListTableVC: UITableViewController {
     
     private var dataArray: [KPerson]?
@@ -73,11 +75,11 @@ extension KPersonListTableVC {
         let cancleAction = UIAlertAction(title: "取消", style: .cancel)
         let confirmAction = UIAlertAction(title: "确定", style: .default) { (action) in
             
-//            guard let p = self.dataArray?[indexPath.row] , let exp = KPerson.Properties.id == p.id?.asExpression() else {
-//                return
-//            }
-//            
-//            KDBManager.share.deleteFromDb(fromTable: TB_Person, where: exp)
+            guard let p = self.dataArray?[indexPath.row]  else {
+                return
+            }
+
+            KDBManager.share.deleteFromDb(fromTable: TB_Person, where: p.id)
             SVProgressHUD.showSuccess(withStatus: "删除成功!")
             self.dataArray?.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .automatic)

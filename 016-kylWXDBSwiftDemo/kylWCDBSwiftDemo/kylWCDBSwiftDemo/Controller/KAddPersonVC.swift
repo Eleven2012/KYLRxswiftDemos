@@ -64,10 +64,10 @@ extension KAddPersonVC {
         else if editType == .edit {
             //修改一个数据库中的人物
             
-//            KDBManager.share.update(table: TB_Person,
-//                                    on: KPerson.Properties.all,
-//                                    with: p,
-//                                    where: KPerson.Properties.id == p.id!.asExpression())
+            KDBManager.share.update(table: TB_Person,
+                                    on: KPerson.Properties.all,
+                                    with: p,
+                                    where: KPerson.Properties.id )
             SVProgressHUD.showSuccess(withStatus: "修改成功!")
         }
     }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5BD600E232776DC00D78BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD600D232776DC00D78BA5 /* AppDelegate.swift */; };
-		A5BD6010232776DC00D78BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD600F232776DC00D78BA5 /* ViewController.swift */; };
 		A5BD6013232776DC00D78BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BD6011232776DC00D78BA5 /* Main.storyboard */; };
 		A5BD6015232776DE00D78BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BD6014232776DE00D78BA5 /* Assets.xcassets */; };
 		A5BD6018232776DE00D78BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BD6016232776DE00D78BA5 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		A5BD604023277B8D00D78BA5 /* KDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD603F23277B8D00D78BA5 /* KDBManager.swift */; };
 		A5BD60432327955D00D78BA5 /* KPersonListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD60422327955D00D78BA5 /* KPersonListTableVC.swift */; };
 		A5BD60452327957D00D78BA5 /* KAddPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD60442327957D00D78BA5 /* KAddPersonVC.swift */; };
+		A5BD60472327B98700D78BA5 /* KTestWCDBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD60462327B98700D78BA5 /* KTestWCDBVC.swift */; };
 		B1BC086E32F28617925A969F /* Pods_kylWCDBSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C8DB2E73030273905B50B /* Pods_kylWCDBSwiftDemo.framework */; };
 		B8C3317941B7083799F35E8D /* Pods_kylWCDBSwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338A13B3502130AB4FE05612 /* Pods_kylWCDBSwiftDemoUITests.framework */; };
 		CD6AC00DB890DDFBFC05EECB /* Pods_kylWCDBSwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9C4311BCC1A9625BCB272 /* Pods_kylWCDBSwiftDemoTests.framework */; };
@@ -48,7 +48,6 @@
 		7777793CD8D3F0E1745C5A84 /* Pods-kylWCDBSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWCDBSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylWCDBSwiftDemo/Pods-kylWCDBSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BD600A232776DC00D78BA5 /* kylWCDBSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylWCDBSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BD600D232776DC00D78BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5BD600F232776DC00D78BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5BD6012232776DC00D78BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5BD6014232776DE00D78BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BD6017232776DE00D78BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		A5BD603F23277B8D00D78BA5 /* KDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDBManager.swift; sourceTree = "<group>"; };
 		A5BD60422327955D00D78BA5 /* KPersonListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPersonListTableVC.swift; sourceTree = "<group>"; };
 		A5BD60442327957D00D78BA5 /* KAddPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAddPersonVC.swift; sourceTree = "<group>"; };
+		A5BD60462327B98700D78BA5 /* KTestWCDBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestWCDBVC.swift; sourceTree = "<group>"; };
 		A7F53D72B156769C1CBB314C /* Pods-kylWCDBSwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWCDBSwiftDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylWCDBSwiftDemoUITests/Pods-kylWCDBSwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B71FA6EF414421CC581AF705 /* Pods-kylWCDBSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWCDBSwiftDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylWCDBSwiftDemoTests/Pods-kylWCDBSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B96C8DB2E73030273905B50B /* Pods_kylWCDBSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylWCDBSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +136,6 @@
 				A5BD603C232778AC00D78BA5 /* Model */,
 				A5BD603B232778A500D78BA5 /* DB */,
 				A5BD600D232776DC00D78BA5 /* AppDelegate.swift */,
-				A5BD600F232776DC00D78BA5 /* ViewController.swift */,
 				A5BD6011232776DC00D78BA5 /* Main.storyboard */,
 				A5BD6014232776DE00D78BA5 /* Assets.xcassets */,
 				A5BD6016232776DE00D78BA5 /* LaunchScreen.storyboard */,
@@ -184,6 +183,7 @@
 			children = (
 				A5BD60422327955D00D78BA5 /* KPersonListTableVC.swift */,
 				A5BD60442327957D00D78BA5 /* KAddPersonVC.swift */,
+				A5BD60462327B98700D78BA5 /* KTestWCDBVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -422,9 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5BD6010232776DC00D78BA5 /* ViewController.swift in Sources */,
 				A5BD60432327955D00D78BA5 /* KPersonListTableVC.swift in Sources */,
 				A5BD603E232778CA00D78BA5 /* KPerson.swift in Sources */,
+				A5BD60472327B98700D78BA5 /* KTestWCDBVC.swift in Sources */,
 				A5BD600E232776DC00D78BA5 /* AppDelegate.swift in Sources */,
 				A5BD604023277B8D00D78BA5 /* KDBManager.swift in Sources */,
 				A5BD60452327957D00D78BA5 /* KAddPersonVC.swift in Sources */,
