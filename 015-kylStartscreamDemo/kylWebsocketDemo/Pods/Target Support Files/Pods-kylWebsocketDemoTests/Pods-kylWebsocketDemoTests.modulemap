@@ -1,0 +1,6 @@
+framework module Pods_kylWebsocketDemoTests {
+  umbrella header "Pods-kylWebsocketDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

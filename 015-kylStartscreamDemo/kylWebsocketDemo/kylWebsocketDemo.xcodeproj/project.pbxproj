@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246E5E8EA2324D75A1DAFD1C /* Pods_kylWebsocketDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0187A831D7CC04B68D0BD6B2 /* Pods_kylWebsocketDemoTests.framework */; };
+		703AAD7AC528D9B0F6DCA0C2 /* Pods_kylWebsocketDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449C37D3952381366FFCFCC8 /* Pods_kylWebsocketDemoUITests.framework */; };
+		A5036C642325F35F000F8056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5036C632325F35F000F8056 /* AppDelegate.swift */; };
+		A5036C662325F35F000F8056 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5036C652325F35F000F8056 /* ViewController.swift */; };
+		A5036C692325F35F000F8056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5036C672325F35F000F8056 /* Main.storyboard */; };
+		A5036C6C2325F35F000F8056 /* kylWebsocketDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5036C6A2325F35F000F8056 /* kylWebsocketDemo.xcdatamodeld */; };
+		A5036C6E2325F361000F8056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5036C6D2325F361000F8056 /* Assets.xcassets */; };
+		A5036C712325F361000F8056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5036C6F2325F361000F8056 /* LaunchScreen.storyboard */; };
+		A5036C7C2325F361000F8056 /* kylWebsocketDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5036C7B2325F361000F8056 /* kylWebsocketDemoTests.swift */; };
+		A5036C872325F362000F8056 /* kylWebsocketDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5036C862325F362000F8056 /* kylWebsocketDemoUITests.swift */; };
+		BD1C7A9A5409F37140AA554F /* Pods_kylWebsocketDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204183BC88E8B626F2EEB872 /* Pods_kylWebsocketDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5036C782325F361000F8056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5036C582325F35F000F8056 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5036C5F2325F35F000F8056;
+			remoteInfo = kylWebsocketDemo;
+		};
+		A5036C832325F361000F8056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5036C582325F35F000F8056 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5036C5F2325F35F000F8056;
+			remoteInfo = kylWebsocketDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0187A831D7CC04B68D0BD6B2 /* Pods_kylWebsocketDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylWebsocketDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204183BC88E8B626F2EEB872 /* Pods_kylWebsocketDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylWebsocketDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449C37D3952381366FFCFCC8 /* Pods_kylWebsocketDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylWebsocketDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4886139870ECFA77ABA6C6BD /* Pods-kylWebsocketDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWebsocketDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylWebsocketDemoUITests/Pods-kylWebsocketDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B4B3DAAD70048C3E709B567 /* Pods-kylWebsocketDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWebsocketDemoTests.release.xcconfig"; path = "Target Support Files/Pods-kylWebsocketDemoTests/Pods-kylWebsocketDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		93629CB5B17731C8897E3B75 /* Pods-kylWebsocketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWebsocketDemo.release.xcconfig"; path = "Target Support Files/Pods-kylWebsocketDemo/Pods-kylWebsocketDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9819E47F9DA0E8F3F58695AD /* Pods-kylWebsocketDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWebsocketDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylWebsocketDemoTests/Pods-kylWebsocketDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20A18AA4B2B7D2DC65A60C7 /* Pods-kylWebsocketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWebsocketDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylWebsocketDemo/Pods-kylWebsocketDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A5036C602325F35F000F8056 /* kylWebsocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylWebsocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5036C632325F35F000F8056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5036C652325F35F000F8056 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5036C682325F35F000F8056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5036C6B2325F35F000F8056 /* kylWebsocketDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kylWebsocketDemo.xcdatamodel; sourceTree = "<group>"; };
+		A5036C6D2325F361000F8056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5036C702325F361000F8056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5036C722325F361000F8056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5036C772325F361000F8056 /* kylWebsocketDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylWebsocketDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5036C7B2325F361000F8056 /* kylWebsocketDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylWebsocketDemoTests.swift; sourceTree = "<group>"; };
+		A5036C7D2325F361000F8056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5036C822325F361000F8056 /* kylWebsocketDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylWebsocketDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5036C862325F362000F8056 /* kylWebsocketDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylWebsocketDemoUITests.swift; sourceTree = "<group>"; };
+		A5036C882325F362000F8056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8BB6D5559F6F19D17A68D8 /* Pods-kylWebsocketDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWebsocketDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylWebsocketDemoUITests/Pods-kylWebsocketDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5036C5D2325F35F000F8056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1C7A9A5409F37140AA554F /* Pods_kylWebsocketDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5036C742325F361000F8056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246E5E8EA2324D75A1DAFD1C /* Pods_kylWebsocketDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5036C7F2325F361000F8056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703AAD7AC528D9B0F6DCA0C2 /* Pods_kylWebsocketDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85E1EB8EA7566C12EBEDDEDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A20A18AA4B2B7D2DC65A60C7 /* Pods-kylWebsocketDemo.debug.xcconfig */,
+				93629CB5B17731C8897E3B75 /* Pods-kylWebsocketDemo.release.xcconfig */,
+				9819E47F9DA0E8F3F58695AD /* Pods-kylWebsocketDemoTests.debug.xcconfig */,
+				8B4B3DAAD70048C3E709B567 /* Pods-kylWebsocketDemoTests.release.xcconfig */,
+				4886139870ECFA77ABA6C6BD /* Pods-kylWebsocketDemoUITests.debug.xcconfig */,
+				BE8BB6D5559F6F19D17A68D8 /* Pods-kylWebsocketDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5036C572325F35F000F8056 = {
+			isa = PBXGroup;
+			children = (
+				A5036C622325F35F000F8056 /* kylWebsocketDemo */,
+				A5036C7A2325F361000F8056 /* kylWebsocketDemoTests */,
+				A5036C852325F362000F8056 /* kylWebsocketDemoUITests */,
+				A5036C612325F35F000F8056 /* Products */,
+				85E1EB8EA7566C12EBEDDEDE /* Pods */,
+				CEDE37B3CECE6ECF9EFF7CAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5036C612325F35F000F8056 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5036C602325F35F000F8056 /* kylWebsocketDemo.app */,
+				A5036C772325F361000F8056 /* kylWebsocketDemoTests.xctest */,
+				A5036C822325F361000F8056 /* kylWebsocketDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5036C622325F35F000F8056 /* kylWebsocketDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A5036C632325F35F000F8056 /* AppDelegate.swift */,
+				A5036C652325F35F000F8056 /* ViewController.swift */,
+				A5036C672325F35F000F8056 /* Main.storyboard */,
+				A5036C6D2325F361000F8056 /* Assets.xcassets */,
+				A5036C6F2325F361000F8056 /* LaunchScreen.storyboard */,
+				A5036C722325F361000F8056 /* Info.plist */,
+				A5036C6A2325F35F000F8056 /* kylWebsocketDemo.xcdatamodeld */,
+			);
+			path = kylWebsocketDemo;
+			sourceTree = "<group>";
+		};
+		A5036C7A2325F361000F8056 /* kylWebsocketDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5036C7B2325F361000F8056 /* kylWebsocketDemoTests.swift */,
+				A5036C7D2325F361000F8056 /* Info.plist */,
+			);
+			path = kylWebsocketDemoTests;
+			sourceTree = "<group>";
+		};
+		A5036C852325F362000F8056 /* kylWebsocketDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5036C862325F362000F8056 /* kylWebsocketDemoUITests.swift */,
+				A5036C882325F362000F8056 /* Info.plist */,
+			);
+			path = kylWebsocketDemoUITests;
+			sourceTree = "<group>";
+		};
+		CEDE37B3CECE6ECF9EFF7CAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				204183BC88E8B626F2EEB872 /* Pods_kylWebsocketDemo.framework */,
+				0187A831D7CC04B68D0BD6B2 /* Pods_kylWebsocketDemoTests.framework */,
+				449C37D3952381366FFCFCC8 /* Pods_kylWebsocketDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5036C5F2325F35F000F8056 /* kylWebsocketDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5036C8B2325F362000F8056 /* Build configuration list for PBXNativeTarget "kylWebsocketDemo" */;
+			buildPhases = (
+				ED27F67A713CCC70EED9D411 /* [CP] Check Pods Manifest.lock */,
+				A5036C5C2325F35F000F8056 /* Sources */,
+				A5036C5D2325F35F000F8056 /* Frameworks */,
+				A5036C5E2325F35F000F8056 /* Resources */,
+				4EF7B9D92532FD926A6857C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kylWebsocketDemo;
+			productName = kylWebsocketDemo;
+			productReference = A5036C602325F35F000F8056 /* kylWebsocketDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5036C762325F361000F8056 /* kylWebsocketDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5036C8E2325F362000F8056 /* Build configuration list for PBXNativeTarget "kylWebsocketDemoTests" */;
+			buildPhases = (
+				20E7FDF4137F0C450D0EA6C0 /* [CP] Check Pods Manifest.lock */,
+				A5036C732325F361000F8056 /* Sources */,
+				A5036C742325F361000F8056 /* Frameworks */,
+				A5036C752325F361000F8056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5036C792325F361000F8056 /* PBXTargetDependency */,
+			);
+			name = kylWebsocketDemoTests;
+			productName = kylWebsocketDemoTests;
+			productReference = A5036C772325F361000F8056 /* kylWebsocketDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5036C812325F361000F8056 /* kylWebsocketDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5036C912325F362000F8056 /* Build configuration list for PBXNativeTarget "kylWebsocketDemoUITests" */;
+			buildPhases = (
+				7A49257BD879C0BA85BBCC86 /* [CP] Check Pods Manifest.lock */,
+				A5036C7E2325F361000F8056 /* Sources */,
+				A5036C7F2325F361000F8056 /* Frameworks */,
+				A5036C802325F361000F8056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5036C842325F361000F8056 /* PBXTargetDependency */,
+			);
+			name = kylWebsocketDemoUITests;
+			productName = kylWebsocketDemoUITests;
+			productReference = A5036C822325F361000F8056 /* kylWebsocketDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5036C582325F35F000F8056 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A5036C5F2325F35F000F8056 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A5036C762325F361000F8056 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5036C5F2325F35F000F8056;
+					};
+					A5036C812325F361000F8056 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5036C5F2325F35F000F8056;
+					};
+				};
+			};
+			buildConfigurationList = A5036C5B2325F35F000F8056 /* Build configuration list for PBXProject "kylWebsocketDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5036C572325F35F000F8056;
+			productRefGroup = A5036C612325F35F000F8056 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5036C5F2325F35F000F8056 /* kylWebsocketDemo */,
+				A5036C762325F361000F8056 /* kylWebsocketDemoTests */,
+				A5036C812325F361000F8056 /* kylWebsocketDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5036C5E2325F35F000F8056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5036C712325F361000F8056 /* LaunchScreen.storyboard in Resources */,
+				A5036C6E2325F361000F8056 /* Assets.xcassets in Resources */,
+				A5036C692325F35F000F8056 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5036C752325F361000F8056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5036C802325F361000F8056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E7FDF4137F0C450D0EA6C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylWebsocketDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EF7B9D92532FD926A6857C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylWebsocketDemo/Pods-kylWebsocketDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylWebsocketDemo/Pods-kylWebsocketDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylWebsocketDemo/Pods-kylWebsocketDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A49257BD879C0BA85BBCC86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylWebsocketDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED27F67A713CCC70EED9D411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylWebsocketDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5036C5C2325F35F000F8056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5036C6C2325F35F000F8056 /* kylWebsocketDemo.xcdatamodeld in Sources */,
+				A5036C662325F35F000F8056 /* ViewController.swift in Sources */,
+				A5036C642325F35F000F8056 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5036C732325F361000F8056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5036C7C2325F361000F8056 /* kylWebsocketDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5036C7E2325F361000F8056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5036C872325F362000F8056 /* kylWebsocketDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5036C792325F361000F8056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5036C5F2325F35F000F8056 /* kylWebsocketDemo */;
+			targetProxy = A5036C782325F361000F8056 /* PBXContainerItemProxy */;
+		};
+		A5036C842325F361000F8056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5036C5F2325F35F000F8056 /* kylWebsocketDemo */;
+			targetProxy = A5036C832325F361000F8056 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5036C672325F35F000F8056 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5036C682325F35F000F8056 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5036C6F2325F361000F8056 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5036C702325F361000F8056 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5036C892325F362000F8056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5036C8A2325F362000F8056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5036C8C2325F362000F8056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20A18AA4B2B7D2DC65A60C7 /* Pods-kylWebsocketDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylWebsocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylWebsocketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5036C8D2325F362000F8056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93629CB5B17731C8897E3B75 /* Pods-kylWebsocketDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylWebsocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylWebsocketDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5036C8F2325F362000F8056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9819E47F9DA0E8F3F58695AD /* Pods-kylWebsocketDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylWebsocketDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylWebsocketDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylWebsocketDemo.app/kylWebsocketDemo";
+			};
+			name = Debug;
+		};
+		A5036C902325F362000F8056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B4B3DAAD70048C3E709B567 /* Pods-kylWebsocketDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylWebsocketDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylWebsocketDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylWebsocketDemo.app/kylWebsocketDemo";
+			};
+			name = Release;
+		};
+		A5036C922325F362000F8056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4886139870ECFA77ABA6C6BD /* Pods-kylWebsocketDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylWebsocketDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylWebsocketDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylWebsocketDemo;
+			};
+			name = Debug;
+		};
+		A5036C932325F362000F8056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8BB6D5559F6F19D17A68D8 /* Pods-kylWebsocketDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylWebsocketDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylWebsocketDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylWebsocketDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5036C5B2325F35F000F8056 /* Build configuration list for PBXProject "kylWebsocketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5036C892325F362000F8056 /* Debug */,
+				A5036C8A2325F362000F8056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5036C8B2325F362000F8056 /* Build configuration list for PBXNativeTarget "kylWebsocketDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5036C8C2325F362000F8056 /* Debug */,
+				A5036C8D2325F362000F8056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5036C8E2325F362000F8056 /* Build configuration list for PBXNativeTarget "kylWebsocketDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5036C8F2325F362000F8056 /* Debug */,
+				A5036C902325F362000F8056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5036C912325F362000F8056 /* Build configuration list for PBXNativeTarget "kylWebsocketDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5036C922325F362000F8056 /* Debug */,
+				A5036C932325F362000F8056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5036C6A2325F35F000F8056 /* kylWebsocketDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5036C6B2325F35F000F8056 /* kylWebsocketDemo.xcdatamodel */,
+			);
+			currentVersion = A5036C6B2325F35F000F8056 /* kylWebsocketDemo.xcdatamodel */;
+			path = kylWebsocketDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5036C582325F35F000F8056 /* Project object */;
+}
