@@ -71,7 +71,7 @@ extension KTestWCDBVC {
 
 // MARK - 更新操作
 extension KTestWCDBVC {
-    private func testUpdate() {
+    private func testUpdate2() {
         guard let db = db else {
             return
         }
@@ -116,11 +116,31 @@ extension KTestWCDBVC {
             print(error)
         }
     }
+    
+    private func testUpdate() {
+        guard let db = db else {
+            return
+        }
+        do {
+            //更新数据
+            let object = Sample()
+            object.description = "update"
+            
+            // 将 sampleTable 中前三行的 description 字段更新为 "update"
+            try db.update(table: TB_Sample,
+                          on: Sample.Properties.description,
+                          with: object,
+                          limit: 3)
+            
+        } catch {
+            print(error)
+        }
+    }
 }
 
 // MARK - 删除操作
 extension KTestWCDBVC {
-    private func testDelete() {
+    private func testDelete2() {
         guard let db = db else {
             return
         }
@@ -149,6 +169,24 @@ extension KTestWCDBVC {
             print(error)
         }
     }
+    
+    private func testDelete() {
+        guard let db = db else {
+            return
+        }
+        do {
+            //删除操作
+            // 删除 sampleTable 中所有 identifier 大于 1 的行的数据
+            try db.delete(fromTable: TB_Sample,
+                          where: Sample.Properties.identifier > 1)
+            
+            // 删除 sampleTable 中的所有数据
+            try db.delete(fromTable: TB_Sample)
+            
+        } catch {
+            print(error)
+        }
+    }
 }
 
 // MARK - 查询操作
@@ -162,9 +200,12 @@ extension KTestWCDBVC {
             // 返回 sampleTable 中的所有数据
             let allObjects: [Sample] = try db.getObjects(fromTable: TB_Sample)
             
+            print(allObjects)
+            
             // 返回 sampleTable 中 identifier 小于 5 或 大于 10 的行的数据
             let objects: [Sample] = try db.getObjects(fromTable: TB_Sample,
                                                             where: Sample.Properties.identifier < 5 || Sample.Properties.identifier > 10)
+            print(objects)
             
             // 返回 sampleTable 中 identifier 最大的行的数据
 //            let object: Sample? = try db.getObject(fromTable: TB_Sample,
@@ -192,7 +233,7 @@ extension KTestWCDBVC {
             
             // 获取 identifier 的最大值
             let maxIdentifier = try db.getValue(on: Sample.Properties.identifier.max(), fromTable: TB_Sample)
-            print(maxIdentifier.stringValue) 
+            print(maxIdentifier.stringValue)
             
             // 获取不重复的 description 的值
             let distinctDescription = try db.getDistinctValue(on: Sample.Properties.description, fromTable: TB_Sample)
