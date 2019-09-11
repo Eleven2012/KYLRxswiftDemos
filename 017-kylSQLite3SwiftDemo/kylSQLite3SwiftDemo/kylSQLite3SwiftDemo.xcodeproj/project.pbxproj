@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,18 @@
 		26977C3DFE462508FFD5480D /* Pods_kylSQLite3SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8958D1593190C4C8B7A578 /* Pods_kylSQLite3SwiftDemo.framework */; };
 		2D7DCFAA501E851DDAEDCCDD /* Pods_kylSQLite3SwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E19EF8BCA8558CD093FAAF /* Pods_kylSQLite3SwiftDemoTests.framework */; };
 		A5C54BD82328F5E800A2E4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BD72328F5E800A2E4A6 /* AppDelegate.swift */; };
-		A5C54BDA2328F5E800A2E4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BD92328F5E800A2E4A6 /* ViewController.swift */; };
 		A5C54BDD2328F5E800A2E4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C54BDB2328F5E800A2E4A6 /* Main.storyboard */; };
 		A5C54BDF2328F5E900A2E4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C54BDE2328F5E900A2E4A6 /* Assets.xcassets */; };
 		A5C54BE22328F5E900A2E4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C54BE02328F5E900A2E4A6 /* LaunchScreen.storyboard */; };
 		A5C54BED2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BEC2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift */; };
 		A5C54BF82328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BF72328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift */; };
+		A5C54C0C23290A1F00A2E4A6 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C54C0A23290A1E00A2E4A6 /* TestTableViewCell.xib */; };
+		A5C54C0D23290A1F00A2E4A6 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C0B23290A1F00A2E4A6 /* TestTableViewCell.swift */; };
+		A5C54C0F23290F6D00A2E4A6 /* KAddNewPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C0E23290F6D00A2E4A6 /* KAddNewPersonVC.swift */; };
+		A5C54C1323290FA000A2E4A6 /* KPersonListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C1223290FA000A2E4A6 /* KPersonListVC.swift */; };
+		A5C54C15232910D400A2E4A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C14232910D400A2E4A6 /* User.swift */; };
+		A5C54C17232910E600A2E4A6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C16232910E600A2E4A6 /* UserViewModel.swift */; };
+		A5C54C1A2329127300A2E4A6 /* KSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C192329127300A2E4A6 /* KSQLiteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +54,6 @@
 		9B0F00397BBA54851476AF0F /* Pods-kylSQLite3SwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemoTests/Pods-kylSQLite3SwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5C54BD42328F5E800A2E4A6 /* kylSQLite3SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylSQLite3SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C54BD72328F5E800A2E4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5C54BD92328F5E800A2E4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5C54BDC2328F5E800A2E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C54BDE2328F5E900A2E4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C54BE12328F5E900A2E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +64,13 @@
 		A5C54BF32328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylSQLite3SwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C54BF72328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylSQLite3SwiftDemoUITests.swift; sourceTree = "<group>"; };
 		A5C54BF92328F5E900A2E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C54C0A23290A1E00A2E4A6 /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		A5C54C0B23290A1F00A2E4A6 /* TestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		A5C54C0E23290F6D00A2E4A6 /* KAddNewPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAddNewPersonVC.swift; sourceTree = "<group>"; };
+		A5C54C1223290FA000A2E4A6 /* KPersonListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPersonListVC.swift; sourceTree = "<group>"; };
+		A5C54C14232910D400A2E4A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A5C54C16232910E600A2E4A6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A5C54C192329127300A2E4A6 /* KSQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSQLiteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +121,6 @@
 				9010E267B8CF5CDA61BB8BD8 /* Pods-kylSQLite3SwiftDemoUITests.debug.xcconfig */,
 				57377AC0B425C3C0129C2DF1 /* Pods-kylSQLite3SwiftDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,8 +149,12 @@
 		A5C54BD62328F5E800A2E4A6 /* kylSQLite3SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5C54C182329124000A2E4A6 /* DB */,
+				A5C54C09232909FE00A2E4A6 /* controller */,
+				A5C54C08232909F300A2E4A6 /* viewModel */,
+				A5C54C07232909EC00A2E4A6 /* view */,
+				A5C54C06232909E300A2E4A6 /* model */,
 				A5C54BD72328F5E800A2E4A6 /* AppDelegate.swift */,
-				A5C54BD92328F5E800A2E4A6 /* ViewController.swift */,
 				A5C54BDB2328F5E800A2E4A6 /* Main.storyboard */,
 				A5C54BDE2328F5E900A2E4A6 /* Assets.xcassets */,
 				A5C54BE02328F5E900A2E4A6 /* LaunchScreen.storyboard */,
@@ -164,6 +179,48 @@
 				A5C54BF92328F5E900A2E4A6 /* Info.plist */,
 			);
 			path = kylSQLite3SwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		A5C54C06232909E300A2E4A6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54C14232910D400A2E4A6 /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A5C54C07232909EC00A2E4A6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54C0B23290A1F00A2E4A6 /* TestTableViewCell.swift */,
+				A5C54C0A23290A1E00A2E4A6 /* TestTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A5C54C08232909F300A2E4A6 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54C16232910E600A2E4A6 /* UserViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		A5C54C09232909FE00A2E4A6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54C0E23290F6D00A2E4A6 /* KAddNewPersonVC.swift */,
+				A5C54C1223290FA000A2E4A6 /* KPersonListVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A5C54C182329124000A2E4A6 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54C192329127300A2E4A6 /* KSQLiteManager.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C54BE22328F5E900A2E4A6 /* LaunchScreen.storyboard in Resources */,
+				A5C54C0C23290A1F00A2E4A6 /* TestTableViewCell.xib in Resources */,
 				A5C54BDF2328F5E900A2E4A6 /* Assets.xcassets in Resources */,
 				A5C54BDD2328F5E800A2E4A6 /* Main.storyboard in Resources */,
 			);
@@ -387,8 +445,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C54BDA2328F5E800A2E4A6 /* ViewController.swift in Sources */,
 				A5C54BD82328F5E800A2E4A6 /* AppDelegate.swift in Sources */,
+				A5C54C17232910E600A2E4A6 /* UserViewModel.swift in Sources */,
+				A5C54C1A2329127300A2E4A6 /* KSQLiteManager.swift in Sources */,
+				A5C54C1323290FA000A2E4A6 /* KPersonListVC.swift in Sources */,
+				A5C54C0F23290F6D00A2E4A6 /* KAddNewPersonVC.swift in Sources */,
+				A5C54C15232910D400A2E4A6 /* User.swift in Sources */,
+				A5C54C0D23290A1F00A2E4A6 /* TestTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
