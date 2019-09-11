@@ -184,11 +184,19 @@
 		A5BD6041232793A500D78BA5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5C54C052329077700A2E4A6 /* WCDB */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5C54C052329077700A2E4A6 /* WCDB */ = {
+			isa = PBXGroup;
+			children = (
 				A5BD60422327955D00D78BA5 /* KPersonListTableVC.swift */,
 				A5BD60442327957D00D78BA5 /* KAddPersonVC.swift */,
 				A5BD60462327B98700D78BA5 /* KTestWCDBVC.swift */,
 			);
-			path = Controller;
+			path = WCDB;
 			sourceTree = "<group>";
 		};
 		A8751F7EED5501B11842EB32 /* Pods */ = {

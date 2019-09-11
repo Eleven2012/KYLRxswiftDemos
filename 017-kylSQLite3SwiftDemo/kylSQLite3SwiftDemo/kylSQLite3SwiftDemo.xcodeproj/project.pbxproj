@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AFA400B107D4B9B45678FB8 /* Pods_kylSQLite3SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 740B728B124EC4057A297226 /* Pods_kylSQLite3SwiftDemoUITests.framework */; };
+		26977C3DFE462508FFD5480D /* Pods_kylSQLite3SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8958D1593190C4C8B7A578 /* Pods_kylSQLite3SwiftDemo.framework */; };
+		2D7DCFAA501E851DDAEDCCDD /* Pods_kylSQLite3SwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E19EF8BCA8558CD093FAAF /* Pods_kylSQLite3SwiftDemoTests.framework */; };
+		A5C54BD82328F5E800A2E4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BD72328F5E800A2E4A6 /* AppDelegate.swift */; };
+		A5C54BDA2328F5E800A2E4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BD92328F5E800A2E4A6 /* ViewController.swift */; };
+		A5C54BDD2328F5E800A2E4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C54BDB2328F5E800A2E4A6 /* Main.storyboard */; };
+		A5C54BDF2328F5E900A2E4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C54BDE2328F5E900A2E4A6 /* Assets.xcassets */; };
+		A5C54BE22328F5E900A2E4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C54BE02328F5E900A2E4A6 /* LaunchScreen.storyboard */; };
+		A5C54BED2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BEC2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift */; };
+		A5C54BF82328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BF72328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5C54BE92328F5E900A2E4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C54BCC2328F5E800A2E4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C54BD32328F5E800A2E4A6;
+			remoteInfo = kylSQLite3SwiftDemo;
+		};
+		A5C54BF42328F5E900A2E4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C54BCC2328F5E800A2E4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C54BD32328F5E800A2E4A6;
+			remoteInfo = kylSQLite3SwiftDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03E19EF8BCA8558CD093FAAF /* Pods_kylSQLite3SwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylSQLite3SwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2250AE3C71593C586199AA56 /* Pods-kylSQLite3SwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemoTests/Pods-kylSQLite3SwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57377AC0B425C3C0129C2DF1 /* Pods-kylSQLite3SwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemoUITests/Pods-kylSQLite3SwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		580AC6CAF892518CF202858D /* Pods-kylSQLite3SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemo/Pods-kylSQLite3SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		740B728B124EC4057A297226 /* Pods_kylSQLite3SwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylSQLite3SwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7598F7EC1A28F42AE5C18DCE /* Pods-kylSQLite3SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemo/Pods-kylSQLite3SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8958D1593190C4C8B7A578 /* Pods_kylSQLite3SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylSQLite3SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9010E267B8CF5CDA61BB8BD8 /* Pods-kylSQLite3SwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemoUITests/Pods-kylSQLite3SwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B0F00397BBA54851476AF0F /* Pods-kylSQLite3SwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylSQLite3SwiftDemoTests.release.xcconfig"; path = "Target Support Files/Pods-kylSQLite3SwiftDemoTests/Pods-kylSQLite3SwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5C54BD42328F5E800A2E4A6 /* kylSQLite3SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylSQLite3SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C54BD72328F5E800A2E4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5C54BD92328F5E800A2E4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5C54BDC2328F5E800A2E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5C54BDE2328F5E900A2E4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5C54BE12328F5E900A2E4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5C54BE32328F5E900A2E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C54BE82328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylSQLite3SwiftDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C54BEC2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylSQLite3SwiftDemoTests.swift; sourceTree = "<group>"; };
+		A5C54BEE2328F5E900A2E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C54BF32328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylSQLite3SwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C54BF72328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylSQLite3SwiftDemoUITests.swift; sourceTree = "<group>"; };
+		A5C54BF92328F5E900A2E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5C54BD12328F5E800A2E4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26977C3DFE462508FFD5480D /* Pods_kylSQLite3SwiftDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C54BE52328F5E900A2E4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7DCFAA501E851DDAEDCCDD /* Pods_kylSQLite3SwiftDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C54BF02328F5E900A2E4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFA400B107D4B9B45678FB8 /* Pods_kylSQLite3SwiftDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A590F4F883032AAC432D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E8958D1593190C4C8B7A578 /* Pods_kylSQLite3SwiftDemo.framework */,
+				03E19EF8BCA8558CD093FAAF /* Pods_kylSQLite3SwiftDemoTests.framework */,
+				740B728B124EC4057A297226 /* Pods_kylSQLite3SwiftDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		104203207B89BD1C285A6C51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7598F7EC1A28F42AE5C18DCE /* Pods-kylSQLite3SwiftDemo.debug.xcconfig */,
+				580AC6CAF892518CF202858D /* Pods-kylSQLite3SwiftDemo.release.xcconfig */,
+				2250AE3C71593C586199AA56 /* Pods-kylSQLite3SwiftDemoTests.debug.xcconfig */,
+				9B0F00397BBA54851476AF0F /* Pods-kylSQLite3SwiftDemoTests.release.xcconfig */,
+				9010E267B8CF5CDA61BB8BD8 /* Pods-kylSQLite3SwiftDemoUITests.debug.xcconfig */,
+				57377AC0B425C3C0129C2DF1 /* Pods-kylSQLite3SwiftDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5C54BCB2328F5E800A2E4A6 = {
+			isa = PBXGroup;
+			children = (
+				A5C54BD62328F5E800A2E4A6 /* kylSQLite3SwiftDemo */,
+				A5C54BEB2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests */,
+				A5C54BF62328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests */,
+				A5C54BD52328F5E800A2E4A6 /* Products */,
+				104203207B89BD1C285A6C51 /* Pods */,
+				04A590F4F883032AAC432D41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5C54BD52328F5E800A2E4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54BD42328F5E800A2E4A6 /* kylSQLite3SwiftDemo.app */,
+				A5C54BE82328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.xctest */,
+				A5C54BF32328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5C54BD62328F5E800A2E4A6 /* kylSQLite3SwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54BD72328F5E800A2E4A6 /* AppDelegate.swift */,
+				A5C54BD92328F5E800A2E4A6 /* ViewController.swift */,
+				A5C54BDB2328F5E800A2E4A6 /* Main.storyboard */,
+				A5C54BDE2328F5E900A2E4A6 /* Assets.xcassets */,
+				A5C54BE02328F5E900A2E4A6 /* LaunchScreen.storyboard */,
+				A5C54BE32328F5E900A2E4A6 /* Info.plist */,
+			);
+			path = kylSQLite3SwiftDemo;
+			sourceTree = "<group>";
+		};
+		A5C54BEB2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54BEC2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift */,
+				A5C54BEE2328F5E900A2E4A6 /* Info.plist */,
+			);
+			path = kylSQLite3SwiftDemoTests;
+			sourceTree = "<group>";
+		};
+		A5C54BF62328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5C54BF72328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift */,
+				A5C54BF92328F5E900A2E4A6 /* Info.plist */,
+			);
+			path = kylSQLite3SwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5C54BD32328F5E800A2E4A6 /* kylSQLite3SwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C54BFC2328F5E900A2E4A6 /* Build configuration list for PBXNativeTarget "kylSQLite3SwiftDemo" */;
+			buildPhases = (
+				D71612B847C06C3D0A509A3D /* [CP] Check Pods Manifest.lock */,
+				A5C54BD02328F5E800A2E4A6 /* Sources */,
+				A5C54BD12328F5E800A2E4A6 /* Frameworks */,
+				A5C54BD22328F5E800A2E4A6 /* Resources */,
+				B275BF9862166E7DB26A5067 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kylSQLite3SwiftDemo;
+			productName = kylSQLite3SwiftDemo;
+			productReference = A5C54BD42328F5E800A2E4A6 /* kylSQLite3SwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5C54BE72328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C54BFF2328F5E900A2E4A6 /* Build configuration list for PBXNativeTarget "kylSQLite3SwiftDemoTests" */;
+			buildPhases = (
+				0286663A6FCBE8FC50B7661D /* [CP] Check Pods Manifest.lock */,
+				A5C54BE42328F5E900A2E4A6 /* Sources */,
+				A5C54BE52328F5E900A2E4A6 /* Frameworks */,
+				A5C54BE62328F5E900A2E4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C54BEA2328F5E900A2E4A6 /* PBXTargetDependency */,
+			);
+			name = kylSQLite3SwiftDemoTests;
+			productName = kylSQLite3SwiftDemoTests;
+			productReference = A5C54BE82328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5C54BF22328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C54C022328F5E900A2E4A6 /* Build configuration list for PBXNativeTarget "kylSQLite3SwiftDemoUITests" */;
+			buildPhases = (
+				F182EACA0C77E9000BEDD369 /* [CP] Check Pods Manifest.lock */,
+				A5C54BEF2328F5E900A2E4A6 /* Sources */,
+				A5C54BF02328F5E900A2E4A6 /* Frameworks */,
+				A5C54BF12328F5E900A2E4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5C54BF52328F5E900A2E4A6 /* PBXTargetDependency */,
+			);
+			name = kylSQLite3SwiftDemoUITests;
+			productName = kylSQLite3SwiftDemoUITests;
+			productReference = A5C54BF32328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5C54BCC2328F5E800A2E4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yulu kong";
+				TargetAttributes = {
+					A5C54BD32328F5E800A2E4A6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					A5C54BE72328F5E900A2E4A6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5C54BD32328F5E800A2E4A6;
+					};
+					A5C54BF22328F5E900A2E4A6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = A5C54BD32328F5E800A2E4A6;
+					};
+				};
+			};
+			buildConfigurationList = A5C54BCF2328F5E800A2E4A6 /* Build configuration list for PBXProject "kylSQLite3SwiftDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5C54BCB2328F5E800A2E4A6;
+			productRefGroup = A5C54BD52328F5E800A2E4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5C54BD32328F5E800A2E4A6 /* kylSQLite3SwiftDemo */,
+				A5C54BE72328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests */,
+				A5C54BF22328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5C54BD22328F5E800A2E4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C54BE22328F5E900A2E4A6 /* LaunchScreen.storyboard in Resources */,
+				A5C54BDF2328F5E900A2E4A6 /* Assets.xcassets in Resources */,
+				A5C54BDD2328F5E800A2E4A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C54BE62328F5E900A2E4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C54BF12328F5E900A2E4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0286663A6FCBE8FC50B7661D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylSQLite3SwiftDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B275BF9862166E7DB26A5067 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylSQLite3SwiftDemo/Pods-kylSQLite3SwiftDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kylSQLite3SwiftDemo/Pods-kylSQLite3SwiftDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kylSQLite3SwiftDemo/Pods-kylSQLite3SwiftDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71612B847C06C3D0A509A3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylSQLite3SwiftDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F182EACA0C77E9000BEDD369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kylSQLite3SwiftDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C54BD02328F5E800A2E4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C54BDA2328F5E800A2E4A6 /* ViewController.swift in Sources */,
+				A5C54BD82328F5E800A2E4A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C54BE42328F5E900A2E4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C54BED2328F5E900A2E4A6 /* kylSQLite3SwiftDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C54BEF2328F5E900A2E4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C54BF82328F5E900A2E4A6 /* kylSQLite3SwiftDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5C54BEA2328F5E900A2E4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C54BD32328F5E800A2E4A6 /* kylSQLite3SwiftDemo */;
+			targetProxy = A5C54BE92328F5E900A2E4A6 /* PBXContainerItemProxy */;
+		};
+		A5C54BF52328F5E900A2E4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5C54BD32328F5E800A2E4A6 /* kylSQLite3SwiftDemo */;
+			targetProxy = A5C54BF42328F5E900A2E4A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5C54BDB2328F5E800A2E4A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C54BDC2328F5E800A2E4A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5C54BE02328F5E900A2E4A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5C54BE12328F5E900A2E4A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5C54BFA2328F5E900A2E4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5C54BFB2328F5E900A2E4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5C54BFD2328F5E900A2E4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7598F7EC1A28F42AE5C18DCE /* Pods-kylSQLite3SwiftDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylSQLite3SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylSQLite3SwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5C54BFE2328F5E900A2E4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 580AC6CAF892518CF202858D /* Pods-kylSQLite3SwiftDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylSQLite3SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylSQLite3SwiftDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5C54C002328F5E900A2E4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2250AE3C71593C586199AA56 /* Pods-kylSQLite3SwiftDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylSQLite3SwiftDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylSQLite3SwiftDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylSQLite3SwiftDemo.app/kylSQLite3SwiftDemo";
+			};
+			name = Debug;
+		};
+		A5C54C012328F5E900A2E4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0F00397BBA54851476AF0F /* Pods-kylSQLite3SwiftDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylSQLite3SwiftDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylSQLite3SwiftDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kylSQLite3SwiftDemo.app/kylSQLite3SwiftDemo";
+			};
+			name = Release;
+		};
+		A5C54C032328F5E900A2E4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9010E267B8CF5CDA61BB8BD8 /* Pods-kylSQLite3SwiftDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylSQLite3SwiftDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylSQLite3SwiftDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylSQLite3SwiftDemo;
+			};
+			name = Debug;
+		};
+		A5C54C042328F5E900A2E4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57377AC0B425C3C0129C2DF1 /* Pods-kylSQLite3SwiftDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GLWCRSS83U;
+				INFOPLIST_FILE = kylSQLite3SwiftDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wswy.l05.kylSQLite3SwiftDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = kylSQLite3SwiftDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5C54BCF2328F5E800A2E4A6 /* Build configuration list for PBXProject "kylSQLite3SwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C54BFA2328F5E900A2E4A6 /* Debug */,
+				A5C54BFB2328F5E900A2E4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C54BFC2328F5E900A2E4A6 /* Build configuration list for PBXNativeTarget "kylSQLite3SwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C54BFD2328F5E900A2E4A6 /* Debug */,
+				A5C54BFE2328F5E900A2E4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C54BFF2328F5E900A2E4A6 /* Build configuration list for PBXNativeTarget "kylSQLite3SwiftDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C54C002328F5E900A2E4A6 /* Debug */,
+				A5C54C012328F5E900A2E4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5C54C022328F5E900A2E4A6 /* Build configuration list for PBXNativeTarget "kylSQLite3SwiftDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C54C032328F5E900A2E4A6 /* Debug */,
+				A5C54C042328F5E900A2E4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5C54BCC2328F5E800A2E4A6 /* Project object */;
+}

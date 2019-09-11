@@ -80,6 +80,12 @@ extension KTestWCDBVC {
             let object = Sample()
             object.description = "update"
             
+            // 将 sampleTable 中前三行的 description 字段更新为 "update"
+            try db.update(table: TB_Sample,
+                          on: Sample.Properties.description,
+                          with: object,
+                          limit: 3)
+            
             // 将 sampleTable 中所有 identifier 大于 1 且 description 字段不为空 的行的 description 字段更新为 "update"
 //            try db.update(table: TB_Sample,
 //                          on: Sample.Properties.description,
@@ -87,13 +93,8 @@ extension KTestWCDBVC {
 //                          where: Sample.Properites.identifier > 1 && Sample.Properties.description.isNotNull()
 //                          )
             
-            // 将 sampleTable 中前三行的 description 字段更新为 "update"
-            try db.update(table: TB_Sample,
-                on: Sample.Properties.description,
-                with: object,
-                limit: 3)
             
-            let row: [ColumnCodableBase] = ["update"]
+//            let row: [ColumnCodableBase] = ["update"]
             
             // 将 sampleTable 中所有 identifier 大于 1 且 description 字段不为空 的行的 description 字段更新为 "update"
 //            try db.update(table: TB_Sample,
@@ -107,10 +108,6 @@ extension KTestWCDBVC {
 //                with: row,
 //                limit: 3)
             
-            //try db.update(table: <#T##String#>, on: <#T##[PropertyConvertible]#>, with: <#T##[ColumnEncodable]#>, where: <#T##Condition?#>, orderBy: <#T##[OrderBy]?#>, limit: <#T##Limit?#>, offset: <#T##Offset?#>)
-            //try db.update(table: <#T##String#>, on: <#T##[PropertyConvertible]#>, with: <#T##TableEncodable#>, where: <#T##Condition?#>, orderBy: <#T##[OrderBy]?#>, limit: <#T##Limit?#>, offset: <#T##Offset?#>)
-            //try db.update(table: <#T##String#>, on: <#T##PropertyConvertible...##PropertyConvertible#>, with: <#T##[ColumnEncodable]#>, where: <#T##Condition?#>, orderBy: <#T##[OrderBy]?#>, limit: <#T##Limit?#>, offset: <#T##Offset?#>)
-            //try db.update(table: <#T##String#>, on: <#T##PropertyConvertible...##PropertyConvertible#>, with: <#T##TableEncodable#>, where: <#T##Condition?#>, orderBy: <#T##[OrderBy]?#>, limit: <#T##Limit?#>, offset: <#T##Offset?#>)
             
         } catch {
             print(error)
