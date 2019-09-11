@@ -23,6 +23,8 @@
 		A5C54C15232910D400A2E4A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C14232910D400A2E4A6 /* User.swift */; };
 		A5C54C17232910E600A2E4A6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C16232910E600A2E4A6 /* UserViewModel.swift */; };
 		A5C54C1A2329127300A2E4A6 /* KSQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C192329127300A2E4A6 /* KSQLiteManager.swift */; };
+		A5C54C1C2329186200A2E4A6 /* KTestSQLiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C1B2329186200A2E4A6 /* KTestSQLiteVC.swift */; };
+		A5C54C1E2329189100A2E4A6 /* KDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C1D2329189100A2E4A6 /* KDataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		A5C54C14232910D400A2E4A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A5C54C16232910E600A2E4A6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A5C54C192329127300A2E4A6 /* KSQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSQLiteManager.swift; sourceTree = "<group>"; };
+		A5C54C1B2329186200A2E4A6 /* KTestSQLiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestSQLiteVC.swift; sourceTree = "<group>"; };
+		A5C54C1D2329189100A2E4A6 /* KDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 			children = (
 				A5C54C0E23290F6D00A2E4A6 /* KAddNewPersonVC.swift */,
 				A5C54C1223290FA000A2E4A6 /* KPersonListVC.swift */,
+				A5C54C1B2329186200A2E4A6 /* KTestSQLiteVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				A5C54C192329127300A2E4A6 /* KSQLiteManager.swift */,
+				A5C54C1D2329189100A2E4A6 /* KDataBase.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -449,6 +455,8 @@
 				A5C54C17232910E600A2E4A6 /* UserViewModel.swift in Sources */,
 				A5C54C1A2329127300A2E4A6 /* KSQLiteManager.swift in Sources */,
 				A5C54C1323290FA000A2E4A6 /* KPersonListVC.swift in Sources */,
+				A5C54C1C2329186200A2E4A6 /* KTestSQLiteVC.swift in Sources */,
+				A5C54C1E2329189100A2E4A6 /* KDataBase.swift in Sources */,
 				A5C54C0F23290F6D00A2E4A6 /* KAddNewPersonVC.swift in Sources */,
 				A5C54C15232910D400A2E4A6 /* User.swift in Sources */,
 				A5C54C0D23290A1F00A2E4A6 /* TestTableViewCell.swift in Sources */,
