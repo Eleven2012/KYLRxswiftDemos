@@ -18,6 +18,7 @@
 		A5BD60432327955D00D78BA5 /* KPersonListTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD60422327955D00D78BA5 /* KPersonListTableVC.swift */; };
 		A5BD60452327957D00D78BA5 /* KAddPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD60442327957D00D78BA5 /* KAddPersonVC.swift */; };
 		A5BD60472327B98700D78BA5 /* KTestWCDBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD60462327B98700D78BA5 /* KTestWCDBVC.swift */; };
+		A5C54BCA2328DDB700A2E4A6 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54BC92328DDB700A2E4A6 /* Sample.swift */; };
 		B1BC086E32F28617925A969F /* Pods_kylWCDBSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C8DB2E73030273905B50B /* Pods_kylWCDBSwiftDemo.framework */; };
 		B8C3317941B7083799F35E8D /* Pods_kylWCDBSwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338A13B3502130AB4FE05612 /* Pods_kylWCDBSwiftDemoUITests.framework */; };
 		CD6AC00DB890DDFBFC05EECB /* Pods_kylWCDBSwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD9C4311BCC1A9625BCB272 /* Pods_kylWCDBSwiftDemoTests.framework */; };
@@ -63,6 +64,7 @@
 		A5BD60422327955D00D78BA5 /* KPersonListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPersonListTableVC.swift; sourceTree = "<group>"; };
 		A5BD60442327957D00D78BA5 /* KAddPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAddPersonVC.swift; sourceTree = "<group>"; };
 		A5BD60462327B98700D78BA5 /* KTestWCDBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTestWCDBVC.swift; sourceTree = "<group>"; };
+		A5C54BC92328DDB700A2E4A6 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		A7F53D72B156769C1CBB314C /* Pods-kylWCDBSwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWCDBSwiftDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-kylWCDBSwiftDemoUITests/Pods-kylWCDBSwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B71FA6EF414421CC581AF705 /* Pods-kylWCDBSwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylWCDBSwiftDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylWCDBSwiftDemoTests/Pods-kylWCDBSwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B96C8DB2E73030273905B50B /* Pods_kylWCDBSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylWCDBSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				A5BD603D232778CA00D78BA5 /* KPerson.swift */,
+				A5C54BC92328DDB700A2E4A6 /* Sample.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				A5BD60472327B98700D78BA5 /* KTestWCDBVC.swift in Sources */,
 				A5BD600E232776DC00D78BA5 /* AppDelegate.swift in Sources */,
 				A5BD604023277B8D00D78BA5 /* KDBManager.swift in Sources */,
+				A5C54BCA2328DDB700A2E4A6 /* Sample.swift in Sources */,
 				A5BD60452327957D00D78BA5 /* KAddPersonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
