@@ -10,8 +10,9 @@
 //  Database.swift
 //  iOS_Client
 //
-//  Created by AlexTiger on 2020/13/33.
-//  Copyright © 2020年 Tiger. All rights reserved.
+//  Created by yulu kong on 2019/9/11.
+//  Copyright © 2019 yulu kong. All rights reserved.
+//
 //
 
 import Foundation
