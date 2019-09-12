@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'kylSQLite3SwiftDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for kylSQLite3SwiftDemo
+  #pod 'SQLCipher'
+    pod 'SQLite.swift'
+    pod  'SwiftyJSON'
+    
+  target 'kylSQLite3SwiftDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'kylSQLite3SwiftDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-kylSQLite3SwiftDemo/Pods-kylSQLite3SwiftDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

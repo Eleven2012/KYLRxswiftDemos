@@ -1,0 +1,6 @@
+framework module Pods_kylSQLite3SwiftDemoTests {
+  umbrella header "Pods-kylSQLite3SwiftDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
