@@ -7,10 +7,10 @@ target 'kylRealmSwiftDemo' do
    
   # Pods for kylRealmSwiftDemo
       # Persistence
-  pod 'RealmSwift'
-  pod 'SwiftyJSON'
-  # Model
-  pod 'ObjectMapper'
+      pod 'RealmSwift'
+      pod 'SwiftyJSON'
+      # Model
+      pod 'ObjectMapper'
   
   target 'kylRealmSwiftDemoTests' do
     inherit! :search_paths
