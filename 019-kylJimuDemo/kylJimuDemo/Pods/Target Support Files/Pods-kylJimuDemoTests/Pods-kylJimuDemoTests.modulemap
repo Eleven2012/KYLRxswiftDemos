@@ -1,0 +1,6 @@
+framework module Pods_kylJimuDemoTests {
+  umbrella header "Pods-kylJimuDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
