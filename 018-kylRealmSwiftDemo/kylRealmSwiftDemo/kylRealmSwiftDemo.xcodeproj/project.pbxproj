@@ -18,6 +18,7 @@
 		A5C54C4C2329D21D00A2E4A6 /* kylRealmSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C4B2329D21D00A2E4A6 /* kylRealmSwiftDemoUITests.swift */; };
 		A5C54C5B2329D5A100A2E4A6 /* KRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C5A2329D5A100A2E4A6 /* KRealmManager.swift */; };
 		A5C54C5E2329D73100A2E4A6 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C54C5D2329D73100A2E4A6 /* RealmModel.swift */; };
+		A5D47F46232F1A320043377F /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F45232F1A320043377F /* Student.swift */; };
 		AC538B1221C1C79A2BD74AD1 /* Pods_kylRealmSwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1016E314D365F2A5EB4E30 /* Pods_kylRealmSwiftDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		A5C54C4D2329D21D00A2E4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5C54C5A2329D5A100A2E4A6 /* KRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRealmManager.swift; sourceTree = "<group>"; };
 		A5C54C5D2329D73100A2E4A6 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		A5D47F45232F1A320043377F /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		B8C9B6C97F272289FEE9EC9C /* Pods-kylRealmSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRealmSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-kylRealmSwiftDemo/Pods-kylRealmSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EB44C93CF61DF63A9D8A829A /* Pods_kylRealmSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylRealmSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDC556DC628C772DC355E41 /* Pods-kylRealmSwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylRealmSwiftDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylRealmSwiftDemoUITests/Pods-kylRealmSwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				A5C54C5D2329D73100A2E4A6 /* RealmModel.swift */,
+				A5D47F45232F1A320043377F /* Student.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				A5C54C2E2329D21C00A2E4A6 /* ViewController.swift in Sources */,
 				A5C54C5E2329D73100A2E4A6 /* RealmModel.swift in Sources */,
 				A5C54C2C2329D21C00A2E4A6 /* AppDelegate.swift in Sources */,
+				A5D47F46232F1A320043377F /* Student.swift in Sources */,
 				A5C54C5B2329D5A100A2E4A6 /* KRealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

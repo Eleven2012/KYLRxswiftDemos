@@ -28,6 +28,28 @@ final class KRealmManager {
         Realm.Configuration.defaultConfiguration = config
     }
     
+    /// 配置数据库
+    class func configRealm() {
+        /// 如果要存储的数据模型属性发生变化,需要配置当前版本号比之前大
+        let dbVersion : UInt64 = 3
+        let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
+        let dbPath = docPath.appending("/defaultDB.realm")
+        let config = Realm.Configuration(fileURL: URL.init(string: dbPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: dbVersion, migrationBlock: { (migration, oldSchemaVersion) in
+//            migration.enumerateObjects(ofType: Student.className(), { (oldObject, newObject) in
+//                let name = oldObject!["name"] as! String
+//                newObject!["groupName"] = "孔雨露\(name)"
+//            })
+        }, deleteRealmIfMigrationNeeded: false, shouldCompactOnLaunch: nil, objectTypes: nil)
+        Realm.Configuration.defaultConfiguration = config
+        Realm.asyncOpen { (realm, error) in
+            if let _ = realm {
+                print("Realm 服务器配置成功!")
+            }else if let error = error {
+                print("Realm 数据库配置失败：\(error.localizedDescription)")
+            }
+        }
+    }
+    
     /// 做写入操作
     static func doWriteHandler(_ clouse: @escaping ()->()) { // 这里用到了 Trailing 闭包
         try! sharedInstance.write {
@@ -147,6 +169,10 @@ final class KRealmManager {
     /// 查询排序后所有数据,关键词及是否升序
     static func selectScoretByAll<T: Object>(_: T.Type ,key: String, isAscending: Bool) -> Results<T>{
         return sharedInstance.objects(T.self).sorted(byKeyPath: key, ascending: isAscending)
+    }
+    
+    static func select<T: Object>(type: T.Type, by primaryKey:String) -> T? {
+        return sharedInstance.object(ofType: type, forPrimaryKey: primaryKey)
     }
     
     //--- MARK: 删除 Realm
