@@ -6,10 +6,62 @@ target 'kylJimuDemo' do
   use_frameworks!
 
   # Pods for kylJimuDemo
+  
+  
+      # Persistence
       pod 'RealmSwift'
       pod 'SwiftyJSON'
+      
       # Model
       pod 'ObjectMapper'
+      
+      # Logging
+      pod 'CocoaLumberjack/Swift'
+      
+      # UI
+      pod 'SnapKit'
+      pod 'YYText'
+      pod 'Toaster'
+      pod 'SVProgressHUD'
+      pod 'FSPagerView'
+      pod 'ManualLayout'
+      pod 'URLNavigator'
+      
+      # Rx
+        pod 'RxSwift' ,    '~> 4.4'
+        pod 'RxCocoa'
+        pod 'RxDataSources'
+        pod 'RxGesture'
+        pod 'NSObject+Rx'
+        pod 'RxOptional'
+        pod 'RxViewController'
+      
+      # Networking
+        pod 'Kingfisher'
+        pod 'Alamofire'
+        pod 'Moya' ,    '~> 12.0.1'
+        pod 'Moya/RxSwift'
+      
+      # Misc.
+      pod 'CGFloatLiteral'
+      pod 'Dollar'
+      pod 'Then'
+      pod 'SwiftyColor'
+      pod 'SwiftyImage'
+      pod 'SwiftTimer'
+      pod 'SwiftDate'
+      pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
+      pod 'ReachabilitySwift'
+      pod 'ReusableKit'
+      pod 'ReusableKit/RxSwift'  # with RxSwift extension
+      pod 'GDPerformanceView-Swift'
+      pod 'EmptyKit'
+      
+
+
+      
+
+      
   target 'kylJimuDemoTests' do
     inherit! :search_paths
     # Pods for testing

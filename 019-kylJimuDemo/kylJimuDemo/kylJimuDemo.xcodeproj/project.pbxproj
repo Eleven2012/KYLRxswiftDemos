@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,16 @@
 		4F52DC6D09D99766321452AF /* Pods_kylJimuDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B710873F6E3D6B9026CDBF7 /* Pods_kylJimuDemoUITests.framework */; };
 		86C444A953D4C9B2A5A1E7D0 /* Pods_kylJimuDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B93763011DA571619A6A76F /* Pods_kylJimuDemoTests.framework */; };
 		A5D47F54232F5CEB0043377F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F53232F5CEB0043377F /* AppDelegate.swift */; };
-		A5D47F56232F5CEB0043377F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F55232F5CEB0043377F /* ViewController.swift */; };
 		A5D47F59232F5CEB0043377F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D47F57232F5CEB0043377F /* Main.storyboard */; };
 		A5D47F5B232F5CEC0043377F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D47F5A232F5CEC0043377F /* Assets.xcassets */; };
 		A5D47F5E232F5CEC0043377F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D47F5C232F5CEC0043377F /* LaunchScreen.storyboard */; };
 		A5D47F69232F5CED0043377F /* kylJimuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F68232F5CED0043377F /* kylJimuDemoTests.swift */; };
 		A5D47F74232F5CED0043377F /* kylJimuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F73232F5CED0043377F /* kylJimuDemoUITests.swift */; };
+		A5D47F95233222EB0043377F /* KRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F94233222EB0043377F /* KRealmManager.swift */; };
+		A5D47F972332236B0043377F /* KImageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F962332236B0043377F /* KImageConfig.swift */; };
+		A5D47F992332237C0043377F /* KFontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F982332237C0043377F /* KFontConfig.swift */; };
+		A5D47F9B2332239A0043377F /* KAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F9A2332239A0043377F /* KAppConfig.swift */; };
+		A5D47F9D233225530043377F /* KCompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D47F9C233225530043377F /* KCompositionRoot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,6 @@
 		A2A0D390818A6FCD98C3C7F1 /* Pods-kylJimuDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylJimuDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-kylJimuDemoTests/Pods-kylJimuDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5D47F50232F5CEB0043377F /* kylJimuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylJimuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D47F53232F5CEB0043377F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5D47F55232F5CEB0043377F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5D47F58232F5CEB0043377F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5D47F5A232F5CEC0043377F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D47F5D232F5CEC0043377F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +59,11 @@
 		A5D47F6F232F5CED0043377F /* kylJimuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kylJimuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D47F73232F5CED0043377F /* kylJimuDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kylJimuDemoUITests.swift; sourceTree = "<group>"; };
 		A5D47F75232F5CED0043377F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D47F94233222EB0043377F /* KRealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KRealmManager.swift; path = "../../../../../018-kylRealmSwiftDemo/kylRealmSwiftDemo/kylRealmSwiftDemo/DB/KRealmManager.swift"; sourceTree = "<group>"; };
+		A5D47F962332236B0043377F /* KImageConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KImageConfig.swift; sourceTree = "<group>"; };
+		A5D47F982332237C0043377F /* KFontConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFontConfig.swift; sourceTree = "<group>"; };
+		A5D47F9A2332239A0043377F /* KAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAppConfig.swift; sourceTree = "<group>"; };
+		A5D47F9C233225530043377F /* KCompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCompositionRoot.swift; sourceTree = "<group>"; };
 		D0610EB38452192198F79C3F /* Pods_kylJimuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kylJimuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52A621121EF5542A894D439 /* Pods-kylJimuDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylJimuDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-kylJimuDemoUITests/Pods-kylJimuDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F57D291EF7E542E8E534B927 /* Pods-kylJimuDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kylJimuDemoTests.release.xcconfig"; path = "Target Support Files/Pods-kylJimuDemoTests/Pods-kylJimuDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +107,6 @@
 				31C98C209B1D35131AD59852 /* Pods-kylJimuDemoUITests.debug.xcconfig */,
 				D52A621121EF5542A894D439 /* Pods-kylJimuDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,11 +135,8 @@
 		A5D47F52232F5CEB0043377F /* kylJimuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A5D47F53232F5CEB0043377F /* AppDelegate.swift */,
-				A5D47F55232F5CEB0043377F /* ViewController.swift */,
-				A5D47F57232F5CEB0043377F /* Main.storyboard */,
-				A5D47F5A232F5CEC0043377F /* Assets.xcassets */,
-				A5D47F5C232F5CEC0043377F /* LaunchScreen.storyboard */,
+				A5D47F87233218AD0043377F /* Sources */,
+				A5D47F88233218F70043377F /* Resources */,
 				A5D47F5F232F5CEC0043377F /* Info.plist */,
 			);
 			path = kylJimuDemo;
@@ -154,6 +158,117 @@
 				A5D47F75232F5CED0043377F /* Info.plist */,
 			);
 			path = kylJimuDemoUITests;
+			sourceTree = "<group>";
+		};
+		A5D47F87233218AD0043377F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A5D47F9323321CE80043377F /* Constants */,
+				A5D47F9223321CD70043377F /* Extensions */,
+				A5D47F9123321CB50043377F /* Tools */,
+				A5D47F9023321C790043377F /* DB */,
+				A5D47F8F23321C710043377F /* Network */,
+				A5D47F8E23321C590043377F /* Utils */,
+				A5D47F8D23321BD50043377F /* Services */,
+				A5D47F8C23321BAE0043377F /* Controllers */,
+				A5D47F8B23321BA40043377F /* ViewModels */,
+				A5D47F8A23321B9D0043377F /* Views */,
+				A5D47F8923321B920043377F /* Models */,
+				A5D47F53232F5CEB0043377F /* AppDelegate.swift */,
+				A5D47F9C233225530043377F /* KCompositionRoot.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A5D47F88233218F70043377F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5D47F5A232F5CEC0043377F /* Assets.xcassets */,
+				A5D47F57232F5CEB0043377F /* Main.storyboard */,
+				A5D47F5C232F5CEC0043377F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5D47F8923321B920043377F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5D47F8A23321B9D0043377F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5D47F8B23321BA40043377F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A5D47F8C23321BAE0043377F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5D47F8D23321BD50043377F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5D47F8E23321C590043377F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A5D47F8F23321C710043377F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A5D47F9023321C790043377F /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A5D47F94233222EB0043377F /* KRealmManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A5D47F9123321CB50043377F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A5D47F9223321CD70043377F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5D47F9323321CE80043377F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A5D47F962332236B0043377F /* KImageConfig.swift */,
+				A5D47F982332237C0043377F /* KFontConfig.swift */,
+				A5D47F9A2332239A0043377F /* KAppConfig.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		F3A23FE35375658225801967 /* Frameworks */ = {
@@ -387,8 +502,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D47F56232F5CEB0043377F /* ViewController.swift in Sources */,
+				A5D47F9D233225530043377F /* KCompositionRoot.swift in Sources */,
+				A5D47F992332237C0043377F /* KFontConfig.swift in Sources */,
 				A5D47F54232F5CEB0043377F /* AppDelegate.swift in Sources */,
+				A5D47F95233222EB0043377F /* KRealmManager.swift in Sources */,
+				A5D47F9B2332239A0043377F /* KAppConfig.swift in Sources */,
+				A5D47F972332236B0043377F /* KImageConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kylJimuDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,6 +706,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kylJimuDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
