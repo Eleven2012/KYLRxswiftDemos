@@ -16,6 +16,7 @@
 		A5F87B63234C8C2B00813329 /* kylDrawDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F87B62234C8C2B00813329 /* kylDrawDemoUITests.swift */; };
 		A5F87B71234C8D0500813329 /* KWaveAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F87B70234C8D0500813329 /* KWaveAnimationView.swift */; };
 		A5F87B75234C8D6600813329 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F87B74234C8D6600813329 /* UIColor+Hex.swift */; };
+		A5F87B78234C8FD600813329 /* KDrawRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F87B77234C8FD600813329 /* KDrawRectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A5F87B64234C8C2B00813329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5F87B70234C8D0500813329 /* KWaveAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KWaveAnimationView.swift; sourceTree = "<group>"; };
 		A5F87B74234C8D6600813329 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		A5F87B77234C8FD600813329 /* KDrawRectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDrawRectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		A5F87B41234C8C2900813329 /* kylDrawDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5F87B76234C8F9E00813329 /* draw */,
 				A5F87B73234C8D4500813329 /* extension */,
 				A5F87B72234C8D1100813329 /* animation */,
 				A5F87B42234C8C2900813329 /* AppDelegate.swift */,
@@ -145,6 +148,14 @@
 				A5F87B74234C8D6600813329 /* UIColor+Hex.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		A5F87B76234C8F9E00813329 /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				A5F87B77234C8FD600813329 /* KDrawRectView.swift */,
+			);
+			path = draw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F87B78234C8FD600813329 /* KDrawRectView.swift in Sources */,
 				A5F87B71234C8D0500813329 /* KWaveAnimationView.swift in Sources */,
 				A5F87B75234C8D6600813329 /* UIColor+Hex.swift in Sources */,
 				A5F87B45234C8C2900813329 /* ViewController.swift in Sources */,

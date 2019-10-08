@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        testWaveAnimation()
+        testDrawRect()
     }
 
 
@@ -49,6 +49,13 @@ extension ViewController {
         
         // 开始播放波浪动画
         waveView.startWave()
+    }
+    
+    private func testDrawRect() {
+        let frame = CGRect(x: 30, y: 30, width: 250, height: 100)
+        let cgView = KDrawRect(frame: frame)
+        view.addSubview(cgView)
+
     }
 }
 
