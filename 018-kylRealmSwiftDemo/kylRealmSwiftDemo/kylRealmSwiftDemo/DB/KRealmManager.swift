@@ -16,31 +16,16 @@ final class KRealmManager {
     static let sharedInstance = try! Realm()
     
     static func initRealm() {
-        
-        var config = Realm.Configuration()
-        //使用默认的目录，但是可以使用用户名来替换默认的文件名
-        config.fileURL = config.fileURL!.deletingLastPathComponent().appendingPathComponent("Bilibili.realm")
+        let dbVersion : UInt64 = 1
+        let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
+        let dbPath = docPath.appending("/JimuProDB.realm")
+        let config = Realm.Configuration(fileURL: URL.init(string: dbPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: dbVersion, migrationBlock: { (migration, oldSchemaVersion) in
+        }, deleteRealmIfMigrationNeeded: false, shouldCompactOnLaunch: nil, objectTypes: nil)
+        Realm.Configuration.defaultConfiguration = config
         //获取我们的Realm文件的父级目录
         let folderPath = config.fileURL!.deletingLastPathComponent().path
         //解除这个目录的保护
         try! FileManager.default.setAttributes([FileAttributeKey.protectionKey: FileProtectionType.none], ofItemAtPath: folderPath)
-        //创建Realm
-        Realm.Configuration.defaultConfiguration = config
-    }
-    
-    /// 配置数据库
-    class func configRealm() {
-        /// 如果要存储的数据模型属性发生变化,需要配置当前版本号比之前大
-        let dbVersion : UInt64 = 3
-        let docPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
-        let dbPath = docPath.appending("/defaultDB.realm")
-        let config = Realm.Configuration(fileURL: URL.init(string: dbPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: dbVersion, migrationBlock: { (migration, oldSchemaVersion) in
-//            migration.enumerateObjects(ofType: Student.className(), { (oldObject, newObject) in
-//                let name = oldObject!["name"] as! String
-//                newObject!["groupName"] = "孔雨露\(name)"
-//            })
-        }, deleteRealmIfMigrationNeeded: false, shouldCompactOnLaunch: nil, objectTypes: nil)
-        Realm.Configuration.defaultConfiguration = config
         Realm.asyncOpen { (realm, error) in
             if let _ = realm {
                 print("Realm 服务器配置成功!")

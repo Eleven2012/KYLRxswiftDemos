@@ -1,0 +1,6 @@
+framework module SwiftTimer {
+  umbrella header "SwiftTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}

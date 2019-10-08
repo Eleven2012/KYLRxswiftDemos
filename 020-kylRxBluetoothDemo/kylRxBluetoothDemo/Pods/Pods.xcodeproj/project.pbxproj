@@ -1,0 +1,1115 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05CA23C43024A74D57C330814E1A8351 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6C450C4E3EB674C5372E44A5EBFF98 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06FAABF17CA6C7CA051EEDC9C6725D2D /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C565DFD86EB6F2DB48EFA95DD03BD /* DDOSLogger.m */; };
+		096CB0404EF464DC1E8D5F5F5B0A210E /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 92506D3F35BD417A147935DCB0BF13E7 /* DDFileLogger.m */; };
+		104F93F51E9874729C21655508F6D9D9 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 06478169F2DEED57748DE0D6C6ABD54A /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		158337C39C663083CC1858B14F443D05 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBF0AE6649103C17CBB1EFCDDE8923D /* DDAbstractDatabaseLogger.m */; };
+		23F8AF0CCD6932BD129CCB61619ADB3D /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A49E964CECADB674B864AD4034D95B2 /* DDASLLogCapture.m */; };
+		25951A525FDB265713DACAF9184F4292 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DE7522FB41BE95EA42096E16EC4E5F /* DDTTYLogger.m */; };
+		3F8D6E16E7F40A3AD3B208ED3BCD6F97 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A55E84D5EB3A9608379E4F00F98761F9 /* DDMultiFormatter.m */; };
+		47771D4F38962FF6D770D8D36E43D021 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA60634BACC7330F3CCB3A5D05259E /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CAD49704680286622E12C021FB60917 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D67D96B1560A6D0A230A1C7098EC86F /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EAC3D69F4903411B1C8A52E8AFE90DD /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A758FBE1B8BC5BAEE3071F57B3F415 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		517A2E0FE591D72609637BB7021A6D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		571D67412D63E7B133DC365423BFC3F3 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BB4D8EEEDE8EED30406C0370230E25 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A176CDB39E2631FAEE15AA7C55F4B17 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1EB4171A798C5AF338480472A7F25 /* DDLog.m */; };
+		624EB5C2E3BAE9752E44A6D6ED63C61D /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E05B17746765B51207606A27953E54 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A4C4A5764636432DC4E24C259A0F7F /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B1065B23B2143D5F7EF0C5B85970F964 /* CLIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A705DACC676BCB94BAFB2979394CEA6 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B2E9837A51E29FAAF2B56DA6BC8C5C /* DDDispatchQueueLogFormatter.m */; };
+		7BB947EA62030EB477712B705A7B446F /* SwiftLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 92987B1D790731E9B57CB07AD7B80C3A /* SwiftLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D9FD7963BD0891B07B86C1BA858930B /* DDFileLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F3546253A52C6B80933C615B1FABB4F /* DDFileLogger+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83CC221B10D47B704195093BDC414867 /* DDAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F22484AB4DF9567D7E708EE7ED63E4 /* DDAssert.swift */; };
+		89141F0C37E88953C21B8A3A974ECBC7 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60195910D7FB25DB947EBF88958BB6 /* DDFileLogger+Buffering.m */; };
+		8A06D2CF5742FD2D42787EF27D59C98A /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AA13B764D2C313AFD21D76B65A5A7 /* DDLoggerNames.m */; };
+		940C063BA63E04C26083CA576243D70E /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE9386C9C67D456BBEFCDDAE54135F0 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		981C2ACFAE691B7612064B7252F5AA3E /* Pods-kylRxBluetoothDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F69DBFFD0D8B0F89AF9C18378EAB1A /* Pods-kylRxBluetoothDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01ED3AD57503C4E42F6321F5C13E745 /* Pods-kylRxBluetoothDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B61BC7B16A1F0D4889B9AD35E4FB7D /* Pods-kylRxBluetoothDemoTests-dummy.m */; };
+		A086395C3C4300488EF23AF3D67A9B10 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E2BC84E1924E149A768CDC689D3B72 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2E02FEF95BDED595E60F4AE92836FD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A5E839070BC3DF5291BE4CC48FAB08E6 /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = 959FB691AA6628D0A79CA03CA27EC2E4 /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABCE3270FE73CD7BBB6B33C6B0A95B81 /* Pods-kylRxBluetoothDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 853421580ED93C6A0C2766452C4777F1 /* Pods-kylRxBluetoothDemo-dummy.m */; };
+		B090F4D7E9FC4D9B10CBD55237D37EE8 /* Pods-kylRxBluetoothDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A2C8A6A63083E2B370221600C8169D /* Pods-kylRxBluetoothDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B25AFA2775DFEC1085D803C9821205FA /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B785AFB638C1D45E10088CC71AF7053 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6665786223B5428866C62CA97EA3AE /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7563B8E76EA6587E53274304A4BB11A8 /* CLIColor.m */; };
+		C4061CF4C1E403C0F6F3FC8A994A4C42 /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F07DE7192F911ACED032822AEEECD /* CocoaLumberjack.swift */; };
+		CF1A7526B86DBAA3C9ADFCBAED01BB71 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A19C3D216E5046829AC1B43028DE2D0 /* CocoaLumberjack-dummy.m */; };
+		D0BD1654DD7AEE81F5F1AD782E61ABD7 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDA7E13DB6DBBD176ECD1A33F669412 /* DDContextFilterLogFormatter.m */; };
+		D1C23E853E5800653C5672037961ED96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D865950786FDC596321E957342A44D5E /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B94252C021B6A4923FC8C941A8A6151 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA5628721FD25F42FD5BFB47B3950512 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EC82E240E7C4A5A6833B09061A4D4C /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC1DBD71C983F57315E35EE3DE49329 /* Pods-kylRxBluetoothDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30406D46E0C11C2FC9A8BE752130F45E /* Pods-kylRxBluetoothDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBA1DFA48782099673B506B6E5AC4E74 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7188C780CBE037678683B9856995EA /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E19203C917B4E14C0E5D1527689F9B60 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B07452F765B6CD733FC56F21B49E03D5 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3260FB9E3E7504172F5300AAB31BDFC /* Pods-kylRxBluetoothDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E42625FD7A4BF6DB8E78C86A0CAE8C6F /* Pods-kylRxBluetoothDemoUITests-dummy.m */; };
+		EE6A0367F4D6164F374FDDDB9F57EFFC /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ED23EC2E873D800C7FA716A010A831 /* DDASLLogger.m */; };
+		F337238E4310A50BDBF50005C88220C0 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8D5A08219BA214A73B82024598B56 /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51013C3D7AD87FBBBBA8AA9A4BE03EC /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F405530B70D2B810D554D63CAEF4C417 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6949BF2A8CF492225A02F703377EA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FE744FCC324426ADC0BA21A902799C48 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6509E56FCA6014158831B6C7BA318BC2 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134F38E896A179AFF5EB29E9722C1597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DD75A0A72A2A0D11B659DF14819E109;
+			remoteInfo = "Pods-kylRxBluetoothDemo";
+		};
+		8C9270B9CA6BA097C7913B324A6ECF5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DD75A0A72A2A0D11B659DF14819E109;
+			remoteInfo = "Pods-kylRxBluetoothDemo";
+		};
+		C9E5771915168F4EBB30A3C11FF603F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D9B0D46AF3C9D28C1D778456D00CC9 /* Pods-kylRxBluetoothDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kylRxBluetoothDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		0256AA93958D7D2932D20B468BFAD29A /* Pods-kylRxBluetoothDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kylRxBluetoothDemo.release.xcconfig"; sourceTree = "<group>"; };
+		06478169F2DEED57748DE0D6C6ABD54A /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		0B64EB22642B2F5128DAF1E10B33D277 /* Pods-kylRxBluetoothDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kylRxBluetoothDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		12DE7522FB41BE95EA42096E16EC4E5F /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		1B785AFB638C1D45E10088CC71AF7053 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		234F07DE7192F911ACED032822AEEECD /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
+		28A2C8A6A63083E2B370221600C8169D /* Pods-kylRxBluetoothDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kylRxBluetoothDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		30406D46E0C11C2FC9A8BE752130F45E /* Pods-kylRxBluetoothDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kylRxBluetoothDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3822E4C252BAD0E449D3DA0F17D620A7 /* Pods-kylRxBluetoothDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kylRxBluetoothDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B60195910D7FB25DB947EBF88958BB6 /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Classes/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
+		40237FF8C4F59E5AB04F8EBB7EECC541 /* Pods-kylRxBluetoothDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kylRxBluetoothDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A49E964CECADB674B864AD4034D95B2 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		4B7D07E60BA018CB881E82F285C04FBD /* Pods-kylRxBluetoothDemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kylRxBluetoothDemoUITests-Info.plist"; sourceTree = "<group>"; };
+		4BB4B5DFB64B3939C707BEDC0F2237B6 /* Pods-kylRxBluetoothDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kylRxBluetoothDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50D7D57E97540A982C15D5E4E7434A5A /* Pods-kylRxBluetoothDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kylRxBluetoothDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		56C3FF273346002825BBDD1021D24BD8 /* Pods_kylRxBluetoothDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kylRxBluetoothDemoTests.framework; path = "Pods-kylRxBluetoothDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F69DBFFD0D8B0F89AF9C18378EAB1A /* Pods-kylRxBluetoothDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kylRxBluetoothDemo-umbrella.h"; sourceTree = "<group>"; };
+		58038BEFFDD225C689137EBCEE1206A3 /* Pods-kylRxBluetoothDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kylRxBluetoothDemo.modulemap"; sourceTree = "<group>"; };
+		5876258279CD4C014D376E220DA6A593 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
+		58E05B17746765B51207606A27953E54 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		59ED5D6BD15E546C4BD20242A40C3808 /* Pods-kylRxBluetoothDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kylRxBluetoothDemoUITests.modulemap"; sourceTree = "<group>"; };
+		5FE8D5A08219BA214A73B82024598B56 /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Classes/DDLoggerNames.h; sourceTree = "<group>"; };
+		6509E56FCA6014158831B6C7BA318BC2 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		6A70A3300FE3140477D42F286D6C73C3 /* Pods-kylRxBluetoothDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kylRxBluetoothDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C8967A1CB3A2BBD62F6B3BBF76EA682 /* Pods-kylRxBluetoothDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kylRxBluetoothDemoTests-Info.plist"; sourceTree = "<group>"; };
+		6F3546253A52C6B80933C615B1FABB4F /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Internal.h"; path = "Classes/DDFileLogger+Internal.h"; sourceTree = "<group>"; };
+		743C565DFD86EB6F2DB48EFA95DD03BD /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
+		7563B8E76EA6587E53274304A4BB11A8 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Classes/CLI/CLIColor.m; sourceTree = "<group>"; };
+		76E2BC84E1924E149A768CDC689D3B72 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		79B2E9837A51E29FAAF2B56DA6BC8C5C /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		79BB4D8EEEDE8EED30406C0370230E25 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		853421580ED93C6A0C2766452C4777F1 /* Pods-kylRxBluetoothDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kylRxBluetoothDemo-dummy.m"; sourceTree = "<group>"; };
+		8A07BF0051FE9D6609BEB3C835659DD8 /* Pods-kylRxBluetoothDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kylRxBluetoothDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8B94252C021B6A4923FC8C941A8A6151 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
+		8C3AA13B764D2C313AFD21D76B65A5A7 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Classes/DDLoggerNames.m; sourceTree = "<group>"; };
+		8C6B2B74301FAD98195E2A78FDB2974C /* Pods_kylRxBluetoothDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kylRxBluetoothDemoUITests.framework; path = "Pods-kylRxBluetoothDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D67D96B1560A6D0A230A1C7098EC86F /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
+		8DE9386C9C67D456BBEFCDDAE54135F0 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		9224B50130E9F4DD0C53849E7FDB89B3 /* Pods-kylRxBluetoothDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kylRxBluetoothDemoTests.modulemap"; sourceTree = "<group>"; };
+		92506D3F35BD417A147935DCB0BF13E7 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		92987B1D790731E9B57CB07AD7B80C3A /* SwiftLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftLogLevel.h; path = Classes/SwiftLogLevel.h; sourceTree = "<group>"; };
+		93ED23EC2E873D800C7FA716A010A831 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		959FB691AA6628D0A79CA03CA27EC2E4 /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Classes/Extensions/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
+		97B9012997B0981A3B70B255CE526ADC /* Pods_kylRxBluetoothDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kylRxBluetoothDemo.framework; path = "Pods-kylRxBluetoothDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A19C3D216E5046829AC1B43028DE2D0 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
+		9AD1EB4171A798C5AF338480472A7F25 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F6681B1EFE200A28F21CFD1A8B63286 /* Pods-kylRxBluetoothDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kylRxBluetoothDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4CA60634BACC7330F3CCB3A5D05259E /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		A55E84D5EB3A9608379E4F00F98761F9 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		ACBF0AE6649103C17CBB1EFCDDE8923D /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		AFDA7E13DB6DBBD176ECD1A33F669412 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		B07452F765B6CD733FC56F21B49E03D5 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		B1065B23B2143D5F7EF0C5B85970F964 /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Classes/CLI/CLIColor.h; sourceTree = "<group>"; };
+		B2C5F6047CB175EC4C9C99B20331BE19 /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
+		BC7188C780CBE037678683B9856995EA /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C5A0C13E6D7657DF9637DE37632E63 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
+		CE6C450C4E3EB674C5372E44A5EBFF98 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		D106208E0F0867C02A7A8A8A00EBA660 /* Pods-kylRxBluetoothDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kylRxBluetoothDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D24A2610D3EA82D7603EF56959448307 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
+		D9F22484AB4DF9567D7E708EE7ED63E4 /* DDAssert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDAssert.swift; path = Classes/DDAssert.swift; sourceTree = "<group>"; };
+		DCED0BD1AB41211C7DE9594E4CD242BB /* Pods-kylRxBluetoothDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kylRxBluetoothDemo-Info.plist"; sourceTree = "<group>"; };
+		E0A758FBE1B8BC5BAEE3071F57B3F415 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		E42625FD7A4BF6DB8E78C86A0CAE8C6F /* Pods-kylRxBluetoothDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kylRxBluetoothDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		F1339A2B58CCCFA6F10D59BC6C306E80 /* Pods-kylRxBluetoothDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kylRxBluetoothDemo-frameworks.sh"; sourceTree = "<group>"; };
+		F405530B70D2B810D554D63CAEF4C417 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		F5B61BC7B16A1F0D4889B9AD35E4FB7D /* Pods-kylRxBluetoothDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kylRxBluetoothDemoTests-dummy.m"; sourceTree = "<group>"; };
+		F5EC82E240E7C4A5A6833B09061A4D4C /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		F7333B5EA64087D59A38F9894215CAAF /* Pods-kylRxBluetoothDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kylRxBluetoothDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		055955DB1686184B10485E3281B9A122 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517A2E0FE591D72609637BB7021A6D8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F275E1749DCBB35F4B8DB86070000F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E02FEF95BDED595E60F4AE92836FD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4E368935672CDD44AB2EDF94DB21E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1C23E853E5800653C5672037961ED96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F61ADF2C0842D7617E67EA6B2E4639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6949BF2A8CF492225A02F703377EA0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBF77B4981C494A9E70D7592A762507 /* Pods-kylRxBluetoothDemo */ = {
+			isa = PBXGroup;
+			children = (
+				58038BEFFDD225C689137EBCEE1206A3 /* Pods-kylRxBluetoothDemo.modulemap */,
+				F7333B5EA64087D59A38F9894215CAAF /* Pods-kylRxBluetoothDemo-acknowledgements.markdown */,
+				0B64EB22642B2F5128DAF1E10B33D277 /* Pods-kylRxBluetoothDemo-acknowledgements.plist */,
+				853421580ED93C6A0C2766452C4777F1 /* Pods-kylRxBluetoothDemo-dummy.m */,
+				F1339A2B58CCCFA6F10D59BC6C306E80 /* Pods-kylRxBluetoothDemo-frameworks.sh */,
+				DCED0BD1AB41211C7DE9594E4CD242BB /* Pods-kylRxBluetoothDemo-Info.plist */,
+				56F69DBFFD0D8B0F89AF9C18378EAB1A /* Pods-kylRxBluetoothDemo-umbrella.h */,
+				8A07BF0051FE9D6609BEB3C835659DD8 /* Pods-kylRxBluetoothDemo.debug.xcconfig */,
+				0256AA93958D7D2932D20B468BFAD29A /* Pods-kylRxBluetoothDemo.release.xcconfig */,
+			);
+			name = "Pods-kylRxBluetoothDemo";
+			path = "Target Support Files/Pods-kylRxBluetoothDemo";
+			sourceTree = "<group>";
+		};
+		2FE4F6760C86F245C35F5453720F498A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B1065B23B2143D5F7EF0C5B85970F964 /* CLIColor.h */,
+				7563B8E76EA6587E53274304A4BB11A8 /* CLIColor.m */,
+				A4CA60634BACC7330F3CCB3A5D05259E /* CocoaLumberjack.h */,
+				76E2BC84E1924E149A768CDC689D3B72 /* DDAbstractDatabaseLogger.h */,
+				ACBF0AE6649103C17CBB1EFCDDE8923D /* DDAbstractDatabaseLogger.m */,
+				06478169F2DEED57748DE0D6C6ABD54A /* DDASLLogCapture.h */,
+				4A49E964CECADB674B864AD4034D95B2 /* DDASLLogCapture.m */,
+				8DE9386C9C67D456BBEFCDDAE54135F0 /* DDASLLogger.h */,
+				93ED23EC2E873D800C7FA716A010A831 /* DDASLLogger.m */,
+				BC7188C780CBE037678683B9856995EA /* DDAssertMacros.h */,
+				58E05B17746765B51207606A27953E54 /* DDContextFilterLogFormatter.h */,
+				AFDA7E13DB6DBBD176ECD1A33F669412 /* DDContextFilterLogFormatter.m */,
+				B07452F765B6CD733FC56F21B49E03D5 /* DDDispatchQueueLogFormatter.h */,
+				79B2E9837A51E29FAAF2B56DA6BC8C5C /* DDDispatchQueueLogFormatter.m */,
+				F5EC82E240E7C4A5A6833B09061A4D4C /* DDFileLogger.h */,
+				92506D3F35BD417A147935DCB0BF13E7 /* DDFileLogger.m */,
+				959FB691AA6628D0A79CA03CA27EC2E4 /* DDFileLogger+Buffering.h */,
+				3B60195910D7FB25DB947EBF88958BB6 /* DDFileLogger+Buffering.m */,
+				6F3546253A52C6B80933C615B1FABB4F /* DDFileLogger+Internal.h */,
+				E0A758FBE1B8BC5BAEE3071F57B3F415 /* DDLegacyMacros.h */,
+				79BB4D8EEEDE8EED30406C0370230E25 /* DDLog.h */,
+				9AD1EB4171A798C5AF338480472A7F25 /* DDLog.m */,
+				1B785AFB638C1D45E10088CC71AF7053 /* DDLog+LOGV.h */,
+				5FE8D5A08219BA214A73B82024598B56 /* DDLoggerNames.h */,
+				8C3AA13B764D2C313AFD21D76B65A5A7 /* DDLoggerNames.m */,
+				CE6C450C4E3EB674C5372E44A5EBFF98 /* DDLogMacros.h */,
+				F405530B70D2B810D554D63CAEF4C417 /* DDMultiFormatter.h */,
+				A55E84D5EB3A9608379E4F00F98761F9 /* DDMultiFormatter.m */,
+				8B94252C021B6A4923FC8C941A8A6151 /* DDOSLogger.h */,
+				743C565DFD86EB6F2DB48EFA95DD03BD /* DDOSLogger.m */,
+				6509E56FCA6014158831B6C7BA318BC2 /* DDTTYLogger.h */,
+				12DE7522FB41BE95EA42096E16EC4E5F /* DDTTYLogger.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		320ED2F2348655F220D240EB856D3CE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E9D3C854078D09079E3AB5B54654C66 /* CocoaLumberjack */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4228380462BA7B7F16831F7863BB008D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBF77B4981C494A9E70D7592A762507 /* Pods-kylRxBluetoothDemo */,
+				6E7634C7B82C2020F1442A9BC9FF36D0 /* Pods-kylRxBluetoothDemoTests */,
+				F954A934BFF93C113436C6AEACB2E2AE /* Pods-kylRxBluetoothDemoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		451D85AFDD4C5C511919DF59963A24FD /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				234F07DE7192F911ACED032822AEEECD /* CocoaLumberjack.swift */,
+				D9F22484AB4DF9567D7E708EE7ED63E4 /* DDAssert.swift */,
+				92987B1D790731E9B57CB07AD7B80C3A /* SwiftLogLevel.h */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		59652B4C76A6FED3CE8A38D7E545B9B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
+				97B9012997B0981A3B70B255CE526ADC /* Pods_kylRxBluetoothDemo.framework */,
+				56C3FF273346002825BBDD1021D24BD8 /* Pods_kylRxBluetoothDemoTests.framework */,
+				8C6B2B74301FAD98195E2A78FDB2974C /* Pods_kylRxBluetoothDemoUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E7634C7B82C2020F1442A9BC9FF36D0 /* Pods-kylRxBluetoothDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9224B50130E9F4DD0C53849E7FDB89B3 /* Pods-kylRxBluetoothDemoTests.modulemap */,
+				9F6681B1EFE200A28F21CFD1A8B63286 /* Pods-kylRxBluetoothDemoTests-acknowledgements.markdown */,
+				D106208E0F0867C02A7A8A8A00EBA660 /* Pods-kylRxBluetoothDemoTests-acknowledgements.plist */,
+				F5B61BC7B16A1F0D4889B9AD35E4FB7D /* Pods-kylRxBluetoothDemoTests-dummy.m */,
+				6C8967A1CB3A2BBD62F6B3BBF76EA682 /* Pods-kylRxBluetoothDemoTests-Info.plist */,
+				28A2C8A6A63083E2B370221600C8169D /* Pods-kylRxBluetoothDemoTests-umbrella.h */,
+				3822E4C252BAD0E449D3DA0F17D620A7 /* Pods-kylRxBluetoothDemoTests.debug.xcconfig */,
+				00D9B0D46AF3C9D28C1D778456D00CC9 /* Pods-kylRxBluetoothDemoTests.release.xcconfig */,
+			);
+			name = "Pods-kylRxBluetoothDemoTests";
+			path = "Target Support Files/Pods-kylRxBluetoothDemoTests";
+			sourceTree = "<group>";
+		};
+		7E9D3C854078D09079E3AB5B54654C66 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				2FE4F6760C86F245C35F5453720F498A /* Core */,
+				9190AB9A8BF5417609B94A7049EF92B5 /* Support Files */,
+				451D85AFDD4C5C511919DF59963A24FD /* Swift */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		9190AB9A8BF5417609B94A7049EF92B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5876258279CD4C014D376E220DA6A593 /* CocoaLumberjack.modulemap */,
+				C2C5A0C13E6D7657DF9637DE37632E63 /* CocoaLumberjack.xcconfig */,
+				9A19C3D216E5046829AC1B43028DE2D0 /* CocoaLumberjack-dummy.m */,
+				B2C5F6047CB175EC4C9C99B20331BE19 /* CocoaLumberjack-Info.plist */,
+				D24A2610D3EA82D7603EF56959448307 /* CocoaLumberjack-prefix.pch */,
+				8D67D96B1560A6D0A230A1C7098EC86F /* CocoaLumberjack-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaLumberjack";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				320ED2F2348655F220D240EB856D3CE1 /* Pods */,
+				59652B4C76A6FED3CE8A38D7E545B9B4 /* Products */,
+				4228380462BA7B7F16831F7863BB008D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F954A934BFF93C113436C6AEACB2E2AE /* Pods-kylRxBluetoothDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59ED5D6BD15E546C4BD20242A40C3808 /* Pods-kylRxBluetoothDemoUITests.modulemap */,
+				6A70A3300FE3140477D42F286D6C73C3 /* Pods-kylRxBluetoothDemoUITests-acknowledgements.markdown */,
+				50D7D57E97540A982C15D5E4E7434A5A /* Pods-kylRxBluetoothDemoUITests-acknowledgements.plist */,
+				E42625FD7A4BF6DB8E78C86A0CAE8C6F /* Pods-kylRxBluetoothDemoUITests-dummy.m */,
+				4B7D07E60BA018CB881E82F285C04FBD /* Pods-kylRxBluetoothDemoUITests-Info.plist */,
+				30406D46E0C11C2FC9A8BE752130F45E /* Pods-kylRxBluetoothDemoUITests-umbrella.h */,
+				4BB4B5DFB64B3939C707BEDC0F2237B6 /* Pods-kylRxBluetoothDemoUITests.debug.xcconfig */,
+				40237FF8C4F59E5AB04F8EBB7EECC541 /* Pods-kylRxBluetoothDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-kylRxBluetoothDemoUITests";
+			path = "Target Support Files/Pods-kylRxBluetoothDemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F9BB0CF3566A766899193E1279A4B9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC1DBD71C983F57315E35EE3DE49329 /* Pods-kylRxBluetoothDemoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527A3CD1C9784729C14C6753633675BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A4C4A5764636432DC4E24C259A0F7F /* CLIColor.h in Headers */,
+				4CAD49704680286622E12C021FB60917 /* CocoaLumberjack-umbrella.h in Headers */,
+				47771D4F38962FF6D770D8D36E43D021 /* CocoaLumberjack.h in Headers */,
+				A086395C3C4300488EF23AF3D67A9B10 /* DDAbstractDatabaseLogger.h in Headers */,
+				104F93F51E9874729C21655508F6D9D9 /* DDASLLogCapture.h in Headers */,
+				940C063BA63E04C26083CA576243D70E /* DDASLLogger.h in Headers */,
+				DBA1DFA48782099673B506B6E5AC4E74 /* DDAssertMacros.h in Headers */,
+				624EB5C2E3BAE9752E44A6D6ED63C61D /* DDContextFilterLogFormatter.h in Headers */,
+				E19203C917B4E14C0E5D1527689F9B60 /* DDDispatchQueueLogFormatter.h in Headers */,
+				A5E839070BC3DF5291BE4CC48FAB08E6 /* DDFileLogger+Buffering.h in Headers */,
+				7D9FD7963BD0891B07B86C1BA858930B /* DDFileLogger+Internal.h in Headers */,
+				DA5628721FD25F42FD5BFB47B3950512 /* DDFileLogger.h in Headers */,
+				4EAC3D69F4903411B1C8A52E8AFE90DD /* DDLegacyMacros.h in Headers */,
+				B25AFA2775DFEC1085D803C9821205FA /* DDLog+LOGV.h in Headers */,
+				571D67412D63E7B133DC365423BFC3F3 /* DDLog.h in Headers */,
+				F337238E4310A50BDBF50005C88220C0 /* DDLoggerNames.h in Headers */,
+				05CA23C43024A74D57C330814E1A8351 /* DDLogMacros.h in Headers */,
+				F51013C3D7AD87FBBBBA8AA9A4BE03EC /* DDMultiFormatter.h in Headers */,
+				D865950786FDC596321E957342A44D5E /* DDOSLogger.h in Headers */,
+				FE744FCC324426ADC0BA21A902799C48 /* DDTTYLogger.h in Headers */,
+				7BB947EA62030EB477712B705A7B446F /* SwiftLogLevel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2483736F04B8BC8B3A90EAFD00986FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981C2ACFAE691B7612064B7252F5AA3E /* Pods-kylRxBluetoothDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9ECFD38689DB16ED96FEC18BD8691EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B090F4D7E9FC4D9B10CBD55237D37EE8 /* Pods-kylRxBluetoothDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		56ED720301D9A1E44222D1ADC89FFA98 /* Pods-kylRxBluetoothDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 974A51B0FB335231936C65F0D5B0AEE2 /* Build configuration list for PBXNativeTarget "Pods-kylRxBluetoothDemoTests" */;
+			buildPhases = (
+				F9ECFD38689DB16ED96FEC18BD8691EE /* Headers */,
+				27F9AE9C73E27CFDE873AF403DCE1675 /* Sources */,
+				2F275E1749DCBB35F4B8DB86070000F6 /* Frameworks */,
+				86D1AD87642315B03AB69A5F377D6E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3B48825FAEA5684F8D6730AF818532E /* PBXTargetDependency */,
+			);
+			name = "Pods-kylRxBluetoothDemoTests";
+			productName = "Pods-kylRxBluetoothDemoTests";
+			productReference = 56C3FF273346002825BBDD1021D24BD8 /* Pods_kylRxBluetoothDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DD75A0A72A2A0D11B659DF14819E109 /* Pods-kylRxBluetoothDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA52187286274B748A0D295A97414FC5 /* Build configuration list for PBXNativeTarget "Pods-kylRxBluetoothDemo" */;
+			buildPhases = (
+				F2483736F04B8BC8B3A90EAFD00986FA /* Headers */,
+				1CB14240B1DF3528894E03766F8584F5 /* Sources */,
+				7C4E368935672CDD44AB2EDF94DB21E5 /* Frameworks */,
+				5206BF8A1E258C9BD9D6C30149D35ECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE71B57DF563A866A8F25F6E8D77FC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-kylRxBluetoothDemo";
+			productName = "Pods-kylRxBluetoothDemo";
+			productReference = 97B9012997B0981A3B70B255CE526ADC /* Pods_kylRxBluetoothDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B38F7ACA77D8AC283A58EA292B9C4C89 /* Pods-kylRxBluetoothDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0FFDDB4FDBA6465BA2D8D3B9A17122A /* Build configuration list for PBXNativeTarget "Pods-kylRxBluetoothDemoUITests" */;
+			buildPhases = (
+				0F9BB0CF3566A766899193E1279A4B9B /* Headers */,
+				DDE151FFAE384027DC4AD839A3689CB8 /* Sources */,
+				055955DB1686184B10485E3281B9A122 /* Frameworks */,
+				D61302BF5F5223912414F3C29F37EDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4969B07032F921CAE5BB30001A60ECFA /* PBXTargetDependency */,
+			);
+			name = "Pods-kylRxBluetoothDemoUITests";
+			productName = "Pods-kylRxBluetoothDemoUITests";
+			productReference = 8C6B2B74301FAD98195E2A78FDB2974C /* Pods_kylRxBluetoothDemoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE1656DF5D916841ABB86B9B166CBEEC /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
+			buildPhases = (
+				527A3CD1C9784729C14C6753633675BC /* Headers */,
+				E85D5753D1D064F72FDC5BD1306CFEC9 /* Sources */,
+				C6F61ADF2C0842D7617E67EA6B2E4639 /* Frameworks */,
+				0A8F69AD0BDE81B314AAE7E7A7701D75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaLumberjack;
+			productName = CocoaLumberjack;
+			productReference = C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 59652B4C76A6FED3CE8A38D7E545B9B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
+				9DD75A0A72A2A0D11B659DF14819E109 /* Pods-kylRxBluetoothDemo */,
+				56ED720301D9A1E44222D1ADC89FFA98 /* Pods-kylRxBluetoothDemoTests */,
+				B38F7ACA77D8AC283A58EA292B9C4C89 /* Pods-kylRxBluetoothDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A8F69AD0BDE81B314AAE7E7A7701D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5206BF8A1E258C9BD9D6C30149D35ECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D1AD87642315B03AB69A5F377D6E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61302BF5F5223912414F3C29F37EDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CB14240B1DF3528894E03766F8584F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCE3270FE73CD7BBB6B33C6B0A95B81 /* Pods-kylRxBluetoothDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F9AE9C73E27CFDE873AF403DCE1675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01ED3AD57503C4E42F6321F5C13E745 /* Pods-kylRxBluetoothDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE151FFAE384027DC4AD839A3689CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3260FB9E3E7504172F5300AAB31BDFC /* Pods-kylRxBluetoothDemoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85D5753D1D064F72FDC5BD1306CFEC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6665786223B5428866C62CA97EA3AE /* CLIColor.m in Sources */,
+				CF1A7526B86DBAA3C9ADFCBAED01BB71 /* CocoaLumberjack-dummy.m in Sources */,
+				C4061CF4C1E403C0F6F3FC8A994A4C42 /* CocoaLumberjack.swift in Sources */,
+				158337C39C663083CC1858B14F443D05 /* DDAbstractDatabaseLogger.m in Sources */,
+				23F8AF0CCD6932BD129CCB61619ADB3D /* DDASLLogCapture.m in Sources */,
+				EE6A0367F4D6164F374FDDDB9F57EFFC /* DDASLLogger.m in Sources */,
+				83CC221B10D47B704195093BDC414867 /* DDAssert.swift in Sources */,
+				D0BD1654DD7AEE81F5F1AD782E61ABD7 /* DDContextFilterLogFormatter.m in Sources */,
+				6A705DACC676BCB94BAFB2979394CEA6 /* DDDispatchQueueLogFormatter.m in Sources */,
+				89141F0C37E88953C21B8A3A974ECBC7 /* DDFileLogger+Buffering.m in Sources */,
+				096CB0404EF464DC1E8D5F5F5B0A210E /* DDFileLogger.m in Sources */,
+				5A176CDB39E2631FAEE15AA7C55F4B17 /* DDLog.m in Sources */,
+				8A06D2CF5742FD2D42787EF27D59C98A /* DDLoggerNames.m in Sources */,
+				3F8D6E16E7F40A3AD3B208ED3BCD6F97 /* DDMultiFormatter.m in Sources */,
+				06FAABF17CA6C7CA051EEDC9C6725D2D /* DDOSLogger.m in Sources */,
+				25951A525FDB265713DACAF9184F4292 /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DE71B57DF563A866A8F25F6E8D77FC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = C9E5771915168F4EBB30A3C11FF603F8 /* PBXContainerItemProxy */;
+		};
+		4969B07032F921CAE5BB30001A60ECFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kylRxBluetoothDemo";
+			target = 9DD75A0A72A2A0D11B659DF14819E109 /* Pods-kylRxBluetoothDemo */;
+			targetProxy = 134F38E896A179AFF5EB29E9722C1597 /* PBXContainerItemProxy */;
+		};
+		B3B48825FAEA5684F8D6730AF818532E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-kylRxBluetoothDemo";
+			target = 9DD75A0A72A2A0D11B659DF14819E109 /* Pods-kylRxBluetoothDemo */;
+			targetProxy = 8C9270B9CA6BA097C7913B324A6ECF5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2879C08FED043C9A19F1A210012C779F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C5A0C13E6D7657DF9637DE37632E63 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		61FC73418420A69971E9032B436BEB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40237FF8C4F59E5AB04F8EBB7EECC541 /* Pods-kylRxBluetoothDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kylRxBluetoothDemoUITests/Pods-kylRxBluetoothDemoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kylRxBluetoothDemoUITests/Pods-kylRxBluetoothDemoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9CA39247B801DF8F0A42256B10007857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0256AA93958D7D2932D20B468BFAD29A /* Pods-kylRxBluetoothDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kylRxBluetoothDemo/Pods-kylRxBluetoothDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kylRxBluetoothDemo/Pods-kylRxBluetoothDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B84EAC6C874FC64C7E10FE91E696A066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB4B5DFB64B3939C707BEDC0F2237B6 /* Pods-kylRxBluetoothDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kylRxBluetoothDemoUITests/Pods-kylRxBluetoothDemoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kylRxBluetoothDemoUITests/Pods-kylRxBluetoothDemoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0B32101A71830776B1FEE2F3CF35027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C5A0C13E6D7657DF9637DE37632E63 /* CocoaLumberjack.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaLumberjack/CocoaLumberjack.modulemap";
+				PRODUCT_MODULE_NAME = CocoaLumberjack;
+				PRODUCT_NAME = CocoaLumberjack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA4988FE78A57D755130CA8BE6E48FBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A07BF0051FE9D6609BEB3C835659DD8 /* Pods-kylRxBluetoothDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kylRxBluetoothDemo/Pods-kylRxBluetoothDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kylRxBluetoothDemo/Pods-kylRxBluetoothDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECE68E7C52225EB39654E00021180417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D9B0D46AF3C9D28C1D778456D00CC9 /* Pods-kylRxBluetoothDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kylRxBluetoothDemoTests/Pods-kylRxBluetoothDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kylRxBluetoothDemoTests/Pods-kylRxBluetoothDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F58692EA962EA59D9BC9E47CD0037E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3822E4C252BAD0E449D3DA0F17D620A7 /* Pods-kylRxBluetoothDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kylRxBluetoothDemoTests/Pods-kylRxBluetoothDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kylRxBluetoothDemoTests/Pods-kylRxBluetoothDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		974A51B0FB335231936C65F0D5B0AEE2 /* Build configuration list for PBXNativeTarget "Pods-kylRxBluetoothDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58692EA962EA59D9BC9E47CD0037E5D /* Debug */,
+				ECE68E7C52225EB39654E00021180417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0FFDDB4FDBA6465BA2D8D3B9A17122A /* Build configuration list for PBXNativeTarget "Pods-kylRxBluetoothDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B84EAC6C874FC64C7E10FE91E696A066 /* Debug */,
+				61FC73418420A69971E9032B436BEB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA52187286274B748A0D295A97414FC5 /* Build configuration list for PBXNativeTarget "Pods-kylRxBluetoothDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4988FE78A57D755130CA8BE6E48FBB /* Debug */,
+				9CA39247B801DF8F0A42256B10007857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE1656DF5D916841ABB86B9B166CBEEC /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2879C08FED043C9A19F1A210012C779F /* Debug */,
+				E0B32101A71830776B1FEE2F3CF35027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

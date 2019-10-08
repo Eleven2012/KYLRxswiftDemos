@@ -1,0 +1,6 @@
+framework module Pods_kylRxBluetoothDemoTests {
+  umbrella header "Pods-kylRxBluetoothDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

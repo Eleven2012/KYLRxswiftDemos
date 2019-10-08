@@ -1,0 +1,6 @@
+framework module CGFloatLiteral {
+  umbrella header "CGFloatLiteral-umbrella.h"
+
+  export *
+  module * { export * }
+}
