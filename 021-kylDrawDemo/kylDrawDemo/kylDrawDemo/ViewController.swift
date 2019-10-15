@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        testDrawRect()
+        //testDrawRect()
+        testDrawPan()
     }
 
 
@@ -57,5 +58,16 @@ extension ViewController {
         view.addSubview(cgView)
 
     }
+    
+    private func testDrawPan() {
+        view.addSubview(KDrawPanView(frame: CGRect(x: 10, y: 200, width: 400, height: 400)))
+    }
+    
+    
+}
+
+// MARK - 测试动画
+extension ViewController {
+    
 }
 

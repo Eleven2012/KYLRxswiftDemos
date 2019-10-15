@@ -42,6 +42,9 @@ class KDrawRect:UIView {
         
         //绘制三次贝塞尔曲线
         drawBezierCurve3(context: context)
+        
+        //绘制扇形
+        //drawPan(context: context)
     }
     
 
@@ -196,3 +199,17 @@ extension KDrawRect {
     }
 }
 
+
+// MARK - 绘制扇形
+extension KDrawRect {
+    func drawPan(context: CGContext) {
+        //设置笔触颜色
+        context.setStrokeColor(UIColor.orange.cgColor)
+        //设置笔触宽度
+        context.setLineWidth(6)
+        // 扇形
+        context.move(to: CGPoint(x: 100, y: 200))
+        context.addArc(center: CGPoint(x: 100, y: 200), radius: 50, startAngle: CGFloat( 30 / 180.0 * Double.pi), endAngle: CGFloat( 330.0 / 180.0 * Double.pi), clockwise: true)
+        context.addLine(to: CGPoint(x: 100, y: 200))
+    }
+}

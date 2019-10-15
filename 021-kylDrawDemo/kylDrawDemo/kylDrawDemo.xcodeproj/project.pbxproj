@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5044D10235020A900D6AD7D /* KDrawPanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5044D0F235020A900D6AD7D /* KDrawPanView.swift */; };
 		A5F87B43234C8C2900813329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F87B42234C8C2900813329 /* AppDelegate.swift */; };
 		A5F87B45234C8C2900813329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F87B44234C8C2900813329 /* ViewController.swift */; };
 		A5F87B48234C8C2900813329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F87B46234C8C2900813329 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5044D0F235020A900D6AD7D /* KDrawPanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDrawPanView.swift; sourceTree = "<group>"; };
 		A5F87B3F234C8C2900813329 /* kylDrawDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kylDrawDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F87B42234C8C2900813329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F87B44234C8C2900813329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A5F87B77234C8FD600813329 /* KDrawRectView.swift */,
+				A5044D0F235020A900D6AD7D /* KDrawPanView.swift */,
 			);
 			path = draw;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				A5F87B78234C8FD600813329 /* KDrawRectView.swift in Sources */,
 				A5F87B71234C8D0500813329 /* KWaveAnimationView.swift in Sources */,
+				A5044D10235020A900D6AD7D /* KDrawPanView.swift in Sources */,
 				A5F87B75234C8D6600813329 /* UIColor+Hex.swift in Sources */,
 				A5F87B45234C8C2900813329 /* ViewController.swift in Sources */,
 				A5F87B43234C8C2900813329 /* AppDelegate.swift in Sources */,
@@ -471,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kylDrawDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,6 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GLWCRSS83U;
 				INFOPLIST_FILE = kylDrawDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
